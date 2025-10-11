@@ -1,0 +1,16 @@
+[project]
+name = "sea-assignment"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.3",
+    "streamlit>=1.50.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]

@@ -1,0 +1,19 @@
+# Python-spezifische Dateien
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# uv-spezifische Dateien (falls nicht im .venv)
+.python-version
+
+# Streamlit-spezifische Dateien
+.streamlit/
+streamlit.secrets.toml
+
+# Daten-Dateien
+app/data/*
+!app/data/.gitkeep
