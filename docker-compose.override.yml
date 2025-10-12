@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  streamlit-app:
+    volumes:
+      # Mount source code for live development
+      - ./app:/app/app
+      - ./pyproject.toml:/app/pyproject.toml
+    environment:
+      - STREAMLIT_SERVER_RUNONTOUR=true
+    command: ["/bin/bash", "-lc", ". .venv/bin/activate && streamlit run app/Home.py --server.port=8501 --server.address=0.0.0.0 --server.fileWatcherType=auto"]
