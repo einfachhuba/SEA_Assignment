@@ -1,8 +1,16 @@
 import numpy as np
 
-def simple_hill_climbing(fitness_function: callable, bounds: tuple, step_size: float = 0.1,
-                        max_iterations: int = 100, initial_point: float = None, 
-                        minimize: bool = True, dimensions: int = 1) -> tuple:
+
+def simple_hill_climbing(
+    fitness_function: callable,
+    bounds: tuple,
+    step_size: float = 0.1,
+    max_iterations: int = 100,
+    initial_point: float = None,
+    minimize: bool = True,
+    dimensions: int = 1,
+    neighborhood: str = 'square',
+) -> tuple:
     """
     Simple Hill Climbing: Moves to the first neighbor that improves the solution.
     
@@ -43,33 +51,51 @@ def simple_hill_climbing(fitness_function: callable, bounds: tuple, step_size: f
                 current + step_size
             ]
         else:
-            neighbors = [
-                np.array([current[0] - step_size, current[1]]),  # Left
-                np.array([current[0] + step_size, current[1]]),  # Right
-                np.array([current[0], current[1] - step_size]),  # Down
-                np.array([current[0], current[1] + step_size]),  # Up
-            ]
+            # Generate neighbours according to the chosen neighbourhood shape
+            offsets = [-step_size, 0.0, step_size]
+            neighbors = []
+            for dx in offsets:
+                for dy in offsets:
+                    # skip the current point
+                    if dx == 0 and dy == 0:
+                        continue
+
+                    # Cross (4-neighbourhood): only cardinal directions
+                    if neighborhood == 'cross' and not (dx == 0 or dy == 0):
+                        continue
+
+                    # Square (default): include all offsets (includes diagonals)
+                    neighbors.append(np.array([current[0] + dx, current[1] + dy]))
         
         # Keep neighbors within bounds
         if dimensions == 1:
             neighbors = [n for n in neighbors if lower_bound <= n <= upper_bound]
         else:
-            neighbors = [n for n in neighbors if 
-                        lower_bound <= n[0] <= upper_bound and 
-                        lower_bound <= n[1] <= upper_bound]
+            neighbors = [
+                n for n in neighbors
+                if (lower_bound <= n[0] <= upper_bound and
+                    lower_bound <= n[1] <= upper_bound)
+            ]
         
         # Find first improving neighbor
         improved = False
         for neighbor in neighbors:
             neighbor_fitness = fitness_function(neighbor)
             
-            # Check if neighbor is better (minimization or maximization)
-            is_better = neighbor_fitness < current_fitness if minimize else neighbor_fitness > current_fitness
-            
+            # Check if neighbor is better (minimize or maximize)
+            if minimize:
+                is_better = neighbor_fitness < current_fitness
+            else:
+                is_better = neighbor_fitness > current_fitness
+
             if is_better:
                 current = neighbor if dimensions == 1 else np.copy(neighbor)
                 current_fitness = neighbor_fitness
-                history.append((np.copy(current) if dimensions == 2 else current, current_fitness))
+                entry = (
+                    np.copy(current) if dimensions == 2 else current,
+                    current_fitness,
+                )
+                history.append(entry)
                 improved = True
                 break
         
@@ -79,11 +105,18 @@ def simple_hill_climbing(fitness_function: callable, bounds: tuple, step_size: f
     return current, current_fitness, history
 
 
-def adaptive_hill_climbing(fitness_function: callable, bounds: tuple, 
-                          step_size: float = 0.1, max_iterations: int = 100, 
-                          initial_point: float = None, 
-                          acceleration: float = 1.2, deceleration: float = 0.5,
-                          minimize: bool = True, dimensions: int = 1) -> tuple:
+def adaptive_hill_climbing(
+    fitness_function: callable,
+    bounds: tuple,
+    step_size: float = 0.1,
+    max_iterations: int = 100,
+    initial_point: float = None,
+    acceleration: float = 1.2,
+    deceleration: float = 0.5,
+    minimize: bool = True,
+    dimensions: int = 1,
+    neighborhood: str = 'square',
+) -> tuple:
     """
     Adaptive Hill Climbing: Dynamically adjusts step size based on search progress.
     
@@ -130,20 +163,31 @@ def adaptive_hill_climbing(fitness_function: callable, bounds: tuple,
                 current + current_step
             ]
         else:
-            neighbors = [
-                np.array([current[0] - current_step, current[1]]),  # Left
-                np.array([current[0] + current_step, current[1]]),  # Right
-                np.array([current[0], current[1] - current_step]),  # Down
-                np.array([current[0], current[1] + current_step]),  # Up
-            ]
+            # Generate neighbours according to the chosen neighbourhood shape.
+            offsets = [-current_step, 0.0, current_step]
+            neighbors = []
+            for dx in offsets:
+                for dy in offsets:
+                    # skip the current point
+                    if dx == 0 and dy == 0:
+                        continue
+
+                    # Cross (4-neighbourhood): only cardinal directions
+                    if neighborhood == 'cross' and not (dx == 0 or dy == 0):
+                        continue
+
+                    # Square (default): include all offsets (includes diagonals)
+                    neighbors.append(np.array([current[0] + dx, current[1] + dy]))
         
         # Keep neighbors within bounds
         if dimensions == 1:
             neighbors = [n for n in neighbors if lower_bound <= n <= upper_bound]
         else:
-            neighbors = [n for n in neighbors if 
-                        lower_bound <= n[0] <= upper_bound and 
-                        lower_bound <= n[1] <= upper_bound]
+            neighbors = [
+                n for n in neighbors
+                if (lower_bound <= n[0] <= upper_bound and
+                    lower_bound <= n[1] <= upper_bound)
+            ]
         
         # Find best neighbor
         best_neighbor = None
@@ -151,10 +195,13 @@ def adaptive_hill_climbing(fitness_function: callable, bounds: tuple,
         
         for neighbor in neighbors:
             neighbor_fitness = fitness_function(neighbor)
-            
-            # Check if neighbor is better (minimization or maximization)
-            is_better = neighbor_fitness < best_neighbor_fitness if minimize else neighbor_fitness > best_neighbor_fitness
-            
+
+            # Check if neighbor is better (minimize or maximize)
+            if minimize:
+                is_better = neighbor_fitness < best_neighbor_fitness
+            else:
+                is_better = neighbor_fitness > best_neighbor_fitness
+
             if is_better:
                 best_neighbor = neighbor if dimensions == 1 else np.copy(neighbor)
                 best_neighbor_fitness = neighbor_fitness
@@ -163,8 +210,13 @@ def adaptive_hill_climbing(fitness_function: callable, bounds: tuple,
         if best_neighbor is not None:
             current = best_neighbor
             current_fitness = best_neighbor_fitness
-            current_step = min(current_step * acceleration, (upper_bound - lower_bound) / 2)
-            history.append((np.copy(current) if dimensions == 2 else current, current_fitness))
+            current_step = min(
+                current_step * acceleration,
+                (upper_bound - lower_bound) / 2,
+            )
+            entry = (np.copy(current) if dimensions == 2 else current,
+                     current_fitness)
+            history.append(entry)
         else:
             current_step = current_step * deceleration
             

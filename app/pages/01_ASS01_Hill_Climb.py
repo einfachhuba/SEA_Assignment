@@ -113,7 +113,7 @@ with cont:
 
 st.markdown("# Results")
 
-col1, col2 = st.columns(spec=[0.25,0.75])
+col1, col2 = st.columns(spec=[0.25 ,0.75])
 
 with col1:
     # Set up a control panel
@@ -128,11 +128,16 @@ with col1:
     if dimensions == 1:
         function_options = ["Quadratic", "Sinusoidal", "Ackley", "Rosenbrock", "Rastrigin"]
         st.caption("All functions available in 1D")
-    else:  # 2D
+    else:
         function_options = ["Ackley", "Rosenbrock", "Rastrigin"]
         st.caption("Only complex benchmark functions available in 2D")
     
     function_choice = st.selectbox("Objective Function", function_options)
+    
+    if dimensions == 1:
+        neighborhood = "N/A"
+    else:
+        neighborhood = st.selectbox("Neighbourhood Shape", ["square", "cross"], index=0)
     
     # Set recommended bounds based on function
     if function_choice == "Rosenbrock":
@@ -236,13 +241,14 @@ with col1:
         
         # Run Algorithm 1
         best_algo1, fitness_algo1, history_algo1 = algo_func1(
-            fitness_function, 
+            fitness_function,
             bounds=(lower_bound, upper_bound),
             step_size=step_size,
             max_iterations=iterations,
             initial_point=start_point,
             minimize=minimize,
-            dimensions=dimensions
+            dimensions=dimensions,
+            neighborhood=neighborhood,
         )
         
         # Run Algorithm 2 with SAME starting point
@@ -253,7 +259,8 @@ with col1:
             max_iterations=iterations,
             initial_point=start_point,
             minimize=minimize,
-            dimensions=dimensions
+            dimensions=dimensions,
+            neighborhood=neighborhood,
         )
         
         # Store both results for comparison
@@ -273,7 +280,8 @@ with col1:
             max_iterations=iterations,
             initial_point=start_point,
             minimize=minimize,
-            dimensions=dimensions
+            dimensions=dimensions,
+            neighborhood=neighborhood,
         )
     
     # Display metrics
