@@ -87,8 +87,8 @@ GITHUB_CSS = """
     border:1px solid rgba(255,255,255,.15);
     border-radius:12px;
     padding:12px 0 0 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
     margin-bottom:18px;
     }
 .gh-table-header{

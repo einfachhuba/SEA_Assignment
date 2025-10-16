@@ -3,12 +3,15 @@ from functools import lru_cache
 
 API = "https://api.github.com"
 
-def open_issues_sorted(owner_repo: str, per_page: int = 5, token: str | None = None, oldest_first: bool = False):
-    """Return open issues with optional sorting by creation date.
+def open_issues_sorted(owner_repo: str, per_page: int = 100, token: str | None = None, oldest_first: bool = False, state: str = "all"):
+    """Return issues (all or filtered by state) with optional sorting by creation date.
 
     If oldest_first is True, issues are sorted ascending by created_at.
     """
-    items = http_get(f"/repos/{owner_repo}/issues", {"state": "open", "per_page": per_page}, token)
+    params = {"per_page": per_page}
+    if state:
+        params["state"] = state
+    items = http_get(f"/repos/{owner_repo}/issues", params, token)
     issues = [i for i in items if "pull_request" not in i]
     if oldest_first:
         try:

@@ -75,11 +75,11 @@ spacer(36)
 st.markdown("## 💾 GitHub Project Status")
 
 @st.cache_data(ttl=300)
-def cached_commits(repo: str, n: int = 3):
+def cached_commits(repo: str, n: int = 100):
     return safe_commits(repo, per_page=n)
 @st.cache_data(ttl=300)
-def cached_issues_oldest(repo: str, n: int = 3):
-    return open_issues_sorted(repo, per_page=n, oldest_first=True)
+def cached_issues_oldest(repo: str, n: int = 100):
+    return open_issues_sorted(repo, per_page=n, oldest_first=True, state="all")
 @st.cache_data(ttl=300)
 def cached_prs(repo: str, n: int = 5):
     return open_prs(repo, per_page=n)
@@ -87,12 +87,13 @@ def cached_prs(repo: str, n: int = 5):
 
 # --- Commits ---
 st.markdown("## Latest Commits")
-commits = cached_commits(OWNER_REPO, 3)
+commits = cached_commits(OWNER_REPO, 100)
 if commits is None:
     st.info("No commits yet – push your first code!")
 elif commits:
     html = ["<div class='gh-card'>",
             "<div class='gh-table-header'><div class='gh-col'>Commit</div><div class='gh-col gh-col-right'>Committer</div></div>"]
+    html.append("<div style='max-height:320px;overflow-y:auto;'>")
     for c in commits:
         msg = c["commit"]["message"].split("\n")[0]
         author = c["commit"]["author"].get("name") if c["commit"]["author"] else None
@@ -107,19 +108,20 @@ elif commits:
             right += f"<img class='gh-avatar' src='{avatar}' alt='{author}'> "
         right += f"<div class='gh-committer'><strong>{author}</strong></div>"
         html.append(f"<div class='gh-row-bg'><div class='gh-col'>{left}</div><div class='gh-col-right'>{right}</div></div>")
-    html.append("</div>")
+    html.append("</div></div>")
     st.markdown('\n'.join(html), unsafe_allow_html=True)
 else:
     st.write("No commits found.")
 
 # --- Issues ---
 st.markdown("## Open Issues")
-issues = cached_issues_oldest(OWNER_REPO, 3)
+issues = cached_issues_oldest(OWNER_REPO, 100)
 if not issues:
     st.write("No open issues 🎉")
 else:
     html = ["<div class='gh-card'>",
             "<div class='gh-table-header'><div class='gh-col'>Issue</div><div class='gh-col gh-col-right'>Status</div></div>"]
+    html.append("<div style='max-height:320px;overflow-y:auto;'>")
     for i in issues:
         title = i.get('title')
         url = i.get('html_url')
@@ -140,7 +142,7 @@ else:
         who = i.get('closed_by') and i.get('closed_by').get('login') or (i.get('user') or {}).get('login') or 'unknown'
         right = f"<div class='gh-meta'><strong>{state}</strong> — {who}</div>"
         html.append(f"<div class='gh-row-bg'><div class='gh-col'>{left}</div><div class='gh-col-right'>{right}</div></div>")
-    html.append("</div>")
+    html.append("</div></div>")
     st.markdown('\n'.join(html), unsafe_allow_html=True)
 
 # --- Pull Requests ---
