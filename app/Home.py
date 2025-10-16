@@ -120,27 +120,34 @@ if not issues:
     st.write("No open issues 🎉")
 else:
     html = ["<div class='gh-card'>",
-            "<div class='gh-table-header'><div class='gh-col'>Issue</div><div class='gh-col gh-col-right'>Status</div></div>"]
+            "<div class='gh-table-header'><div class='gh-col'>Issue</div><div class='gh-col gh-col-right'>Last changed by</div></div>"]
     html.append("<div style='max-height:320px;overflow-y:auto;'>")
     for i in issues:
         title = i.get('title')
         url = i.get('html_url')
         labels = i.get('labels', [])
-        label_html = ''
+        # Type tag
+        type_tag = ''
         if labels:
             first = labels[0]
             lname = (first.get('name') or '').lower()
             if 'bug' in lname:
-                cls = 'gh-label-bug'
+                type_cls = 'gh-label-bug'
             elif 'doc' in lname or 'docs' in lname:
-                cls = 'gh-label-doc'
+                type_cls = 'gh-label-doc'
             else:
-                cls = 'gh-label-feature'
-            label_html = f"<span class='gh-label {cls}'>{first.get('name')}</span>"
-        left = f"<a class='gh-link' href='{url}' target='_blank'>#{i.get('number')}: {title}</a>{label_html}"
+                type_cls = 'gh-label-feature'
+            type_tag = f"<span class='gh-label {type_cls}'>{first.get('name')}</span>"
+        # Status tag
         state = i.get('state')
-        who = i.get('closed_by') and i.get('closed_by').get('login') or (i.get('user') or {}).get('login') or 'unknown'
-        right = f"<div class='gh-meta'><strong>{state}</strong> — {who}</div>"
+        if state == 'open':
+            status_tag = "<span class='gh-tag gh-tag-red'>Open</span>"
+        else:
+            status_tag = "<span class='gh-tag gh-tag-green'>Closed</span>"
+        left = f"<a class='gh-link' href='{url}' target='_blank'>#{i.get('number')}: {title}</a> {type_tag} {status_tag}"
+        # Last changed by
+        who = (i.get('closed_by') or i.get('user') or {}).get('login') or 'unknown'
+        right = f"<div class='gh-meta'>Last changed by: {who}</div>"
         html.append(f"<div class='gh-row-bg'><div class='gh-col'>{left}</div><div class='gh-col-right'>{right}</div></div>")
     html.append("</div></div>")
     st.markdown('\n'.join(html), unsafe_allow_html=True)

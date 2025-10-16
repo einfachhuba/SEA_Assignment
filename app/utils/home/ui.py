@@ -160,13 +160,16 @@ GITHUB_CSS = """
 .gh-tag{
     display:inline-block;
     padding:4px 8px;
-    border-radius:999px;
+    border-radius:6px;
     font-size:12px;
     color:#fff;
     margin-left:10px;
 }
 .gh-tag-green{
     background:#16a34a;
+}
+.gh-tag-red{
+    background:#ef4444;
 }
 .gh-label{
     margin-left:8px;
