@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 from utils.hill_climb.functions import quadratic, sinusoidal, ackley, rosenbrock, rastrigin
 from utils.hill_climb.algorithms import simple_hill_climbing, adaptive_hill_climbing
 
@@ -113,17 +114,22 @@ with cont:
 
 st.markdown("# Results")
 
-col1, col2 = st.columns(spec=[0.25 ,0.75])
+col1, col2 = st.columns(spec=[0.3, 0.7])
 
 with col1:
     # Set up a control panel
     st.subheader("Controls")
     
-    # Dimension selector
-    dimensions = st.radio("Problem Dimensions", 
-        [1, 2], 
-        index=0)
-    
+    # Dimension selector and plot type selector side by side
+    col_dim, col_plot = st.columns([1, 1])
+    with col_dim:
+        dimensions = st.radio("Problem Dimensions", [1, 2], index=0)
+    with col_plot:
+        if dimensions == 2:
+            plot_type = st.radio("Plot Type", ["Depth Plot", "3D Interactive Plot"], index=0)
+        else:
+            plot_type = None
+
     # Function selection based on dimensions
     if dimensions == 1:
         function_options = ["Quadratic", "Sinusoidal", "Ackley", "Rosenbrock", "Rastrigin"]
@@ -284,17 +290,109 @@ with col1:
             neighborhood=neighborhood,
         )
     
-    # Display metrics
-    st.markdown("---")
-    
+    # In single mode, results will be shown below plots in col2 (not in this column)
+
+with col2:
+    # plot_type is now set in col1 next to dimensions selector
+    # Extract comparison results variables for plotting
     if comparison_mode:
-        goal_text = "Minimum" if minimize else "Maximum"
-        st.subheader(f"Comparison Results ({goal_text} Search)")
-        
-        # Extract data for both algorithms
         best_algo1, fitness_algo1, history_algo1, name_algo1 = results_comparison['algo1']
         best_algo2, fitness_algo2, history_algo2, name_algo2 = results_comparison['algo2']
-        
+        # Plot everything
+        st.subheader(f"Algorithm Comparison on {function_choice}")
+        if dimensions == 1:
+            # 1D Visualization: show both algorithms' search paths and convergence
+            fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+            candidate_values = np.linspace(lower_bound, upper_bound, 400)
+            fitness_values = [fitness_function(x) for x in candidate_values]
+            candidate_history_algo1, fitness_history_algo1 = zip(*history_algo1) if history_algo1 else ([], [])
+            candidate_history_algo2, fitness_history_algo2 = zip(*history_algo2) if history_algo2 else ([], [])
+            # Plot fitness curve and both search paths
+            ax1.plot(candidate_values, fitness_values, 'k-', linewidth=2, alpha=0.5, label='Objective Function')
+            if len(candidate_history_algo1) > 0:
+                ax1.plot(candidate_history_algo1, [fitness_function(x) for x in candidate_history_algo1],
+                         'ro-', markersize=4, linewidth=2, label=name_algo1)
+            if len(candidate_history_algo2) > 0:
+                ax1.plot(candidate_history_algo2, [fitness_function(x) for x in candidate_history_algo2],
+                         'go-', markersize=4, linewidth=2, label=name_algo2)
+            ax1.set_xlabel('x')
+            ax1.set_ylabel('f(x)')
+            ax1.set_title('Search Paths')
+            ax1.legend()
+            # Plot convergence for both algorithms
+            ax2.plot(range(len(fitness_history_algo1)), fitness_history_algo1, 'r-o', label=f'{name_algo1} Fitness')
+            ax2.plot(range(len(fitness_history_algo2)), fitness_history_algo2, 'g-s', label=f'{name_algo2} Fitness')
+            ax2.set_xlabel('Iteration')
+            ax2.set_ylabel('Fitness')
+            ax2.set_title('Convergence')
+            ax2.legend()
+            ax2.grid(True, alpha=0.3)
+            plt.tight_layout()
+            st.pyplot(fig)
+        elif dimensions == 2:
+            x = np.linspace(lower_bound, upper_bound, 100)
+            y = np.linspace(lower_bound, upper_bound, 100)
+            X, Y = np.meshgrid(x, y)
+            Z = np.array([[fitness_function([xi, yi]) for xi, yi in zip(x_row, y_row)] 
+                         for x_row, y_row in zip(X, Y)])
+            candidate_history_algo1, fitness_history_algo1 = zip(*history_algo1) if history_algo1 else ([], [])
+            candidate_history_algo2, fitness_history_algo2 = zip(*history_algo2) if history_algo2 else ([], [])
+            if plot_type == "Depth Plot":
+                fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+                contour1 = ax1.contourf(X, Y, Z, levels=30, cmap='viridis', alpha=0.8)
+                ax1.contour(X, Y, Z, levels=10, colors='black', alpha=0.2, linewidths=0.5)
+                if len(candidate_history_algo1) > 0:
+                    path1 = np.array(candidate_history_algo1)
+                    ax1.plot(path1[:,0], path1[:,1], 'ro-', markersize=4, linewidth=2, label=name_algo1)
+                ax1.set_xlabel('x')
+                ax1.set_ylabel('y')
+                ax1.set_title(f"{name_algo1} Search Path")
+                ax1.legend()
+                contour2 = ax2.contourf(X, Y, Z, levels=30, cmap='viridis', alpha=0.8)
+                ax2.contour(X, Y, Z, levels=10, colors='black', alpha=0.2, linewidths=0.5)
+                if len(candidate_history_algo2) > 0:
+                    path2 = np.array(candidate_history_algo2)
+                    ax2.plot(path2[:,0], path2[:,1], 'go-', markersize=4, linewidth=2, label=name_algo2)
+                ax2.set_xlabel('x')
+                ax2.set_ylabel('y')
+                ax2.set_title(f"{name_algo2} Search Path")
+                ax2.legend()
+                plt.tight_layout()
+                st.pyplot(fig)
+            elif plot_type == "3D Interactive Plot":
+                fig3d = go.Figure(data=[go.Surface(z=Z, x=X, y=Y, colorscale='Viridis', opacity=0.8)])
+                if len(candidate_history_algo1) > 0:
+                    path1 = np.array(candidate_history_algo1)
+                    fig3d.add_trace(go.Scatter3d(x=path1[:,0], y=path1[:,1], z=[fitness_function(p) for p in path1],
+                        mode='lines+markers', name=name_algo1, line=dict(color='blue', width=4), marker=dict(size=4)))
+                if len(candidate_history_algo2) > 0:
+                    path2 = np.array(candidate_history_algo2)
+                    fig3d.add_trace(go.Scatter3d(x=path2[:,0], y=path2[:,1], z=[fitness_function(p) for p in path2],
+                        mode='lines+markers', name=name_algo2, line=dict(color='green', width=4), marker=dict(size=4)))
+                fig3d.update_layout(title="3D Interactive Plot", scene=dict(
+                    xaxis_title='x', yaxis_title='y', zaxis_title='f(x, y)'))
+                st.plotly_chart(fig3d, use_container_width=True)
+            if len(fitness_history_algo1) > 0 or len(fitness_history_algo2) > 0:
+                fig2, ax2 = plt.subplots(figsize=(10, 4))
+                if len(fitness_history_algo1) > 0:
+                    ax2.plot(range(len(fitness_history_algo1)), fitness_history_algo1, 
+                        marker='o', color='blue', linewidth=2, label=name_algo1, alpha=0.7)
+                if len(fitness_history_algo2) > 0:
+                    ax2.plot(range(len(fitness_history_algo2)), fitness_history_algo2, 
+                        marker='s', color='red', linewidth=2, label=name_algo2, alpha=0.7)
+                ax2.set_xlabel("Iteration", fontsize=12)
+                ax2.set_ylabel("Fitness", fontsize=12)
+                ax2.set_title("Convergence Comparison", fontsize=14, fontweight='bold')
+                ax2.legend()
+                ax2.grid(True, alpha=0.3)
+                st.pyplot(fig2)
+
+        # Show Comparison Results full-width below the plots
+        goal_text = "Minimum" if minimize else "Maximum"
+        st.markdown("---")
+        st.subheader(f"Comparison Results ({goal_text} Search)")
+        best_algo1, fitness_algo1, history_algo1, name_algo1 = results_comparison['algo1']
+        best_algo2, fitness_algo2, history_algo2, name_algo2 = results_comparison['algo2']
         col_a, col_b = st.columns(2)
         with col_a:
             st.markdown(f"**{name_algo1}**")
@@ -305,7 +403,6 @@ with col1:
                 st.metric("Best Position", f"{best_algo1:.4f}")
             else:
                 st.metric("Best Position", f"({best_algo1[0]:.4f}, {best_algo1[1]:.4f})")
-        
         with col_b:
             st.markdown(f"**{name_algo2}**")
             st.metric("Iterations", len(history_algo2))
@@ -315,12 +412,11 @@ with col1:
                 st.metric("Best Position", f"{best_algo2:.4f}")
             else:
                 st.metric("Best Position", f"({best_algo2[0]:.4f}, {best_algo2[1]:.4f})")
-        
         # Highlight differences
         if dimensions == 1:
             position_diff = abs(best_algo1 - best_algo2)
             if position_diff < 0.001:
-                st.success(f"✅ Both algorithms found the **same local optimum** at x ≈ {best_algo1:.4f}")
+                st.success(f"Both algorithms found the **same local optimum** at x ≈ {best_algo1:.4f}")
             else:
                 st.warning(f"Algorithms found **different local optima**!\n\n"
                           f"- {name_algo1}: x = {best_algo1:.4f} (f = {fitness_algo1:.4f})\n"
@@ -328,277 +424,91 @@ with col1:
         else:  # 2D
             position_diff = np.linalg.norm(best_algo1 - best_algo2)
             if position_diff < 0.001:
-                st.success(f"✅ Both algorithms found the **same local optimum** at ({best_algo1[0]:.4f}, {best_algo1[1]:.4f})")
+                st.success(f"Both algorithms found the **same local optimum** at ({best_algo1[0]:.4f}, {best_algo1[1]:.4f})")
             else:
                 st.warning(f"Algorithms found **different local optima**!\n\n"
                           f"- {name_algo1}: ({best_algo1[0]:.4f}, {best_algo1[1]:.4f}) → f = {fitness_algo1:.4f}\n"
                           f"- {name_algo2}: ({best_algo2[0]:.4f}, {best_algo2[1]:.4f}) → f = {fitness_algo2:.4f}")
-        
     else:
-        # Single algorithm metrics
-        goal_text = "Minimum" if minimize else "Maximum"
-        if history:
-            candidate_history, fitness_history = zip(*history)
-        else:
-            candidate_history, fitness_history = [], []
-        
-        st.metric(f"Best {goal_text}", f"{best_fitness:.4f}")
-        if dimensions == 1:
-            st.metric("Best Position", f"{best_candidate:.4f}")
-        else:
-            st.metric("Best Position", f"({best_candidate[0]:.4f}, {best_candidate[1]:.4f})")
-        st.metric("Iterations Used", len(history))
-        st.metric("Function Evaluations", len(history) * (4 if dimensions == 2 else 2))
-
-with col2:
-    # Plot everything
-    if comparison_mode:
-        st.subheader(f"Algorithm Comparison on {function_choice}")
-        
-        if dimensions == 1:
-            # 1D Visualization
-            fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
-            
-            # Plot objective function on both
-            candidate_values = np.linspace(lower_bound, upper_bound, 400)
-            fitness_values = [fitness_function(x) for x in candidate_values]
-            
-            # Extract histories
-            candidate_history_algo1, fitness_history_algo1 = zip(*history_algo1) if history_algo1 else ([], [])
-            candidate_history_algo2, fitness_history_algo2 = zip(*history_algo2) if history_algo2 else ([], [])
-            
-            # Algorithm 1 plot
-            ax1.plot(candidate_values, fitness_values, 'k-', linewidth=2, alpha=0.5, label='Objective Function')
-            
-            if len(candidate_history_algo1) > 0:
-                colors_algo1 = np.linspace(0, 1, len(candidate_history_algo1))
-                ax1.scatter(candidate_history_algo1, fitness_history_algo1, 
-                    c=colors_algo1, cmap='Blues', s=80, edgecolors='black', linewidth=1,
-                    label='Search Path', zorder=5)
-                
-                # Draw path
-                ax1.plot(candidate_history_algo1, fitness_history_algo1, 'b--', alpha=0.3, linewidth=1)
-                
-                # Highlight start and end
-                ax1.scatter(candidate_history_algo1[0], fitness_history_algo1[0], 
-                    color="green", marker='o', s=200, label="Start", zorder=10, edgecolors='black', linewidth=2)
-                ax1.scatter(best_algo1, fitness_algo1, 
-                    color="red", marker='*', s=400, label="Best Found", zorder=10, edgecolors='black', linewidth=2)
-            
-            ax1.set_xlabel("x", fontsize=11)
-            ax1.set_ylabel("f(x)", fontsize=11)
-            ax1.set_title(f"{name_algo1}\n({len(history_algo1)} iterations)", fontsize=12, fontweight='bold')
-            ax1.legend(loc='best', fontsize=9)
-            ax1.grid(True, alpha=0.3)
-            
-            # Algorithm 2 plot
-            ax2.plot(candidate_values, fitness_values, 'k-', linewidth=2, alpha=0.5, label='Objective Function')
-            
-            if len(candidate_history_algo2) > 0:
-                colors_algo2 = np.linspace(0, 1, len(candidate_history_algo2))
-                ax2.scatter(candidate_history_algo2, fitness_history_algo2, 
-                    c=colors_algo2, cmap='Reds', s=80, edgecolors='black', linewidth=1,
-                    label='Search Path', zorder=5)
-                
-                # Draw path
-                ax2.plot(candidate_history_algo2, fitness_history_algo2, 'r--', alpha=0.3, linewidth=1)
-                
-                # Highlight start and end
-                ax2.scatter(candidate_history_algo2[0], fitness_history_algo2[0], 
-                    color="green", marker='o', s=200, label="Start", zorder=10, edgecolors='black', linewidth=2)
-                ax2.scatter(best_algo2, fitness_algo2, 
-                    color="red", marker='*', s=400, label="Best Found", zorder=10, edgecolors='black', linewidth=2)
-            
-            ax2.set_xlabel("x", fontsize=11)
-            ax2.set_ylabel("f(x)", fontsize=11)
-            ax2.set_title(f"{name_algo2}\n({len(history_algo2)} iterations)", fontsize=12, fontweight='bold')
-            ax2.legend(loc='best', fontsize=9)
-            ax2.grid(True, alpha=0.3)
-            
-            plt.tight_layout()
-            st.pyplot(fig)
-            
-        else:
-            fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
-            
-            # Create meshgrid for contour plot
-            x = np.linspace(lower_bound, upper_bound, 100)
-            y = np.linspace(lower_bound, upper_bound, 100)
-            X, Y = np.meshgrid(x, y)
-            Z = np.array([[fitness_function([xi, yi]) for xi, yi in zip(x_row, y_row)] 
-                         for x_row, y_row in zip(X, Y)])
-            
-            # Extract 2D paths
-            candidate_history_algo1, fitness_history_algo1 = zip(*history_algo1) if history_algo1 else ([], [])
-            candidate_history_algo2, fitness_history_algo2 = zip(*history_algo2) if history_algo2 else ([], [])
-            
-            # Algorithm 1 plot
-            contour1 = ax1.contourf(X, Y, Z, levels=30, cmap='viridis', alpha=0.8)
-            ax1.contour(X, Y, Z, levels=10, colors='black', alpha=0.2, linewidths=0.5)
-            
-            if len(candidate_history_algo1) > 0:
-                path1 = np.array(candidate_history_algo1)
-                ax1.plot(path1[:, 0], path1[:, 1], 'b-', linewidth=2, alpha=0.7, label='Search Path')
-                ax1.scatter(path1[:, 0], path1[:, 1], c=range(len(path1)), cmap='Blues', 
-                           s=50, edgecolors='white', linewidth=1, zorder=5)
-                ax1.scatter(path1[0, 0], path1[0, 1], color='green', marker='o', s=200, 
-                           label='Start', zorder=10, edgecolors='black', linewidth=2)
-                ax1.scatter(best_algo1[0], best_algo1[1], color='red', marker='*', s=400, 
-                           label='Best Found', zorder=10, edgecolors='black', linewidth=2)
-            
-            ax1.set_xlabel("x", fontsize=11)
-            ax1.set_ylabel("y", fontsize=11)
-            ax1.set_title(f"{name_algo1}\n({len(history_algo1)} iterations)", fontsize=12, fontweight='bold')
-            ax1.legend(loc='best', fontsize=9)
-            plt.colorbar(contour1, ax=ax1, label='f(x, y)')
-            
-            # Algorithm 2 plot
-            contour2 = ax2.contourf(X, Y, Z, levels=30, cmap='viridis', alpha=0.8)
-            ax2.contour(X, Y, Z, levels=10, colors='black', alpha=0.2, linewidths=0.5)
-            
-            if len(candidate_history_algo2) > 0:
-                path2 = np.array(candidate_history_algo2)
-                ax2.plot(path2[:, 0], path2[:, 1], 'r-', linewidth=2, alpha=0.7, label='Search Path')
-                ax2.scatter(path2[:, 0], path2[:, 1], c=range(len(path2)), cmap='Reds', 
-                           s=50, edgecolors='white', linewidth=1, zorder=5)
-                ax2.scatter(path2[0, 0], path2[0, 1], color='green', marker='o', s=200, 
-                           label='Start', zorder=10, edgecolors='black', linewidth=2)
-                ax2.scatter(best_algo2[0], best_algo2[1], color='red', marker='*', s=400, 
-                           label='Best Found', zorder=10, edgecolors='black', linewidth=2)
-            
-            ax2.set_xlabel("x", fontsize=11)
-            ax2.set_ylabel("y", fontsize=11)
-            ax2.set_title(f"{name_algo2}\n({len(history_algo2)} iterations)", fontsize=12, fontweight='bold')
-            ax2.legend(loc='best', fontsize=9)
-            plt.colorbar(contour2, ax=ax2, label='f(x, y)')
-            
-            plt.tight_layout()
-            st.pyplot(fig)
-        
-        # Convergence comparison (works for both 1D and 2D)
-        _, fitness_history_algo1 = zip(*history_algo1) if history_algo1 else ([], [])
-        _, fitness_history_algo2 = zip(*history_algo2) if history_algo2 else ([], [])
-        
-        # Show convergence plot if there's any history
-        if len(fitness_history_algo1) > 0 or len(fitness_history_algo2) > 0:
-            fig2, ax3 = plt.subplots(figsize=(10, 4))
-            
-            if len(fitness_history_algo1) > 0:
-                ax3.plot(range(len(fitness_history_algo1)), fitness_history_algo1, 
-                    marker='o', color='blue', linewidth=2, label=name_algo1, alpha=0.7)
-            
-            if len(fitness_history_algo2) > 0:
-                ax3.plot(range(len(fitness_history_algo2)), fitness_history_algo2, 
-                    marker='s', color='red', linewidth=2, label=name_algo2, alpha=0.7)
-            
-            ax3.set_xlabel("Iteration", fontsize=12)
-            ax3.set_ylabel("Fitness", fontsize=12)
-            ax3.set_title("Convergence Comparison", fontsize=14, fontweight='bold')
-            ax3.legend()
-            ax3.grid(True, alpha=0.3)
-            st.pyplot(fig2)
-    else:
-        # Single algorithm plot
         st.subheader(f"{algorithm_type} on {function_choice}")
-        
-        # Extract history
-        if history:
-            candidate_history, fitness_history = zip(*history)
-        else:
-            candidate_history, fitness_history = [], []
-        
         if dimensions == 1:
-            # 1D Visualization
-            fig, ax = plt.subplots(figsize=(10, 5))
-            
-            # Plot the objective function
+            # 1D plotting: show fitness curve, search path, and convergence
             candidate_values = np.linspace(lower_bound, upper_bound, 400)
             fitness_values = [fitness_function(x) for x in candidate_values]
-            ax.plot(candidate_values, fitness_values, label="Objective Function", 
-                color='black', linewidth=2, alpha=0.7)
-            
-            # Plot the search trajectory
+            candidate_history, fitness_history = zip(*history) if history else ([], [])
+            fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+            # Plot fitness curve and search path
+            ax1.plot(candidate_values, fitness_values, 'k-', linewidth=2, alpha=0.5, label='Objective Function')
             if len(candidate_history) > 0:
-                colors = np.linspace(0, 1, len(candidate_history))
-                sc = ax.scatter(candidate_history, fitness_history, 
-                    c=colors, cmap='Blues', s=50, edgecolors='black', linewidth=0.5,
-                    label='Search Path', zorder=5)
-                
-                if len(candidate_history) > 1:
-                    for i in range(len(candidate_history) - 1):
-                        ax.annotate('', 
-                            xy=(candidate_history[i+1], fitness_history[i+1]),
-                            xytext=(candidate_history[i], fitness_history[i]),
-                            arrowprops=dict(arrowstyle='->', color='blue', alpha=0.3, lw=1))
-                
-                # Highlight start and end
-                ax.scatter(candidate_history[0], fitness_history[0], 
-                    color="green", marker='o', s=200, label="Start", 
-                    zorder=10, edgecolors='black', linewidth=2)
-                ax.scatter(best_candidate, best_fitness, 
-                    color="red", marker='*', s=400, label="Best Found", 
-                    zorder=10, edgecolors='black', linewidth=2)
-            
-            ax.set_xlabel("x", fontsize=12)
-            ax.set_ylabel("f(x)", fontsize=12)
-            ax.set_title(f"{algorithm_type} Search Trajectory", fontsize=14, fontweight='bold')
-            ax.legend(loc='best')
-            ax.grid(True, alpha=0.3)
-            
-            if len(candidate_history) > 0:
-                cbar = plt.colorbar(sc, ax=ax)
-                cbar.set_label("Iteration Progress", fontsize=10)
-            
+                ax1.plot(candidate_history, [fitness_function(x) for x in candidate_history],
+                         'ro-', markersize=4, linewidth=2, label='Search Path')
+            ax1.set_xlabel('x')
+            ax1.set_ylabel('f(x)')
+            ax1.set_title('Search Path')
+            ax1.legend()
+            # Plot convergence
+            ax2.plot(range(len(fitness_history)), fitness_history, 'b-o', label='Fitness')
+            ax2.set_xlabel('Iteration')
+            ax2.set_ylabel('Fitness')
+            ax2.set_title('Convergence')
+            ax2.legend()
+            ax2.grid(True, alpha=0.3)
+            plt.tight_layout()
             st.pyplot(fig)
-            
-        else:
-            fig, ax = plt.subplots(figsize=(10, 8))
-            
-            # Create meshgrid for contour plot
+        if dimensions == 2:
             x = np.linspace(lower_bound, upper_bound, 100)
             y = np.linspace(lower_bound, upper_bound, 100)
             X, Y = np.meshgrid(x, y)
             Z = np.array([[fitness_function([xi, yi]) for xi, yi in zip(x_row, y_row)] 
                          for x_row, y_row in zip(X, Y)])
-            
-            # Plot contour
-            contour = ax.contourf(X, Y, Z, levels=30, cmap='viridis', alpha=0.8)
-            ax.contour(X, Y, Z, levels=10, colors='black', alpha=0.2, linewidths=0.5)
-            plt.colorbar(contour, ax=ax, label='f(x, y)')
-            
-            # Plot search trajectory
-            if len(candidate_history) > 0:
-                path = np.array(candidate_history)
-                ax.plot(path[:, 0], path[:, 1], 'w-', linewidth=3, alpha=0.9, label='Search Path')
-                ax.plot(path[:, 0], path[:, 1], 'b-', linewidth=2, alpha=0.7)
-                
-                colors = np.linspace(0, 1, len(path))
-                ax.scatter(path[:, 0], path[:, 1], c=colors, cmap='Blues', 
-                          s=50, edgecolors='white', linewidth=1, zorder=5)
-                
-                # Highlight start and end
-                ax.scatter(path[0, 0], path[0, 1], color='green', marker='o', s=200, 
-                          label='Start', zorder=10, edgecolors='black', linewidth=2)
-                ax.scatter(best_candidate[0], best_candidate[1], color='red', marker='*', s=400, 
-                          label='Best Found', zorder=10, edgecolors='black', linewidth=2)
-            
-            ax.set_xlabel("x", fontsize=12)
-            ax.set_ylabel("y", fontsize=12)
-            ax.set_title(f"{algorithm_type} Search Trajectory (2D)", fontsize=14, fontweight='bold')
-            ax.legend(loc='best')
-            
-            st.pyplot(fig)
-        
-        # Convergence plot (works for both 1D and 2D)
-        if len(fitness_history) > 0:
-            fig2, ax2 = plt.subplots(figsize=(10, 3))
-            ax2.plot(range(len(fitness_history)), fitness_history, 
-                marker='o', color='blue', linewidth=2)
-            ax2.set_xlabel("Iteration", fontsize=12)
-            ax2.set_ylabel("Fitness", fontsize=12)
-            ax2.set_title("Fitness vs Iteration (Convergence)", fontsize=14, fontweight='bold')
-            ax2.grid(True, alpha=0.3)
-            st.pyplot(fig2)
+            candidate_history, fitness_history = zip(*history) if history else ([], [])
+            if plot_type == "Depth Plot":
+                fig, ax = plt.subplots(figsize=(8, 6))
+                contour = ax.contourf(X, Y, Z, levels=30, cmap='viridis', alpha=0.8)
+                ax.contour(X, Y, Z, levels=10, colors='black', alpha=0.2, linewidths=0.5)
+                if len(candidate_history) > 0:
+                    path = np.array(candidate_history)
+                    ax.plot(path[:,0], path[:,1], 'ro-', markersize=4, linewidth=2, label='Search Path')
+                ax.set_xlabel('x')
+                ax.set_ylabel('y')
+                ax.set_title(f"{algorithm_type} Search Path")
+                ax.legend()
+                st.pyplot(fig)
+            elif plot_type == "3D Interactive Plot":
+                fig3d = go.Figure(data=[go.Surface(z=Z, x=X, y=Y, colorscale='Viridis', opacity=0.8)])
+                if len(candidate_history) > 0:
+                    path = np.array(candidate_history)
+                    fig3d.add_trace(go.Scatter3d(x=path[:,0], y=path[:,1], z=[fitness_function(p) for p in path],
+                        mode='lines+markers', name='Search Path', line=dict(color='red', width=4), marker=dict(size=4)))
+                fig3d.update_layout(title="3D Interactive Plot", scene=dict(
+                    xaxis_title='x', yaxis_title='y', zaxis_title='f(x, y)'))
+                st.plotly_chart(fig3d, use_container_width=True)
+
+            # Always show convergence plot below main plot for 2D
+            if len(fitness_history) > 0:
+                fig2, ax2 = plt.subplots(figsize=(10, 3))
+                ax2.plot(range(len(fitness_history)), fitness_history, 
+                    marker='o', color='blue', linewidth=2)
+                ax2.set_xlabel("Iteration", fontsize=12)
+                ax2.set_ylabel("Fitness", fontsize=12)
+                ax2.set_title("Fitness vs Iteration (Convergence)", fontsize=14, fontweight='bold')
+                ax2.grid(True, alpha=0.3)
+                st.pyplot(fig2)
+        # Results full-width below plots (single mode)
+        goal_text = "Minimum" if minimize else "Maximum"
+        st.markdown("---")
+        st.subheader(f"Results ({goal_text} Search)")
+        cols = st.columns(3)
+        with cols[0]:
+            st.metric(f"Best {goal_text}", f"{best_fitness:.4f}")
+        with cols[1]:
+            if dimensions == 1:
+                st.metric("Best Position", f"{best_candidate:.4f}")
+            else:
+                st.metric("Best Position", f"({best_candidate[0]:.4f}, {best_candidate[1]:.4f})")
+        with cols[2]:
+            st.metric("Iterations", len(history))
+            st.caption(f"Evaluations: {len(history) * (4 if dimensions == 2 else 2)}")
 
 # ---------
 
