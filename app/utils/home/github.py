@@ -3,6 +3,20 @@ from functools import lru_cache
 
 API = "https://api.github.com"
 
+def open_issues_sorted(owner_repo: str, per_page: int = 5, token: str | None = None, oldest_first: bool = False):
+    """Return open issues with optional sorting by creation date.
+
+    If oldest_first is True, issues are sorted ascending by created_at.
+    """
+    items = http_get(f"/repos/{owner_repo}/issues", {"state": "open", "per_page": per_page}, token)
+    issues = [i for i in items if "pull_request" not in i]
+    if oldest_first:
+        try:
+            issues.sort(key=lambda i: i.get("created_at") or "")
+        except Exception:
+            pass
+    return issues
+
 def _headers(token: str | None = None):
     return {"Authorization": f"Bearer {token}"} if token else {}
 
