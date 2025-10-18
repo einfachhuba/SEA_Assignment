@@ -17,3 +17,5 @@ streamlit.secrets.toml
 # Daten-Dateien
 app/data/*
 !app/data/.gitkeep
+
+.env

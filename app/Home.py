@@ -70,6 +70,30 @@ def cached_joke():
 joke = cached_joke()
 st.markdown(f"""<div class="joke-card"><p class="joke-text">{joke}</p></div>""", unsafe_allow_html=True)
 
+# --- Chat Interface Call-to-Action ---
+spacer(12)
+# Add custom CSS for blue button
+st.markdown("""
+<style>
+div[data-testid="stButton"] > button[kind="primary"] {
+    background-color: #0066CC !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+}
+div[data-testid="stButton"] > button[kind="primary"]:hover {
+    background-color: #0052A3 !important;
+    color: white !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    if st.button("🤖 Try our AI Chat Interface", use_container_width=True, type="primary"):
+        st.switch_page("pages/02_Chat_Interface.py")
+
 # --- GitHub project status ---
 spacer(36)
 st.markdown("## 💾 GitHub Project Status")
