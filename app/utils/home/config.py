@@ -15,4 +15,5 @@ USERS = [
 # Assignment/task cards shown on the home page
 TASKS = [
     {"key": "01_01", "title": "Assignment 1: Hill Climb",          "page": "04_ASS01_Hill_Climb.py",          "done": 1.0},
+    {"key": "02_01", "title": "Assignment 2: Genetic Algorithm",   "page": "05_ASS02_Genetic_Algorithms.py",  "done": 1.0},
 ]

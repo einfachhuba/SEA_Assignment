@@ -141,7 +141,7 @@ else:
 st.markdown("## Open Issues")
 issues = cached_issues_oldest(OWNER_REPO, 100)
 if not issues:
-    st.write("No open issues 🎉")
+    st.write("No open issues")
 else:
     html = ["<div class='gh-card'>",
             "<div class='gh-table-header'><div class='gh-col'>Issue</div><div class='gh-col gh-col-right'>Last changed by</div></div>"]
