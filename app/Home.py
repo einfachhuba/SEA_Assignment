@@ -2,7 +2,7 @@ import streamlit as st, requests
 from datetime import datetime
 import random
 
-from utils.home.github import user as gh_user, safe_commits, open_prs, open_issues_sorted
+from utils.home.github import user as gh_user, safe_commits, all_prs, open_issues_sorted
 from utils.home.ui import css_blocks, progress_bar, spacer, get_github_css
 from utils.home.jokes import fetch_dad_joke
 from utils.home.ui import css_blocks, progress_bar, spacer
@@ -70,30 +70,6 @@ def cached_joke():
 joke = cached_joke()
 st.markdown(f"""<div class="joke-card"><p class="joke-text">{joke}</p></div>""", unsafe_allow_html=True)
 
-# --- Chat Interface Call-to-Action ---
-spacer(12)
-# Add custom CSS for blue button
-st.markdown("""
-<style>
-div[data-testid="stButton"] > button[kind="primary"] {
-    background-color: #0066CC !important;
-    color: white !important;
-    border: none !important;
-    border-radius: 6px !important;
-    font-weight: 600 !important;
-}
-div[data-testid="stButton"] > button[kind="primary"]:hover {
-    background-color: #0052A3 !important;
-    color: white !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    if st.button("🤖 Try our AI Chat Interface", use_container_width=True, type="primary"):
-        st.switch_page("pages/02_Chat_Interface.py")
-
 # --- GitHub project status ---
 spacer(36)
 st.markdown("## 💾 GitHub Project Status")
@@ -106,7 +82,7 @@ def cached_issues_oldest(repo: str, n: int = 100):
     return open_issues_sorted(repo, per_page=n, oldest_first=True, state="all")
 @st.cache_data(ttl=300)
 def cached_prs(repo: str, n: int = 5):
-    return open_prs(repo, per_page=n)
+    return all_prs(repo, per_page=n)
 
 
 # --- Commits ---
@@ -144,7 +120,7 @@ if not issues:
     st.write("No open issues")
 else:
     html = ["<div class='gh-card'>",
-            "<div class='gh-table-header'><div class='gh-col'>Issue</div><div class='gh-col gh-col-right'>Last changed by</div></div>"]
+            "<div class='gh-table-header'><div class='gh-col'>Issue</div><div class='gh-col gh-col-right'>Opened By</div></div>"]
     html.append("<div style='max-height:320px;overflow-y:auto;'>")
     for i in issues:
         title = i.get('title')
@@ -165,34 +141,62 @@ else:
         # Status tag
         state = i.get('state')
         if state == 'open':
-            status_tag = "<span class='gh-tag gh-tag-red'>Open</span>"
+            status_tag = "<span class='gh-tag gh-tag-red'>open</span>"
         else:
-            status_tag = "<span class='gh-tag gh-tag-green'>Closed</span>"
+            status_tag = "<span class='gh-tag gh-tag-green'>closed</span>"
         left = f"<a class='gh-link' href='{url}' target='_blank'>#{i.get('number')}: {title}</a> {type_tag} {status_tag}"
-        # Last changed by
-        who = (i.get('closed_by') or i.get('user') or {}).get('login') or 'unknown'
-        right = f"<div class='gh-meta'>Last changed by: {who}</div>"
+        
+        # Opened by with avatar like commits
+        user_data = i.get('user') or {}
+        opener = user_data.get('login') or 'unknown'
+        avatar = user_data.get('avatar_url')
+        
+        right = ""
+        if avatar:
+            right += f"<img class='gh-avatar' src='{avatar}' alt='{opener}'> "
+        right += f"<div class='gh-committer'><strong>{opener}</strong></div>"
+        
         html.append(f"<div class='gh-row-bg'><div class='gh-col'>{left}</div><div class='gh-col-right'>{right}</div></div>")
     html.append("</div></div>")
     st.markdown('\n'.join(html), unsafe_allow_html=True)
 
 # --- Pull Requests ---
-st.markdown("## Open Pull Requests")
-prs = cached_prs(OWNER_REPO, 5)
+st.markdown("## Pull Requests")
+prs = cached_prs(OWNER_REPO, 10)
 if not prs:
-    st.write("No open PRs 🚀")
+    st.write("No PRs found 🚀")
 else:
     html = ["<div class='gh-card'>",
-            "<div class='gh-table-header'><div class='gh-col'>Pull Request</div><div class='gh-col gh-col-right'>Author / State</div></div>"]
+            "<div class='gh-table-header'><div class='gh-col'>Pull Request</div><div class='gh-col gh-col-right'>Requester</div></div>"]
     for p in prs:
         title = p.get('title')
         url = p.get('html_url')
         num = p.get('number')
-        user = (p.get('user') or {}).get('login') or 'unknown'
+        user_data = p.get('user') or {}
+        user = user_data.get('login') or 'unknown'
+        avatar = user_data.get('avatar_url')
         state = p.get('state')
-        state_cls = 'gh-pr-open' if state == 'open' else 'gh-pr-closed'
-        left = f"<a class='gh-link' href='{url}' target='_blank'>#{num}: {title}</a>"
-        right = f"<div class='gh-meta'>{user}</div><span class='gh-pr-state {state_cls}'>{state}</span>"
+        merged = p.get('merged_at') is not None
+        
+        # Determine state class and display text
+        if state == 'open':
+            state_cls = 'gh-pr-open'
+            state_text = 'open'
+        elif merged:
+            state_cls = 'gh-pr-merged'
+            state_text = 'merged'
+        else:
+            state_cls = 'gh-pr-closed'
+            state_text = 'closed'
+            
+        left = f"<a class='gh-link' href='{url}' target='_blank'>#{num}: {title}</a> <span class='gh-pr-state {state_cls}'>{state_text}</span>"
+        
+        # Build right side with avatar and username like commits
+        right = ""
+        if avatar:
+            right += f"<img class='gh-avatar' src='{avatar}' alt='{user}'> "
+        right += f"<div class='gh-committer'><strong>{user}</strong></div>"
+        
         html.append(f"<div class='gh-row-bg'><div class='gh-col'>{left}</div><div class='gh-col-right'>{right}</div></div>")
     html.append("</div>")
     st.markdown('\n'.join(html), unsafe_allow_html=True)
@@ -206,3 +210,20 @@ for t in TASKS:
         st.markdown(f"**{t['title']}**")
         progress_bar(t["done"])
         st.page_link(f"pages/{t['page']}", label="Open page")
+
+# --- AI Chat Interface ---
+spacer(24)
+st.markdown("### 🧠 AI Assistant")
+
+with st.container(border=True):
+    chat_cols = st.columns([6, 2])
+    
+    with chat_cols[0]:
+        st.markdown("<p class='profile-title' style='margin-bottom: 4px; margin-top: 10px;'>AI Chat Interface</p>", unsafe_allow_html=True)
+        st.markdown("<p class='profile-sub' style='margin: 0;'>You have some questions? Try asking our AI assistant!</p>", unsafe_allow_html=True)
+    
+    with chat_cols[1]:
+        spacer(4)
+        if st.button("Try Now →", use_container_width=True, type="primary"):
+            st.switch_page("pages/02_Chat_Interface.py")
+        spacer(4)

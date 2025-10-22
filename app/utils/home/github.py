@@ -42,6 +42,9 @@ def open_issues(owner_repo: str, per_page: int = 5, token: str | None = None):
     items = http_get(f"/repos/{owner_repo}/issues", {"state":"open","per_page":per_page}, token)
     return [i for i in items if "pull_request" not in i]
 
+def all_prs(owner_repo: str, per_page: int = 5, token: str | None = None):
+    return http_get(f"/repos/{owner_repo}/pulls", {"state":"all","per_page":per_page}, token)
+
 def open_prs(owner_repo: str, per_page: int = 5, token: str | None = None):
     return http_get(f"/repos/{owner_repo}/pulls", {"state":"open","per_page":per_page}, token)
 

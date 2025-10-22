@@ -5,6 +5,52 @@ def css_blocks():
     st.markdown(
         """
     <style>
+    /* Light mode styles */
+    @media (prefers-color-scheme: light) {
+        .profile-card { 
+            border:1px solid rgba(0,0,0,.15);
+            background: rgba(0,0,0,.03);
+        }
+        .profile-avatar { 
+            border:1px solid rgba(0,0,0,.15);
+        }
+        .profile-sub { 
+            color:rgba(0,0,0,.7);
+        }
+        .profile-meta { 
+            color:rgba(0,0,0,.8);
+        }
+        .joke-card{ 
+            border:1px solid rgba(0,0,0,.15);
+            background: rgba(0,0,0,.04);
+        }
+        .joke-text{ 
+            color:rgba(0,0,0,.9);
+        }
+        .pb-wrap { 
+            background:rgba(0,0,0,.12);
+        }
+    }
+    
+    /* Custom button styling */
+    div[data-testid="stButton"] > button[kind="primary"] {
+        background-color: #0066CC !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        padding: 8px 16px !important;
+        transition: background-color 0.2s ease !important;
+    }
+    div[data-testid="stButton"] > button[kind="primary"]:hover {
+        background-color: #0052A3 !important;
+        color: white !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3) !important;
+    }
+    
+    /* Dark mode and default styles */
     .profile-card { 
         display:flex;
         gap:16px;
@@ -25,6 +71,7 @@ def css_blocks():
         font-weight:700;
         font-size:1.05rem;
         margin:0;
+        color: var(--text-color);
         }
     .profile-sub { 
         color:rgba(255,255,255,.7);
@@ -46,6 +93,7 @@ def css_blocks():
         }
     .linkrow a { 
         margin-right:12px;
+        color: #0066CC;
         }
     .joke-card{ 
         border:1px solid rgba(255,255,255,.15);
@@ -81,7 +129,34 @@ def css_blocks():
 # styling sits in one place and matches the look of the existing blocks.
 GITHUB_CSS = """
 <style>
-/* GitHub card/flex table-like layout */
+/* Light mode GitHub styles */
+@media (prefers-color-scheme: light) {
+    .gh-card{
+        background: rgba(0,0,0,.03);
+        border:1px solid rgba(0,0,0,.15);
+    }
+    .gh-table-header{
+        color:rgba(0,0,0,.92);
+        border-bottom:1px solid rgba(0,0,0,.15);
+    }
+    .gh-row-bg {
+        background: rgba(0,0,0,.03);
+    }
+    .gh-commit-msg,.gh-issue-title,.gh-pr-title{
+        color:rgba(0,0,0,.95);
+    }
+    .gh-committer{
+        color:rgba(0,0,0,.95);
+    }
+    .gh-meta{
+        color:rgba(0,0,0,.7);
+    }
+    .gh-link{
+        color:#0066CC;
+    }
+}
+
+/* GitHub card/flex table-like layout - Dark mode and default */
 .gh-card{
     background: rgba(255,255,255,.03);
     border:1px solid rgba(255,255,255,.15);
@@ -214,6 +289,9 @@ GITHUB_CSS = """
 }
 .gh-pr-closed{
     background:#ef4444;
+}
+.gh-pr-merged{
+    background:#8b5cf6;
 }
 .gh-link{
     color:#a5b4fc;
