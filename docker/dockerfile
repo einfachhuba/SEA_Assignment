@@ -24,6 +24,7 @@ RUN uv venv && . .venv/bin/activate && uv sync --frozen
 COPY app ./app
 COPY main.py ./
 COPY docker/start.sh ./start.sh
+COPY .env ./
 
 # Normalize line endings (in case file was checked out with CRLF on Windows)
 RUN sed -i 's/\r$//' ./start.sh
