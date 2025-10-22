@@ -371,7 +371,7 @@ def plot_population_evolution_2d_interactive(population_history, fitness_functio
 
 
 
-def plot_fitness_3d_interactive(fitness_function, fixed_dim, fixed_value, grid_points=30):
+def plot_fitness_3d_interactive(fitness_function, fixed_dim, fixed_value, grid_points=30, best_point=None):
     """
     Create an interactive 3D surface plot using Plotly.
     
@@ -380,6 +380,7 @@ def plot_fitness_3d_interactive(fitness_function, fixed_dim, fixed_value, grid_p
         fixed_dim: string, e.g., 'brew_time' (dimension to keep fixed)
         fixed_value: float, value for the fixed dimension
         grid_points: int, resolution of the grid
+        best_point: dict, optional best solution parameters {'roast': x, 'blend': y, 'grind': z, 'brew_time': w}
     
     Returns:
         plotly.graph_objects.Figure: Interactive 3D plot
@@ -447,6 +448,39 @@ def plot_fitness_3d_interactive(fitness_function, fixed_dim, fixed_value, grid_p
         height=600,
         margin=dict(l=0, r=0, b=0, t=40)
     )
+    
+    # Add best point marker if provided
+    if best_point is not None:
+        # Get coordinates for the best point in the 2D parameter space
+        best_x = best_point[variable_dims[0]]  # x-axis parameter
+        best_y = best_point[variable_dims[1]]  # y-axis parameter
+        best_third_dim = best_point[variable_dims[2]]  # third dimension parameter value
+        
+        # Calculate fitness at best point (Z should be fitness, not parameter value)
+        best_fitness_args = dict(best_point)
+        best_fitness_args[fixed_dim] = fixed_value  # Override the fixed dimension
+        best_fitness_value = fitness_function(**best_fitness_args)
+        
+        # Add scatter trace for best point - positioned ON the fitness surface
+        fig.add_trace(go.Scatter3d(
+            x=[best_x],
+            y=[best_y],
+            z=[best_fitness_value],  # Z is fitness value, not parameter value!
+            mode='markers',
+            marker=dict(
+                size=15,
+                color='red',
+                symbol='diamond',
+                line=dict(width=3, color='white')
+            ),
+            name=f'Best Solution (Fitness: {best_fitness_value:.2f})',
+            hovertemplate=f'<b>Best Solution</b><br>' +
+                         f'<b>{variable_dims[0].capitalize()}</b>: {best_x:.2f}<br>' +
+                         f'<b>{variable_dims[1].capitalize()}</b>: {best_y:.2f}<br>' +
+                         f'<b>{variable_dims[2].capitalize()}</b>: {best_third_dim:.2f}<br>' +
+                         f'<b>{fixed_dim.capitalize()}</b>: {fixed_value:.2f}<br>' +
+                         f'<b>Fitness</b>: {best_fitness_value:.2f}<extra></extra>'
+        ))
     
     return fig
 

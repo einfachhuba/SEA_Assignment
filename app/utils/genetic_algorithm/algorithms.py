@@ -65,7 +65,7 @@ def single_point_crossover(parent1: np.ndarray, parent2: np.ndarray) -> Tuple[np
 
 
 def bit_flip_mutation(individual: np.ndarray, bounds: List[Tuple[float, float]], 
-                     mutation_rate: float = 0.1, mutation_strength: float = 0.1) -> np.ndarray:
+                     mutation_rate: float = 0.1) -> np.ndarray:
     """
     Apply bit-flip style mutation by randomly replacing genes with new random values.
     
@@ -73,7 +73,6 @@ def bit_flip_mutation(individual: np.ndarray, bounds: List[Tuple[float, float]],
         individual: Individual to mutate
         bounds: List of (min, max) tuples for each dimension
         mutation_rate: Probability of mutating each gene
-        mutation_strength: Not used for bit-flip mutation (kept for consistency)
         
     Returns:
         np.ndarray: Mutated individual
@@ -93,7 +92,6 @@ def genetic_algorithm(
     population_size: int = 50,
     max_generations: int = 100,
     mutation_rate: float = 0.1,
-    mutation_strength: float = 0.1,
     elitism: bool = True,
     elite_size: int = 2,
     seed: int = None
@@ -173,8 +171,8 @@ def genetic_algorithm(
             offspring1, offspring2 = crossover_func(parents[0], parents[1])
             
             # Mutation
-            offspring1 = mutation_func(offspring1, bounds, mutation_rate, mutation_strength)
-            offspring2 = mutation_func(offspring2, bounds, mutation_rate, mutation_strength)
+            offspring1 = mutation_func(offspring1, bounds, mutation_rate)
+            offspring2 = mutation_func(offspring2, bounds, mutation_rate)
             
             new_population.extend([offspring1, offspring2])
         
@@ -214,7 +212,6 @@ def run_coffee_genetic_algorithm(
     population_size: int = 50,
     max_generations: int = 100,
     mutation_rate: float = 0.1,
-    mutation_strength: float = 0.1,
     seed: int = None
 ) -> dict:
     """
@@ -239,7 +236,7 @@ def run_coffee_genetic_algorithm(
         population_size=population_size,
         max_generations=max_generations,
         mutation_rate=mutation_rate,
-        mutation_strength=mutation_strength,
+        
         seed=seed
     )
     

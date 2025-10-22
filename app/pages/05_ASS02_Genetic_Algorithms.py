@@ -1,6 +1,4 @@
 import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 import time
 from utils.genetic_algorithm.algorithms import run_coffee_genetic_algorithm
@@ -11,7 +9,6 @@ from utils.genetic_algorithm.functions import (
 )
 from utils.genetic_algorithm.config import COFFEE_BOUNDS, COFFEE_PARAM_NAMES
 from utils.genetic_algorithm.ui import css_blocks, spacer
-from utils.hill_climb.algorithms import simple_hill_climbing
 
 css_blocks()
 
@@ -109,7 +106,6 @@ with col1:
 with col2:
     st.badge("**Mutation Parameters**", color="green")
     mutation_rate = st.slider("Mutation Rate", 0.01, 0.5, 0.1, step=0.01)
-    mutation_strength = st.slider("Mutation Strength", 0.01, 0.5, 0.1, step=0.01)
 
 spacer(24)
 
@@ -124,7 +120,6 @@ if st.button("Run Genetic Algorithm", type="primary"):
             population_size=population_size,
             max_generations=max_generations,
             mutation_rate=mutation_rate,
-            mutation_strength=mutation_strength,
             seed=seed
         )
         
@@ -355,7 +350,8 @@ if 'ga_results' in st.session_state:
             coffee_fitness_4d,
             fixed_dim=fixed_param_3d,
             fixed_value=fixed_value_3d,
-            grid_points=25  # Reduced for performance
+            grid_points=25,  # Reduced for performance
+            best_point=best_params  # Pass the best solution parameters
         )
         
         st.plotly_chart(fig_3d_interactive, use_container_width=True)
@@ -411,10 +407,6 @@ spacer(24)
 
 st.header("Comparison with Hill Climbing")
 
-st.markdown("""
-Compare the genetic algorithm results with hill climbing from Assignment 1:
-""")
-
 col1, col2 = st.columns(2)
 
 with col1:
@@ -433,56 +425,3 @@ with col2:
     - **Fast local optimization**: Quickly refines promising solutions
     """)
 
-if st.button("Run HC vs GA"):
-    with st.spinner("Running hill climbing for comparison..."):        
-        # Convert 4D problem to hill climbing format
-        def hc_fitness_function(params):
-            if isinstance(params, (list, np.ndarray)) and len(params) == 4:
-                return fitness_from_chromosome(np.array(params))
-            else:
-                # For 1D case, use fixed values for other parameters
-                best_params = st.session_state.ga_results['best_params'] if 'ga_results' in st.session_state else {'roast': 12, 'blend': 50, 'grind': 5, 'brew_time': 2.5}
-                return coffee_fitness_4d(params, best_params['blend'], best_params['grind'], best_params['brew_time'])
-        
-        # Run multiple hill climbing trials
-        n_trials = 10
-        hc_results = []
-        
-        for trial in range(n_trials):
-            # Random initialization for fair comparison
-            init_point = [
-                np.random.uniform(0, 20),    # roast
-                np.random.uniform(0, 100),   # blend  
-                np.random.uniform(0, 10),    # grind
-                np.random.uniform(0, 5)      # brew_time
-            ]
-            
-            # Run hill climbing (would need to adapt for 4D)
-            best_pos, best_fit, history = simple_hill_climbing(
-                fitness_function=hc_fitness_function,
-                bounds=(0, 100),
-                step_size=1.0,
-                max_iterations=100,
-                initial_point=50,
-                minimize=False,
-                dimensions=1
-            )
-            
-            hc_results.append(best_fit)
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown("**Genetic Algorithm**")
-            if 'ga_results' in st.session_state:
-                ga_fitness = st.session_state.ga_results['best_fitness']
-                st.metric("Best Fitness", f"{ga_fitness:.2f}")
-                st.metric("Avg Generations", len(st.session_state.ga_results['fitness_history']))
-        
-        with col2:
-            st.markdown("**Hill Climbing (10 runs)**")
-            hc_best = max(hc_results)
-            hc_avg = np.mean(hc_results)
-            st.metric("Best Fitness", f"{hc_best:.2f}")
-            st.metric("Average Fitness", f"{hc_avg:.2f}")
-        
