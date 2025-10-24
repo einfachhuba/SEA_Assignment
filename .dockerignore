@@ -6,7 +6,6 @@
 # Documentation
 README.md
 how-to-setup.md
-Assignment_Sheets/
 
 # Docker files
 docker-compose*.yml

@@ -30,8 +30,7 @@ class OpenRouterClient:
             "GPT OSS 20B": "openai/gpt-oss-20b:free",
             "DeepSeek R1": "deepseek/deepseek-r1:free",
             "DeepSeek Chat V3": "deepseek/deepseek-chat-v3-0324:free",
-            "Qwen 3 30B": "qwen/qwen3-30b-a3b:free",
-            "Dolphin Mistral 24B": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free"
+            "Qwen 3 30B": "qwen/qwen3-30b-a3b:free"
         }
         
     def get_available_models(self) -> Dict[str, str]:
