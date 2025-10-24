@@ -3572,6 +3572,7 @@ dependencies = [
     { name = "sentence-transformers" },
     { name = "streamlit" },
     { name = "streamlit-chat" },
+    { name = "streamlit-pdf-viewer" },
     { name = "tiktoken" },
 ]
 
@@ -3594,6 +3595,7 @@ requires-dist = [
     { name = "sentence-transformers", specifier = ">=2.2.0" },
     { name = "streamlit", specifier = ">=1.50.0" },
     { name = "streamlit-chat", specifier = ">=0.1.0" },
+    { name = "streamlit-pdf-viewer", specifier = ">=0.0.26" },
     { name = "tiktoken", specifier = ">=0.5.0" },
 ]
 
@@ -3740,6 +3742,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d8/3e/7b16dad6192dca27502a57b218424563d61154bdba97bef226cb222e97ec/streamlit-chat-0.1.1.tar.gz", hash = "sha256:e5911c8e3d5bbdd444782a0eb46a5f0cf24247124eb165bcc2e759540767ac3c", size = 1200156, upload-time = "2023-06-25T17:06:41.421Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/86/f8/26d8429dea8b240f62193fdf4bd36240e2e18d01be50e8f8c0d65491f4b8/streamlit_chat-0.1.1-py3-none-any.whl", hash = "sha256:bec918a6ff9d24fbc842d5a0e7c492e30e1ef71c3a72b94b0cb4be1a7300881e", size = 1225206, upload-time = "2023-06-25T17:06:39.021Z" },
+]
+
+[[package]]
+name = "streamlit-pdf-viewer"
+version = "0.0.26"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "streamlit" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a8/86/19070a89e0140ec3744908cfee660d9f5a0498f7eeaeb916006222f64598/streamlit_pdf_viewer-0.0.26.tar.gz", hash = "sha256:360560b04b01f4805dccbece16e649077e2983a753102c4c95338d8c5234a7d2", size = 2556416, upload-time = "2025-06-23T20:53:49.039Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1b/c6/f9309b16cd987c61f3144489fdae57d6692f24e272880b65d57600e6ae36/streamlit_pdf_viewer-0.0.26-py3-none-any.whl", hash = "sha256:d6fcc9b1bb0d79e07d3c3506b5467bf79b9c3aada15ffa052e9bf3b913df33aa", size = 2598801, upload-time = "2025-06-23T20:53:47.562Z" },
 ]
 
 [[package]]
