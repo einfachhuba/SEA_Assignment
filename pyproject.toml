@@ -19,6 +19,7 @@ dependencies = [
     "streamlit-chat>=0.1.0",
     "python-dotenv>=1.0.0",
     "streamlit-pdf-viewer>=0.0.26",
+    "pytz>=2025.2",
 ]
 
 [dependency-groups]

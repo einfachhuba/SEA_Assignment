@@ -1,5 +1,6 @@
-import streamlit as st, requests
+import streamlit as st
 from datetime import datetime
+import pytz
 import random
 
 from utils.home.github import user as gh_user, safe_commits, all_prs, open_issues_sorted
@@ -100,7 +101,14 @@ elif commits:
         author = author or (c.get("author") or {}).get("login") or "Unknown"
         date_iso = c["commit"]["author"]["date"]
         ts = datetime.fromisoformat(date_iso.replace("Z", "+00:00"))
-        date_tag = f"<span class='gh-tag gh-tag-green'>{ts:%Y-%m-%d %H:%M} UTC</span>"
+        # Convert from UTC to Central European Time (automatically handles CEST/CET)
+        utc_tz = pytz.UTC
+        ce_tz = pytz.timezone('Europe/Vienna')  # Automatically handles CEST/CET transitions
+        ts_utc = ts.replace(tzinfo=utc_tz)
+        ts_local = ts_utc.astimezone(ce_tz)
+        # Get the correct timezone abbreviation (CEST or CET)
+        tz_abbrev = ts_local.strftime('%Z')
+        date_tag = f"<span class='gh-tag gh-tag-green'>{ts_local:%Y-%m-%d %H:%M} {tz_abbrev}</span>"
         left = f"<span class='gh-commit-msg'>{msg}</span>{date_tag}"
         avatar = (c.get("author") or {}).get("avatar_url")
         right = ""
