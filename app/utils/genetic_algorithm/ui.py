@@ -13,5 +13,3 @@ def css_blocks():
     </style>
     """, unsafe_allow_html=True)
 
-def spacer(px=16):
-    st.markdown(f"<div style='height:{px}px'></div>", unsafe_allow_html=True)

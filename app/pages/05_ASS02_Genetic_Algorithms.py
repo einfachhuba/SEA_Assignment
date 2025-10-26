@@ -8,14 +8,15 @@ from utils.genetic_algorithm.functions import (
     plot_population_evolution_2d_interactive, fitness_from_chromosome
 )
 from utils.genetic_algorithm.config import COFFEE_BOUNDS, COFFEE_PARAM_NAMES
-from utils.genetic_algorithm.ui import css_blocks, spacer
+from utils.genetic_algorithm.ui import css_blocks
 from utils.general.pdf_viewer import display_pdf_with_controls
+from utils.general.ui import spacer
 
 css_blocks()
 
 st.set_page_config(page_title="AT02: Genetic Algorithms")
 
-tab1, tab2 = st.tabs(["📄 Assignment Paper", "🔧 Hill Climbing Implementation"])
+tab1, tab2 = st.tabs(["📄 Assignment Paper", "🔧 Genetic Algorithm Implementation"])
 
 with tab1:
     st.title("Assignment 02: Genetic Algorithms Document")

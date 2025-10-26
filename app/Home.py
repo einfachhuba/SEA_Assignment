@@ -4,10 +4,10 @@ import pytz
 import random
 
 from utils.home.github import user as gh_user, safe_commits, all_prs, open_issues_sorted
-from utils.home.ui import css_blocks, progress_bar, spacer, get_github_css
+from utils.home.ui import css_blocks, progress_bar, get_github_css
 from utils.home.jokes import fetch_dad_joke
-from utils.home.ui import css_blocks, progress_bar, spacer
 from utils.home.config import EMOJIS, OWNER_REPO, USERS, TASKS
+from utils.general.ui import spacer
 
 st.set_page_config(page_title="SEA Dashboard", page_icon="👨🏽‍💻", layout="wide")
 css_blocks()
