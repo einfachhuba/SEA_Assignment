@@ -7,27 +7,27 @@ def css_blocks():
     <style>
     /* Light mode styles */
     @media (prefers-color-scheme: light) {
-        .profile-card { 
+        .profile-card {
             border:1px solid rgba(0,0,0,.15);
             background: rgba(0,0,0,.03);
         }
-        .profile-avatar { 
+        .profile-avatar {
             border:1px solid rgba(0,0,0,.15);
         }
-        .profile-sub { 
+        .profile-sub {
             color:rgba(0,0,0,.7);
         }
-        .profile-meta { 
+        .profile-meta {
             color:rgba(0,0,0,.8);
         }
-        .joke-card{ 
+        .joke-card{
             border:1px solid rgba(0,0,0,.15);
             background: rgba(0,0,0,.04);
         }
-        .joke-text{ 
+        .joke-text{
             color:rgba(0,0,0,.9);
         }
-        .pb-wrap { 
+        .pb-wrap {
             background:rgba(0,0,0,.12);
         }
     }
@@ -51,7 +51,7 @@ def css_blocks():
     }
     
     /* Dark mode and default styles */
-    .profile-card { 
+    .profile-card {
         display:flex;
         gap:16px;
         align-items:flex-start;
@@ -60,7 +60,7 @@ def css_blocks():
         padding:14px 16px;
         background: rgba(255,255,255,.03);
         }
-    .profile-avatar { 
+    .profile-avatar {
         width:84px;
         height:84px;
         border-radius:10px;
@@ -73,16 +73,16 @@ def css_blocks():
         margin:0;
         color: var(--text-color);
         }
-    .profile-sub { 
+    .profile-sub {
         color:rgba(255,255,255,.7);
         margin:2px 0 8px 0;
         font-size:.9rem;
         }
-    .profile-meta { 
+    .profile-meta {
         font-size:.85rem;
         color:rgba(255,255,255,.8);
         }
-    .badge { 
+    .badge {
         display:inline-block;
         padding:2px 8px;
         border-radius:999px;
@@ -91,34 +91,54 @@ def css_blocks():
         font-size:.75rem;
         margin-right:6px;
         }
-    .linkrow a { 
+    .linkrow a {
         margin-right:12px;
         color: #0066CC;
         }
-    .joke-card{ 
+    .joke-card{
         border:1px solid rgba(255,255,255,.15);
         background: rgba(255,255,255,.04);
         border-radius:12px;
         padding:14px 16px;
         margin:6px 0 18px 0;
         }
-    .joke-text{ 
+    .joke-text{
         margin:0;
         font-size:0.95rem;
         line-height:1.4;
         color:rgba(255,255,255,.9);
         }
-    .pb-wrap { 
+    .pb-wrap {
         height:10px;
         background:rgba(255,255,255,.12);
         border-radius:999px;
         overflow:hidden;
         }
-    .pb-fill { 
+    .pb-fill {
         height:10px;
         transition: width .3s ease;
         border-radius:999px;
         }
+    /* Make DataFrame/DataEditor non-resizable with fixed dimensions */
+    [data-testid="stDataFrame"],
+    [data-testid="stDataEditor"] {
+        resize: none !important;
+        overflow: hidden !important;
+    }
+    [data-testid="stDataFrame"] > div,
+    [data-testid="stDataEditor"] > div {
+        resize: none !important;
+    }
+    /* Lock down the actual data grid inside */
+    [data-testid="stDataFrame"] .glideDataEditor,
+    [data-testid="stDataEditor"] .glideDataEditor {
+        resize: none !important;
+        overflow: auto !important;
+    }
+
+    /* Ensure profile-sub follows current theme text color (override if needed) */
+    .profile-sub { color: inherit !important; }
+
     </style>
     """,
         unsafe_allow_html=True,
