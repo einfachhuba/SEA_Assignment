@@ -21,6 +21,7 @@ COPY uv.lock* ./
 RUN uv venv && . .venv/bin/activate && uv sync --frozen
 
 # Copy app code
+COPY .streamlit ./.streamlit
 COPY Assignment_Sheets ./Assignment_Sheets
 COPY app ./app
 COPY main.py ./
