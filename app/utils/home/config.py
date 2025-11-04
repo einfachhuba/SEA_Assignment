@@ -34,5 +34,11 @@ TASKS = [
         "title": "Assignment 3: Genetic Algorithm Variations",
         "page": "06_ASS03_Genetic_Algorithm_Variations.py",
         "done": 1.0
+    },
+    {
+        "key": "04_01",
+        "title": "Assignment 4: Simulated Annealing",
+        "page": "07_ASS04_Simulated_Annealing.py",
+        "done": 1.0
     }
 ]

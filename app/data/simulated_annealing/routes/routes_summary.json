@@ -1,0 +1,2177 @@
+{
+  "Graz_to_Wien": {
+    "distance_km": 195.1,
+    "duration_h": 2.25,
+    "file": "sea_demo/data/routes/route_Graz_Wien.json"
+  },
+  "Linz_to_Wien": {
+    "distance_km": 178.4,
+    "duration_h": 1.94,
+    "file": "sea_demo/data/routes/route_Linz_Wien.json"
+  },
+  "Linz_to_Graz": {
+    "distance_km": 217.9,
+    "duration_h": 2.4,
+    "file": "sea_demo/data/routes/route_Linz_Graz.json"
+  },
+  "Salzburg_to_Wien": {
+    "distance_km": 296.2,
+    "duration_h": 2.99,
+    "file": "sea_demo/data/routes/route_Salzburg_Wien.json"
+  },
+  "Salzburg_to_Graz": {
+    "distance_km": 281.4,
+    "duration_h": 2.94,
+    "file": "sea_demo/data/routes/route_Salzburg_Graz.json"
+  },
+  "Salzburg_to_Linz": {
+    "distance_km": 134.5,
+    "duration_h": 1.43,
+    "file": "sea_demo/data/routes/route_Salzburg_Linz.json"
+  },
+  "Innsbruck_to_Wien": {
+    "distance_km": 472.1,
+    "duration_h": 4.79,
+    "file": "sea_demo/data/routes/route_Innsbruck_Wien.json"
+  },
+  "Innsbruck_to_Graz": {
+    "distance_km": 457.3,
+    "duration_h": 4.74,
+    "file": "sea_demo/data/routes/route_Innsbruck_Graz.json"
+  },
+  "Innsbruck_to_Linz": {
+    "distance_km": 310.4,
+    "duration_h": 3.23,
+    "file": "sea_demo/data/routes/route_Innsbruck_Linz.json"
+  },
+  "Innsbruck_to_Salzburg": {
+    "distance_km": 181.3,
+    "duration_h": 2.03,
+    "file": "sea_demo/data/routes/route_Innsbruck_Salzburg.json"
+  },
+  "Klagenfurt_to_Wien": {
+    "distance_km": 318.7,
+    "duration_h": 3.41,
+    "file": "sea_demo/data/routes/route_Klagenfurt_Wien.json"
+  },
+  "Klagenfurt_to_Graz": {
+    "distance_km": 133.8,
+    "duration_h": 1.6,
+    "file": "sea_demo/data/routes/route_Klagenfurt_Graz.json"
+  },
+  "Klagenfurt_to_Linz": {
+    "distance_km": 247.9,
+    "duration_h": 3.23,
+    "file": "sea_demo/data/routes/route_Klagenfurt_Linz.json"
+  },
+  "Klagenfurt_to_Salzburg": {
+    "distance_km": 223.0,
+    "duration_h": 2.35,
+    "file": "sea_demo/data/routes/route_Klagenfurt_Salzburg.json"
+  },
+  "Klagenfurt_to_Innsbruck": {
+    "distance_km": 390.1,
+    "duration_h": 4.04,
+    "file": "sea_demo/data/routes/route_Klagenfurt_Innsbruck.json"
+  },
+  "Villach_to_Wien": {
+    "distance_km": 359.6,
+    "duration_h": 3.82,
+    "file": "sea_demo/data/routes/route_Villach_Wien.json"
+  },
+  "Villach_to_Graz": {
+    "distance_km": 174.7,
+    "duration_h": 2.01,
+    "file": "sea_demo/data/routes/route_Villach_Graz.json"
+  },
+  "Villach_to_Linz": {
+    "distance_km": 315.3,
+    "duration_h": 3.25,
+    "file": "sea_demo/data/routes/route_Villach_Linz.json"
+  },
+  "Villach_to_Salzburg": {
+    "distance_km": 186.2,
+    "duration_h": 2.05,
+    "file": "sea_demo/data/routes/route_Villach_Salzburg.json"
+  },
+  "Villach_to_Innsbruck": {
+    "distance_km": 353.2,
+    "duration_h": 3.74,
+    "file": "sea_demo/data/routes/route_Villach_Innsbruck.json"
+  },
+  "Villach_to_Klagenfurt": {
+    "distance_km": 40.6,
+    "duration_h": 0.64,
+    "file": "sea_demo/data/routes/route_Villach_Klagenfurt.json"
+  },
+  "Wels_to_Wien": {
+    "distance_km": 195.8,
+    "duration_h": 2.06,
+    "file": "sea_demo/data/routes/route_Wels_Wien.json"
+  },
+  "Wels_to_Graz": {
+    "distance_km": 200.2,
+    "duration_h": 2.21,
+    "file": "sea_demo/data/routes/route_Wels_Graz.json"
+  },
+  "Wels_to_Linz": {
+    "distance_km": 34.1,
+    "duration_h": 0.5,
+    "file": "sea_demo/data/routes/route_Wels_Linz.json"
+  },
+  "Wels_to_Salzburg": {
+    "distance_km": 116.3,
+    "duration_h": 1.21,
+    "file": "sea_demo/data/routes/route_Wels_Salzburg.json"
+  },
+  "Wels_to_Innsbruck": {
+    "distance_km": 294.3,
+    "duration_h": 3.04,
+    "file": "sea_demo/data/routes/route_Wels_Innsbruck.json"
+  },
+  "Wels_to_Klagenfurt": {
+    "distance_km": 230.4,
+    "duration_h": 3.05,
+    "file": "sea_demo/data/routes/route_Wels_Klagenfurt.json"
+  },
+  "Wels_to_Villach": {
+    "distance_km": 298.0,
+    "duration_h": 3.08,
+    "file": "sea_demo/data/routes/route_Wels_Villach.json"
+  },
+  "Sankt Pölten_to_Wien": {
+    "distance_km": 61.9,
+    "duration_h": 0.92,
+    "file": "sea_demo/data/routes/route_Sankt_Pölten_Wien.json"
+  },
+  "Sankt Pölten_to_Graz": {
+    "distance_km": 231.0,
+    "duration_h": 2.51,
+    "file": "sea_demo/data/routes/route_Sankt_Pölten_Graz.json"
+  },
+  "Sankt Pölten_to_Linz": {
+    "distance_km": 122.5,
+    "duration_h": 1.32,
+    "file": "sea_demo/data/routes/route_Sankt_Pölten_Linz.json"
+  },
+  "Sankt Pölten_to_Salzburg": {
+    "distance_km": 240.7,
+    "duration_h": 2.34,
+    "file": "sea_demo/data/routes/route_Sankt_Pölten_Salzburg.json"
+  },
+  "Sankt Pölten_to_Innsbruck": {
+    "distance_km": 418.7,
+    "duration_h": 4.17,
+    "file": "sea_demo/data/routes/route_Sankt_Pölten_Innsbruck.json"
+  },
+  "Sankt Pölten_to_Klagenfurt": {
+    "distance_km": 355.4,
+    "duration_h": 3.67,
+    "file": "sea_demo/data/routes/route_Sankt_Pölten_Klagenfurt.json"
+  },
+  "Sankt Pölten_to_Villach": {
+    "distance_km": 395.1,
+    "duration_h": 4.04,
+    "file": "sea_demo/data/routes/route_Sankt_Pölten_Villach.json"
+  },
+  "Sankt Pölten_to_Wels": {
+    "distance_km": 140.8,
+    "duration_h": 1.47,
+    "file": "sea_demo/data/routes/route_Sankt_Pölten_Wels.json"
+  },
+  "Dornbirn_to_Wien": {
+    "distance_km": 607.0,
+    "duration_h": 5.9,
+    "file": "sea_demo/data/routes/route_Dornbirn_Wien.json"
+  },
+  "Dornbirn_to_Graz": {
+    "distance_km": 608.4,
+    "duration_h": 6.0,
+    "file": "sea_demo/data/routes/route_Dornbirn_Graz.json"
+  },
+  "Dornbirn_to_Linz": {
+    "distance_km": 445.3,
+    "duration_h": 4.34,
+    "file": "sea_demo/data/routes/route_Dornbirn_Linz.json"
+  },
+  "Dornbirn_to_Salzburg": {
+    "distance_km": 363.6,
+    "duration_h": 3.31,
+    "file": "sea_demo/data/routes/route_Dornbirn_Salzburg.json"
+  },
+  "Dornbirn_to_Innsbruck": {
+    "distance_km": 181.2,
+    "duration_h": 2.33,
+    "file": "sea_demo/data/routes/route_Dornbirn_Innsbruck.json"
+  },
+  "Dornbirn_to_Klagenfurt": {
+    "distance_km": 570.6,
+    "duration_h": 5.36,
+    "file": "sea_demo/data/routes/route_Dornbirn_Klagenfurt.json"
+  },
+  "Dornbirn_to_Villach": {
+    "distance_km": 534.2,
+    "duration_h": 5.03,
+    "file": "sea_demo/data/routes/route_Dornbirn_Villach.json"
+  },
+  "Dornbirn_to_Wels": {
+    "distance_km": 416.4,
+    "duration_h": 4.03,
+    "file": "sea_demo/data/routes/route_Dornbirn_Wels.json"
+  },
+  "Dornbirn_to_Sankt Pölten": {
+    "distance_km": 556.8,
+    "duration_h": 5.32,
+    "file": "sea_demo/data/routes/route_Dornbirn_Sankt_Pölten.json"
+  },
+  "Wiener Neustadt_to_Wien": {
+    "distance_km": 50.9,
+    "duration_h": 0.81,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Wien.json"
+  },
+  "Wiener Neustadt_to_Graz": {
+    "distance_km": 154.5,
+    "duration_h": 1.55,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Graz.json"
+  },
+  "Wiener Neustadt_to_Linz": {
+    "distance_km": 203.6,
+    "duration_h": 2.09,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Linz.json"
+  },
+  "Wiener Neustadt_to_Salzburg": {
+    "distance_km": 321.8,
+    "duration_h": 3.11,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Salzburg.json"
+  },
+  "Wiener Neustadt_to_Innsbruck": {
+    "distance_km": 499.7,
+    "duration_h": 4.93,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Innsbruck.json"
+  },
+  "Wiener Neustadt_to_Klagenfurt": {
+    "distance_km": 278.8,
+    "duration_h": 2.71,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Klagenfurt.json"
+  },
+  "Wiener Neustadt_to_Villach": {
+    "distance_km": 318.6,
+    "duration_h": 3.08,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Villach.json"
+  },
+  "Wiener Neustadt_to_Wels": {
+    "distance_km": 221.9,
+    "duration_h": 2.24,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Wels.json"
+  },
+  "Wiener Neustadt_to_Sankt Pölten": {
+    "distance_km": 87.4,
+    "duration_h": 1.07,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Sankt_Pölten.json"
+  },
+  "Wiener Neustadt_to_Dornbirn": {
+    "distance_km": 632.5,
+    "duration_h": 6.01,
+    "file": "sea_demo/data/routes/route_Wiener_Neustadt_Dornbirn.json"
+  },
+  "Steyr_to_Wien": {
+    "distance_km": 176.3,
+    "duration_h": 2.01,
+    "file": "sea_demo/data/routes/route_Steyr_Wien.json"
+  },
+  "Steyr_to_Graz": {
+    "distance_km": 192.8,
+    "duration_h": 2.46,
+    "file": "sea_demo/data/routes/route_Steyr_Graz.json"
+  },
+  "Steyr_to_Linz": {
+    "distance_km": 39.8,
+    "duration_h": 0.65,
+    "file": "sea_demo/data/routes/route_Steyr_Linz.json"
+  },
+  "Steyr_to_Salzburg": {
+    "distance_km": 158.0,
+    "duration_h": 1.68,
+    "file": "sea_demo/data/routes/route_Steyr_Salzburg.json"
+  },
+  "Steyr_to_Innsbruck": {
+    "distance_km": 336.0,
+    "duration_h": 3.5,
+    "file": "sea_demo/data/routes/route_Steyr_Innsbruck.json"
+  },
+  "Steyr_to_Klagenfurt": {
+    "distance_km": 223.0,
+    "duration_h": 3.3,
+    "file": "sea_demo/data/routes/route_Steyr_Klagenfurt.json"
+  },
+  "Steyr_to_Villach": {
+    "distance_km": 339.7,
+    "duration_h": 3.54,
+    "file": "sea_demo/data/routes/route_Steyr_Villach.json"
+  },
+  "Steyr_to_Wels": {
+    "distance_km": 58.2,
+    "duration_h": 0.8,
+    "file": "sea_demo/data/routes/route_Steyr_Wels.json"
+  },
+  "Steyr_to_Sankt Pölten": {
+    "distance_km": 126.2,
+    "duration_h": 1.42,
+    "file": "sea_demo/data/routes/route_Steyr_Sankt_Pölten.json"
+  },
+  "Steyr_to_Dornbirn": {
+    "distance_km": 468.7,
+    "duration_h": 4.57,
+    "file": "sea_demo/data/routes/route_Steyr_Dornbirn.json"
+  },
+  "Steyr_to_Wiener Neustadt": {
+    "distance_km": 204.8,
+    "duration_h": 2.17,
+    "file": "sea_demo/data/routes/route_Steyr_Wiener_Neustadt.json"
+  },
+  "Feldkirch_to_Wien": {
+    "distance_km": 627.3,
+    "duration_h": 6.15,
+    "file": "sea_demo/data/routes/route_Feldkirch_Wien.json"
+  },
+  "Feldkirch_to_Graz": {
+    "distance_km": 628.7,
+    "duration_h": 6.25,
+    "file": "sea_demo/data/routes/route_Feldkirch_Graz.json"
+  },
+  "Feldkirch_to_Linz": {
+    "distance_km": 465.7,
+    "duration_h": 4.59,
+    "file": "sea_demo/data/routes/route_Feldkirch_Linz.json"
+  },
+  "Feldkirch_to_Salzburg": {
+    "distance_km": 383.9,
+    "duration_h": 3.55,
+    "file": "sea_demo/data/routes/route_Feldkirch_Salzburg.json"
+  },
+  "Feldkirch_to_Innsbruck": {
+    "distance_km": 159.3,
+    "duration_h": 2.14,
+    "file": "sea_demo/data/routes/route_Feldkirch_Innsbruck.json"
+  },
+  "Feldkirch_to_Klagenfurt": {
+    "distance_km": 590.9,
+    "duration_h": 5.6,
+    "file": "sea_demo/data/routes/route_Feldkirch_Klagenfurt.json"
+  },
+  "Feldkirch_to_Villach": {
+    "distance_km": 554.5,
+    "duration_h": 5.28,
+    "file": "sea_demo/data/routes/route_Feldkirch_Villach.json"
+  },
+  "Feldkirch_to_Wels": {
+    "distance_km": 436.8,
+    "duration_h": 4.28,
+    "file": "sea_demo/data/routes/route_Feldkirch_Wels.json"
+  },
+  "Feldkirch_to_Sankt Pölten": {
+    "distance_km": 577.2,
+    "duration_h": 5.56,
+    "file": "sea_demo/data/routes/route_Feldkirch_Sankt_Pölten.json"
+  },
+  "Feldkirch_to_Dornbirn": {
+    "distance_km": 25.6,
+    "duration_h": 0.49,
+    "file": "sea_demo/data/routes/route_Feldkirch_Dornbirn.json"
+  },
+  "Feldkirch_to_Wiener Neustadt": {
+    "distance_km": 655.8,
+    "duration_h": 6.31,
+    "file": "sea_demo/data/routes/route_Feldkirch_Wiener_Neustadt.json"
+  },
+  "Feldkirch_to_Steyr": {
+    "distance_km": 488.8,
+    "duration_h": 4.87,
+    "file": "sea_demo/data/routes/route_Feldkirch_Steyr.json"
+  },
+  "Bregenz_to_Wien": {
+    "distance_km": 591.7,
+    "duration_h": 5.77,
+    "file": "sea_demo/data/routes/route_Bregenz_Wien.json"
+  },
+  "Bregenz_to_Graz": {
+    "distance_km": 593.1,
+    "duration_h": 5.88,
+    "file": "sea_demo/data/routes/route_Bregenz_Graz.json"
+  },
+  "Bregenz_to_Linz": {
+    "distance_km": 430.1,
+    "duration_h": 4.22,
+    "file": "sea_demo/data/routes/route_Bregenz_Linz.json"
+  },
+  "Bregenz_to_Salzburg": {
+    "distance_km": 348.3,
+    "duration_h": 3.18,
+    "file": "sea_demo/data/routes/route_Bregenz_Salzburg.json"
+  },
+  "Bregenz_to_Innsbruck": {
+    "distance_km": 191.5,
+    "duration_h": 2.44,
+    "file": "sea_demo/data/routes/route_Bregenz_Innsbruck.json"
+  },
+  "Bregenz_to_Klagenfurt": {
+    "distance_km": 555.3,
+    "duration_h": 5.23,
+    "file": "sea_demo/data/routes/route_Bregenz_Klagenfurt.json"
+  },
+  "Bregenz_to_Villach": {
+    "distance_km": 518.9,
+    "duration_h": 4.91,
+    "file": "sea_demo/data/routes/route_Bregenz_Villach.json"
+  },
+  "Bregenz_to_Wels": {
+    "distance_km": 401.1,
+    "duration_h": 3.91,
+    "file": "sea_demo/data/routes/route_Bregenz_Wels.json"
+  },
+  "Bregenz_to_Sankt Pölten": {
+    "distance_km": 541.6,
+    "duration_h": 5.19,
+    "file": "sea_demo/data/routes/route_Bregenz_Sankt_Pölten.json"
+  },
+  "Bregenz_to_Dornbirn": {
+    "distance_km": 16.1,
+    "duration_h": 0.39,
+    "file": "sea_demo/data/routes/route_Bregenz_Dornbirn.json"
+  },
+  "Bregenz_to_Wiener Neustadt": {
+    "distance_km": 620.1,
+    "duration_h": 5.94,
+    "file": "sea_demo/data/routes/route_Bregenz_Wiener_Neustadt.json"
+  },
+  "Bregenz_to_Steyr": {
+    "distance_km": 453.1,
+    "duration_h": 4.5,
+    "file": "sea_demo/data/routes/route_Bregenz_Steyr.json"
+  },
+  "Bregenz_to_Feldkirch": {
+    "distance_km": 40.6,
+    "duration_h": 0.61,
+    "file": "sea_demo/data/routes/route_Bregenz_Feldkirch.json"
+  },
+  "Leoben_to_Wien": {
+    "distance_km": 159.1,
+    "duration_h": 1.9,
+    "file": "sea_demo/data/routes/route_Leoben_Wien.json"
+  },
+  "Leoben_to_Graz": {
+    "distance_km": 66.2,
+    "duration_h": 0.92,
+    "file": "sea_demo/data/routes/route_Leoben_Graz.json"
+  },
+  "Leoben_to_Linz": {
+    "distance_km": 183.2,
+    "duration_h": 1.95,
+    "file": "sea_demo/data/routes/route_Leoben_Linz.json"
+  },
+  "Leoben_to_Salzburg": {
+    "distance_km": 247.2,
+    "duration_h": 2.46,
+    "file": "sea_demo/data/routes/route_Leoben_Salzburg.json"
+  },
+  "Leoben_to_Innsbruck": {
+    "distance_km": 425.2,
+    "duration_h": 4.28,
+    "file": "sea_demo/data/routes/route_Leoben_Innsbruck.json"
+  },
+  "Leoben_to_Klagenfurt": {
+    "distance_km": 155.6,
+    "duration_h": 1.99,
+    "file": "sea_demo/data/routes/route_Leoben_Klagenfurt.json"
+  },
+  "Leoben_to_Villach": {
+    "distance_km": 195.3,
+    "duration_h": 2.36,
+    "file": "sea_demo/data/routes/route_Leoben_Villach.json"
+  },
+  "Leoben_to_Wels": {
+    "distance_km": 167.7,
+    "duration_h": 1.76,
+    "file": "sea_demo/data/routes/route_Leoben_Wels.json"
+  },
+  "Leoben_to_Sankt Pölten": {
+    "distance_km": 195.6,
+    "duration_h": 2.16,
+    "file": "sea_demo/data/routes/route_Leoben_Sankt_Pölten.json"
+  },
+  "Leoben_to_Dornbirn": {
+    "distance_km": 573.8,
+    "duration_h": 5.51,
+    "file": "sea_demo/data/routes/route_Leoben_Dornbirn.json"
+  },
+  "Leoben_to_Wiener Neustadt": {
+    "distance_km": 108.2,
+    "duration_h": 1.09,
+    "file": "sea_demo/data/routes/route_Leoben_Wiener_Neustadt.json"
+  },
+  "Leoben_to_Steyr": {
+    "distance_km": 158.3,
+    "duration_h": 2.02,
+    "file": "sea_demo/data/routes/route_Leoben_Steyr.json"
+  },
+  "Leoben_to_Feldkirch": {
+    "distance_km": 598.3,
+    "duration_h": 5.73,
+    "file": "sea_demo/data/routes/route_Leoben_Feldkirch.json"
+  },
+  "Leoben_to_Bregenz": {
+    "distance_km": 558.6,
+    "duration_h": 5.36,
+    "file": "sea_demo/data/routes/route_Leoben_Bregenz.json"
+  },
+  "Kapfenberg_to_Wien": {
+    "distance_km": 140.8,
+    "duration_h": 1.78,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Wien.json"
+  },
+  "Kapfenberg_to_Graz": {
+    "distance_km": 59.4,
+    "duration_h": 0.91,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Graz.json"
+  },
+  "Kapfenberg_to_Linz": {
+    "distance_km": 202.7,
+    "duration_h": 2.17,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Linz.json"
+  },
+  "Kapfenberg_to_Salzburg": {
+    "distance_km": 266.8,
+    "duration_h": 2.68,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Salzburg.json"
+  },
+  "Kapfenberg_to_Innsbruck": {
+    "distance_km": 444.7,
+    "duration_h": 4.5,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Innsbruck.json"
+  },
+  "Kapfenberg_to_Klagenfurt": {
+    "distance_km": 191.2,
+    "duration_h": 2.14,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Klagenfurt.json"
+  },
+  "Kapfenberg_to_Villach": {
+    "distance_km": 230.9,
+    "duration_h": 2.5,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Villach.json"
+  },
+  "Kapfenberg_to_Wels": {
+    "distance_km": 187.2,
+    "duration_h": 1.98,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Wels.json"
+  },
+  "Kapfenberg_to_Sankt Pölten": {
+    "distance_km": 177.3,
+    "duration_h": 2.04,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Sankt_Pölten.json"
+  },
+  "Kapfenberg_to_Dornbirn": {
+    "distance_km": 593.3,
+    "duration_h": 5.73,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Dornbirn.json"
+  },
+  "Kapfenberg_to_Wiener Neustadt": {
+    "distance_km": 89.9,
+    "duration_h": 0.97,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Wiener_Neustadt.json"
+  },
+  "Kapfenberg_to_Steyr": {
+    "distance_km": 177.8,
+    "duration_h": 2.24,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Steyr.json"
+  },
+  "Kapfenberg_to_Feldkirch": {
+    "distance_km": 617.8,
+    "duration_h": 5.95,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Feldkirch.json"
+  },
+  "Kapfenberg_to_Bregenz": {
+    "distance_km": 578.1,
+    "duration_h": 5.58,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Bregenz.json"
+  },
+  "Kapfenberg_to_Leoben": {
+    "distance_km": 26.1,
+    "duration_h": 0.44,
+    "file": "sea_demo/data/routes/route_Kapfenberg_Leoben.json"
+  },
+  "Amstetten_to_Wien": {
+    "distance_km": 127.3,
+    "duration_h": 1.47,
+    "file": "sea_demo/data/routes/route_Amstetten_Wien.json"
+  },
+  "Amstetten_to_Graz": {
+    "distance_km": 261.1,
+    "duration_h": 2.78,
+    "file": "sea_demo/data/routes/route_Amstetten_Graz.json"
+  },
+  "Amstetten_to_Linz": {
+    "distance_km": 58.9,
+    "duration_h": 0.75,
+    "file": "sea_demo/data/routes/route_Amstetten_Linz.json"
+  },
+  "Amstetten_to_Salzburg": {
+    "distance_km": 177.0,
+    "duration_h": 1.77,
+    "file": "sea_demo/data/routes/route_Amstetten_Salzburg.json"
+  },
+  "Amstetten_to_Innsbruck": {
+    "distance_km": 355.0,
+    "duration_h": 3.59,
+    "file": "sea_demo/data/routes/route_Amstetten_Innsbruck.json"
+  },
+  "Amstetten_to_Klagenfurt": {
+    "distance_km": 291.3,
+    "duration_h": 3.62,
+    "file": "sea_demo/data/routes/route_Amstetten_Klagenfurt.json"
+  },
+  "Amstetten_to_Villach": {
+    "distance_km": 358.7,
+    "duration_h": 3.64,
+    "file": "sea_demo/data/routes/route_Amstetten_Villach.json"
+  },
+  "Amstetten_to_Wels": {
+    "distance_km": 77.2,
+    "duration_h": 0.9,
+    "file": "sea_demo/data/routes/route_Amstetten_Wels.json"
+  },
+  "Amstetten_to_Sankt Pölten": {
+    "distance_km": 77.2,
+    "duration_h": 0.89,
+    "file": "sea_demo/data/routes/route_Amstetten_Sankt_Pölten.json"
+  },
+  "Amstetten_to_Dornbirn": {
+    "distance_km": 487.8,
+    "duration_h": 4.67,
+    "file": "sea_demo/data/routes/route_Amstetten_Dornbirn.json"
+  },
+  "Amstetten_to_Wiener Neustadt": {
+    "distance_km": 155.8,
+    "duration_h": 1.64,
+    "file": "sea_demo/data/routes/route_Amstetten_Wiener_Neustadt.json"
+  },
+  "Amstetten_to_Steyr": {
+    "distance_km": 44.1,
+    "duration_h": 0.83,
+    "file": "sea_demo/data/routes/route_Amstetten_Steyr.json"
+  },
+  "Amstetten_to_Feldkirch": {
+    "distance_km": 512.3,
+    "duration_h": 4.89,
+    "file": "sea_demo/data/routes/route_Amstetten_Feldkirch.json"
+  },
+  "Amstetten_to_Bregenz": {
+    "distance_km": 472.6,
+    "duration_h": 4.52,
+    "file": "sea_demo/data/routes/route_Amstetten_Bregenz.json"
+  },
+  "Amstetten_to_Leoben": {
+    "distance_km": 221.1,
+    "duration_h": 2.28,
+    "file": "sea_demo/data/routes/route_Amstetten_Leoben.json"
+  },
+  "Amstetten_to_Kapfenberg": {
+    "distance_km": 138.2,
+    "duration_h": 2.46,
+    "file": "sea_demo/data/routes/route_Amstetten_Kapfenberg.json"
+  },
+  "Lustenau_to_Wien": {
+    "distance_km": 610.0,
+    "duration_h": 5.94,
+    "file": "sea_demo/data/routes/route_Lustenau_Wien.json"
+  },
+  "Lustenau_to_Graz": {
+    "distance_km": 611.4,
+    "duration_h": 6.05,
+    "file": "sea_demo/data/routes/route_Lustenau_Graz.json"
+  },
+  "Lustenau_to_Linz": {
+    "distance_km": 448.3,
+    "duration_h": 4.39,
+    "file": "sea_demo/data/routes/route_Lustenau_Linz.json"
+  },
+  "Lustenau_to_Salzburg": {
+    "distance_km": 366.5,
+    "duration_h": 3.35,
+    "file": "sea_demo/data/routes/route_Lustenau_Salzburg.json"
+  },
+  "Lustenau_to_Innsbruck": {
+    "distance_km": 181.9,
+    "duration_h": 2.35,
+    "file": "sea_demo/data/routes/route_Lustenau_Innsbruck.json"
+  },
+  "Lustenau_to_Klagenfurt": {
+    "distance_km": 573.6,
+    "duration_h": 5.4,
+    "file": "sea_demo/data/routes/route_Lustenau_Klagenfurt.json"
+  },
+  "Lustenau_to_Villach": {
+    "distance_km": 537.1,
+    "duration_h": 5.08,
+    "file": "sea_demo/data/routes/route_Lustenau_Villach.json"
+  },
+  "Lustenau_to_Wels": {
+    "distance_km": 419.4,
+    "duration_h": 4.08,
+    "file": "sea_demo/data/routes/route_Lustenau_Wels.json"
+  },
+  "Lustenau_to_Sankt Pölten": {
+    "distance_km": 559.8,
+    "duration_h": 5.36,
+    "file": "sea_demo/data/routes/route_Lustenau_Sankt_Pölten.json"
+  },
+  "Lustenau_to_Dornbirn": {
+    "distance_km": 7.9,
+    "duration_h": 0.28,
+    "file": "sea_demo/data/routes/route_Lustenau_Dornbirn.json"
+  },
+  "Lustenau_to_Wiener Neustadt": {
+    "distance_km": 638.4,
+    "duration_h": 6.11,
+    "file": "sea_demo/data/routes/route_Lustenau_Wiener_Neustadt.json"
+  },
+  "Lustenau_to_Steyr": {
+    "distance_km": 471.4,
+    "duration_h": 4.67,
+    "file": "sea_demo/data/routes/route_Lustenau_Steyr.json"
+  },
+  "Lustenau_to_Feldkirch": {
+    "distance_km": 28.0,
+    "duration_h": 0.47,
+    "file": "sea_demo/data/routes/route_Lustenau_Feldkirch.json"
+  },
+  "Lustenau_to_Bregenz": {
+    "distance_km": 19.0,
+    "duration_h": 0.42,
+    "file": "sea_demo/data/routes/route_Lustenau_Bregenz.json"
+  },
+  "Lustenau_to_Leoben": {
+    "distance_km": 571.4,
+    "duration_h": 5.55,
+    "file": "sea_demo/data/routes/route_Lustenau_Leoben.json"
+  },
+  "Lustenau_to_Kapfenberg": {
+    "distance_km": 596.8,
+    "duration_h": 5.85,
+    "file": "sea_demo/data/routes/route_Lustenau_Kapfenberg.json"
+  },
+  "Lustenau_to_Amstetten": {
+    "distance_km": 490.1,
+    "duration_h": 4.72,
+    "file": "sea_demo/data/routes/route_Lustenau_Amstetten.json"
+  },
+  "Traun_to_Wien": {
+    "distance_km": 177.4,
+    "duration_h": 1.92,
+    "file": "sea_demo/data/routes/route_Traun_Wien.json"
+  },
+  "Traun_to_Graz": {
+    "distance_km": 210.9,
+    "duration_h": 2.34,
+    "file": "sea_demo/data/routes/route_Traun_Graz.json"
+  },
+  "Traun_to_Linz": {
+    "distance_km": 9.4,
+    "duration_h": 0.29,
+    "file": "sea_demo/data/routes/route_Traun_Linz.json"
+  },
+  "Traun_to_Salzburg": {
+    "distance_km": 126.9,
+    "duration_h": 1.33,
+    "file": "sea_demo/data/routes/route_Traun_Salzburg.json"
+  },
+  "Traun_to_Innsbruck": {
+    "distance_km": 304.8,
+    "duration_h": 3.15,
+    "file": "sea_demo/data/routes/route_Traun_Innsbruck.json"
+  },
+  "Traun_to_Klagenfurt": {
+    "distance_km": 241.1,
+    "duration_h": 3.18,
+    "file": "sea_demo/data/routes/route_Traun_Klagenfurt.json"
+  },
+  "Traun_to_Villach": {
+    "distance_km": 308.6,
+    "duration_h": 3.19,
+    "file": "sea_demo/data/routes/route_Traun_Villach.json"
+  },
+  "Traun_to_Wels": {
+    "distance_km": 27.0,
+    "duration_h": 0.45,
+    "file": "sea_demo/data/routes/route_Traun_Wels.json"
+  },
+  "Traun_to_Sankt Pölten": {
+    "distance_km": 127.3,
+    "duration_h": 1.34,
+    "file": "sea_demo/data/routes/route_Traun_Sankt_Pölten.json"
+  },
+  "Traun_to_Dornbirn": {
+    "distance_km": 437.6,
+    "duration_h": 4.22,
+    "file": "sea_demo/data/routes/route_Traun_Dornbirn.json"
+  },
+  "Traun_to_Wiener Neustadt": {
+    "distance_km": 205.9,
+    "duration_h": 2.09,
+    "file": "sea_demo/data/routes/route_Traun_Wiener_Neustadt.json"
+  },
+  "Traun_to_Steyr": {
+    "distance_km": 38.8,
+    "duration_h": 0.65,
+    "file": "sea_demo/data/routes/route_Traun_Steyr.json"
+  },
+  "Traun_to_Feldkirch": {
+    "distance_km": 462.1,
+    "duration_h": 4.45,
+    "file": "sea_demo/data/routes/route_Traun_Feldkirch.json"
+  },
+  "Traun_to_Bregenz": {
+    "distance_km": 422.4,
+    "duration_h": 4.07,
+    "file": "sea_demo/data/routes/route_Traun_Bregenz.json"
+  },
+  "Traun_to_Leoben": {
+    "distance_km": 170.9,
+    "duration_h": 1.84,
+    "file": "sea_demo/data/routes/route_Traun_Leoben.json"
+  },
+  "Traun_to_Kapfenberg": {
+    "distance_km": 196.3,
+    "duration_h": 2.14,
+    "file": "sea_demo/data/routes/route_Traun_Kapfenberg.json"
+  },
+  "Traun_to_Amstetten": {
+    "distance_km": 57.6,
+    "duration_h": 0.7,
+    "file": "sea_demo/data/routes/route_Traun_Amstetten.json"
+  },
+  "Traun_to_Lustenau": {
+    "distance_km": 440.0,
+    "duration_h": 4.24,
+    "file": "sea_demo/data/routes/route_Traun_Lustenau.json"
+  },
+  "Krems an der Donau_to_Wien": {
+    "distance_km": 75.2,
+    "duration_h": 0.99,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Wien.json"
+  },
+  "Krems an der Donau_to_Graz": {
+    "distance_km": 258.9,
+    "duration_h": 2.69,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Graz.json"
+  },
+  "Krems an der Donau_to_Linz": {
+    "distance_km": 154.7,
+    "duration_h": 1.51,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Linz.json"
+  },
+  "Krems an der Donau_to_Salzburg": {
+    "distance_km": 272.9,
+    "duration_h": 2.53,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Salzburg.json"
+  },
+  "Krems an der Donau_to_Innsbruck": {
+    "distance_km": 450.9,
+    "duration_h": 4.36,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Innsbruck.json"
+  },
+  "Krems an der Donau_to_Klagenfurt": {
+    "distance_km": 383.3,
+    "duration_h": 3.86,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Klagenfurt.json"
+  },
+  "Krems an der Donau_to_Villach": {
+    "distance_km": 423.0,
+    "duration_h": 4.22,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Villach.json"
+  },
+  "Krems an der Donau_to_Wels": {
+    "distance_km": 173.0,
+    "duration_h": 1.66,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Wels.json"
+  },
+  "Krems an der Donau_to_Sankt Pölten": {
+    "distance_km": 34.2,
+    "duration_h": 0.46,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Sankt_Pölten.json"
+  },
+  "Krems an der Donau_to_Dornbirn": {
+    "distance_km": 583.6,
+    "duration_h": 5.43,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Dornbirn.json"
+  },
+  "Krems an der Donau_to_Wiener Neustadt": {
+    "distance_km": 118.3,
+    "duration_h": 1.28,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Wiener_Neustadt.json"
+  },
+  "Krems an der Donau_to_Steyr": {
+    "distance_km": 139.9,
+    "duration_h": 1.6,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Steyr.json"
+  },
+  "Krems an der Donau_to_Feldkirch": {
+    "distance_km": 608.1,
+    "duration_h": 5.65,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Feldkirch.json"
+  },
+  "Krems an der Donau_to_Bregenz": {
+    "distance_km": 568.4,
+    "duration_h": 5.28,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Bregenz.json"
+  },
+  "Krems an der Donau_to_Leoben": {
+    "distance_km": 223.5,
+    "duration_h": 2.34,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Leoben.json"
+  },
+  "Krems an der Donau_to_Kapfenberg": {
+    "distance_km": 204.7,
+    "duration_h": 2.18,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Kapfenberg.json"
+  },
+  "Krems an der Donau_to_Amstetten": {
+    "distance_km": 104.2,
+    "duration_h": 1.04,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Amstetten.json"
+  },
+  "Krems an der Donau_to_Lustenau": {
+    "distance_km": 586.0,
+    "duration_h": 5.44,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Lustenau.json"
+  },
+  "Krems an der Donau_to_Traun": {
+    "distance_km": 153.9,
+    "duration_h": 1.5,
+    "file": "sea_demo/data/routes/route_Krems_an_der_Donau_Traun.json"
+  },
+  "Baden_to_Wien": {
+    "distance_km": 33.8,
+    "duration_h": 0.76,
+    "file": "sea_demo/data/routes/route_Baden_Wien.json"
+  },
+  "Baden_to_Graz": {
+    "distance_km": 169.9,
+    "duration_h": 1.76,
+    "file": "sea_demo/data/routes/route_Baden_Graz.json"
+  },
+  "Baden_to_Linz": {
+    "distance_km": 181.4,
+    "duration_h": 1.85,
+    "file": "sea_demo/data/routes/route_Baden_Linz.json"
+  },
+  "Baden_to_Salzburg": {
+    "distance_km": 299.5,
+    "duration_h": 2.88,
+    "file": "sea_demo/data/routes/route_Baden_Salzburg.json"
+  },
+  "Baden_to_Innsbruck": {
+    "distance_km": 477.5,
+    "duration_h": 4.7,
+    "file": "sea_demo/data/routes/route_Baden_Innsbruck.json"
+  },
+  "Baden_to_Klagenfurt": {
+    "distance_km": 294.3,
+    "duration_h": 2.92,
+    "file": "sea_demo/data/routes/route_Baden_Klagenfurt.json"
+  },
+  "Baden_to_Villach": {
+    "distance_km": 334.0,
+    "duration_h": 3.29,
+    "file": "sea_demo/data/routes/route_Baden_Villach.json"
+  },
+  "Baden_to_Wels": {
+    "distance_km": 199.7,
+    "duration_h": 2.0,
+    "file": "sea_demo/data/routes/route_Baden_Wels.json"
+  },
+  "Baden_to_Sankt Pölten": {
+    "distance_km": 65.2,
+    "duration_h": 0.84,
+    "file": "sea_demo/data/routes/route_Baden_Sankt_Pölten.json"
+  },
+  "Baden_to_Dornbirn": {
+    "distance_km": 610.3,
+    "duration_h": 5.77,
+    "file": "sea_demo/data/routes/route_Baden_Dornbirn.json"
+  },
+  "Baden_to_Wiener Neustadt": {
+    "distance_km": 29.3,
+    "duration_h": 0.34,
+    "file": "sea_demo/data/routes/route_Baden_Wiener_Neustadt.json"
+  },
+  "Baden_to_Steyr": {
+    "distance_km": 166.6,
+    "duration_h": 1.94,
+    "file": "sea_demo/data/routes/route_Baden_Steyr.json"
+  },
+  "Baden_to_Feldkirch": {
+    "distance_km": 634.8,
+    "duration_h": 6.0,
+    "file": "sea_demo/data/routes/route_Baden_Feldkirch.json"
+  },
+  "Baden_to_Bregenz": {
+    "distance_km": 595.1,
+    "duration_h": 5.62,
+    "file": "sea_demo/data/routes/route_Baden_Bregenz.json"
+  },
+  "Baden_to_Leoben": {
+    "distance_km": 134.6,
+    "duration_h": 1.4,
+    "file": "sea_demo/data/routes/route_Baden_Leoben.json"
+  },
+  "Baden_to_Kapfenberg": {
+    "distance_km": 115.8,
+    "duration_h": 1.24,
+    "file": "sea_demo/data/routes/route_Baden_Kapfenberg.json"
+  },
+  "Baden_to_Amstetten": {
+    "distance_km": 130.8,
+    "duration_h": 1.38,
+    "file": "sea_demo/data/routes/route_Baden_Amstetten.json"
+  },
+  "Baden_to_Lustenau": {
+    "distance_km": 612.6,
+    "duration_h": 5.79,
+    "file": "sea_demo/data/routes/route_Baden_Lustenau.json"
+  },
+  "Baden_to_Traun": {
+    "distance_km": 180.6,
+    "duration_h": 1.85,
+    "file": "sea_demo/data/routes/route_Baden_Traun.json"
+  },
+  "Baden_to_Krems an der Donau": {
+    "distance_km": 92.3,
+    "duration_h": 1.0,
+    "file": "sea_demo/data/routes/route_Baden_Krems_an_der_Donau.json"
+  },
+  "Mödling_to_Wien": {
+    "distance_km": 19.4,
+    "duration_h": 0.61,
+    "file": "sea_demo/data/routes/route_Mödling_Wien.json"
+  },
+  "Mödling_to_Graz": {
+    "distance_km": 182.5,
+    "duration_h": 1.91,
+    "file": "sea_demo/data/routes/route_Mödling_Graz.json"
+  },
+  "Mödling_to_Linz": {
+    "distance_km": 181.7,
+    "duration_h": 1.88,
+    "file": "sea_demo/data/routes/route_Mödling_Linz.json"
+  },
+  "Mödling_to_Salzburg": {
+    "distance_km": 299.9,
+    "duration_h": 2.91,
+    "file": "sea_demo/data/routes/route_Mödling_Salzburg.json"
+  },
+  "Mödling_to_Innsbruck": {
+    "distance_km": 477.9,
+    "duration_h": 4.73,
+    "file": "sea_demo/data/routes/route_Mödling_Innsbruck.json"
+  },
+  "Mödling_to_Klagenfurt": {
+    "distance_km": 306.8,
+    "duration_h": 3.08,
+    "file": "sea_demo/data/routes/route_Mödling_Klagenfurt.json"
+  },
+  "Mödling_to_Villach": {
+    "distance_km": 346.6,
+    "duration_h": 3.45,
+    "file": "sea_demo/data/routes/route_Mödling_Villach.json"
+  },
+  "Mödling_to_Wels": {
+    "distance_km": 200.0,
+    "duration_h": 2.04,
+    "file": "sea_demo/data/routes/route_Mödling_Wels.json"
+  },
+  "Mödling_to_Sankt Pölten": {
+    "distance_km": 65.6,
+    "duration_h": 0.87,
+    "file": "sea_demo/data/routes/route_Mödling_Sankt_Pölten.json"
+  },
+  "Mödling_to_Dornbirn": {
+    "distance_km": 610.6,
+    "duration_h": 5.81,
+    "file": "sea_demo/data/routes/route_Mödling_Dornbirn.json"
+  },
+  "Mödling_to_Wiener Neustadt": {
+    "distance_km": 41.8,
+    "duration_h": 0.5,
+    "file": "sea_demo/data/routes/route_Mödling_Wiener_Neustadt.json"
+  },
+  "Mödling_to_Steyr": {
+    "distance_km": 166.9,
+    "duration_h": 1.97,
+    "file": "sea_demo/data/routes/route_Mödling_Steyr.json"
+  },
+  "Mödling_to_Feldkirch": {
+    "distance_km": 635.1,
+    "duration_h": 6.03,
+    "file": "sea_demo/data/routes/route_Mödling_Feldkirch.json"
+  },
+  "Mödling_to_Bregenz": {
+    "distance_km": 595.4,
+    "duration_h": 5.65,
+    "file": "sea_demo/data/routes/route_Mödling_Bregenz.json"
+  },
+  "Mödling_to_Leoben": {
+    "distance_km": 147.1,
+    "duration_h": 1.56,
+    "file": "sea_demo/data/routes/route_Mödling_Leoben.json"
+  },
+  "Mödling_to_Kapfenberg": {
+    "distance_km": 128.3,
+    "duration_h": 1.4,
+    "file": "sea_demo/data/routes/route_Mödling_Kapfenberg.json"
+  },
+  "Mödling_to_Amstetten": {
+    "distance_km": 131.2,
+    "duration_h": 1.41,
+    "file": "sea_demo/data/routes/route_Mödling_Amstetten.json"
+  },
+  "Mödling_to_Lustenau": {
+    "distance_km": 613.0,
+    "duration_h": 5.82,
+    "file": "sea_demo/data/routes/route_Mödling_Lustenau.json"
+  },
+  "Mödling_to_Traun": {
+    "distance_km": 180.9,
+    "duration_h": 1.88,
+    "file": "sea_demo/data/routes/route_Mödling_Traun.json"
+  },
+  "Mödling_to_Krems an der Donau": {
+    "distance_km": 92.6,
+    "duration_h": 1.03,
+    "file": "sea_demo/data/routes/route_Mödling_Krems_an_der_Donau.json"
+  },
+  "Mödling_to_Baden": {
+    "distance_km": 10.6,
+    "duration_h": 0.25,
+    "file": "sea_demo/data/routes/route_Mödling_Baden.json"
+  },
+  "Schwechat_to_Wien": {
+    "distance_km": 15.0,
+    "duration_h": 0.52,
+    "file": "sea_demo/data/routes/route_Schwechat_Wien.json"
+  },
+  "Schwechat_to_Graz": {
+    "distance_km": 199.6,
+    "duration_h": 2.11,
+    "file": "sea_demo/data/routes/route_Schwechat_Graz.json"
+  },
+  "Schwechat_to_Linz": {
+    "distance_km": 200.8,
+    "duration_h": 2.09,
+    "file": "sea_demo/data/routes/route_Schwechat_Linz.json"
+  },
+  "Schwechat_to_Salzburg": {
+    "distance_km": 318.9,
+    "duration_h": 3.11,
+    "file": "sea_demo/data/routes/route_Schwechat_Salzburg.json"
+  },
+  "Schwechat_to_Innsbruck": {
+    "distance_km": 496.9,
+    "duration_h": 4.94,
+    "file": "sea_demo/data/routes/route_Schwechat_Innsbruck.json"
+  },
+  "Schwechat_to_Klagenfurt": {
+    "distance_km": 324.0,
+    "duration_h": 3.28,
+    "file": "sea_demo/data/routes/route_Schwechat_Klagenfurt.json"
+  },
+  "Schwechat_to_Villach": {
+    "distance_km": 363.7,
+    "duration_h": 3.64,
+    "file": "sea_demo/data/routes/route_Schwechat_Villach.json"
+  },
+  "Schwechat_to_Wels": {
+    "distance_km": 219.1,
+    "duration_h": 2.24,
+    "file": "sea_demo/data/routes/route_Schwechat_Wels.json"
+  },
+  "Schwechat_to_Sankt Pölten": {
+    "distance_km": 84.6,
+    "duration_h": 1.07,
+    "file": "sea_demo/data/routes/route_Schwechat_Sankt_Pölten.json"
+  },
+  "Schwechat_to_Dornbirn": {
+    "distance_km": 629.7,
+    "duration_h": 6.01,
+    "file": "sea_demo/data/routes/route_Schwechat_Dornbirn.json"
+  },
+  "Schwechat_to_Wiener Neustadt": {
+    "distance_km": 59.0,
+    "duration_h": 0.69,
+    "file": "sea_demo/data/routes/route_Schwechat_Wiener_Neustadt.json"
+  },
+  "Schwechat_to_Steyr": {
+    "distance_km": 186.0,
+    "duration_h": 2.18,
+    "file": "sea_demo/data/routes/route_Schwechat_Steyr.json"
+  },
+  "Schwechat_to_Feldkirch": {
+    "distance_km": 654.2,
+    "duration_h": 6.23,
+    "file": "sea_demo/data/routes/route_Schwechat_Feldkirch.json"
+  },
+  "Schwechat_to_Bregenz": {
+    "distance_km": 614.5,
+    "duration_h": 5.86,
+    "file": "sea_demo/data/routes/route_Schwechat_Bregenz.json"
+  },
+  "Schwechat_to_Leoben": {
+    "distance_km": 164.3,
+    "duration_h": 1.76,
+    "file": "sea_demo/data/routes/route_Schwechat_Leoben.json"
+  },
+  "Schwechat_to_Kapfenberg": {
+    "distance_km": 145.5,
+    "duration_h": 1.6,
+    "file": "sea_demo/data/routes/route_Schwechat_Kapfenberg.json"
+  },
+  "Schwechat_to_Amstetten": {
+    "distance_km": 150.3,
+    "duration_h": 1.62,
+    "file": "sea_demo/data/routes/route_Schwechat_Amstetten.json"
+  },
+  "Schwechat_to_Lustenau": {
+    "distance_km": 632.1,
+    "duration_h": 6.02,
+    "file": "sea_demo/data/routes/route_Schwechat_Lustenau.json"
+  },
+  "Schwechat_to_Traun": {
+    "distance_km": 200.0,
+    "duration_h": 2.08,
+    "file": "sea_demo/data/routes/route_Schwechat_Traun.json"
+  },
+  "Schwechat_to_Krems an der Donau": {
+    "distance_km": 87.5,
+    "duration_h": 1.12,
+    "file": "sea_demo/data/routes/route_Schwechat_Krems_an_der_Donau.json"
+  },
+  "Schwechat_to_Baden": {
+    "distance_km": 37.7,
+    "duration_h": 0.6,
+    "file": "sea_demo/data/routes/route_Schwechat_Baden.json"
+  },
+  "Schwechat_to_Mödling": {
+    "distance_km": 23.6,
+    "duration_h": 0.48,
+    "file": "sea_demo/data/routes/route_Schwechat_Mödling.json"
+  },
+  "Hallein_to_Wien": {
+    "distance_km": 315.2,
+    "duration_h": 3.11,
+    "file": "sea_demo/data/routes/route_Hallein_Wien.json"
+  },
+  "Hallein_to_Graz": {
+    "distance_km": 300.4,
+    "duration_h": 3.06,
+    "file": "sea_demo/data/routes/route_Hallein_Graz.json"
+  },
+  "Hallein_to_Linz": {
+    "distance_km": 153.5,
+    "duration_h": 1.55,
+    "file": "sea_demo/data/routes/route_Hallein_Linz.json"
+  },
+  "Hallein_to_Salzburg": {
+    "distance_km": 24.4,
+    "duration_h": 0.35,
+    "file": "sea_demo/data/routes/route_Hallein_Salzburg.json"
+  },
+  "Hallein_to_Innsbruck": {
+    "distance_km": 191.5,
+    "duration_h": 2.04,
+    "file": "sea_demo/data/routes/route_Hallein_Innsbruck.json"
+  },
+  "Hallein_to_Klagenfurt": {
+    "distance_km": 202.0,
+    "duration_h": 2.15,
+    "file": "sea_demo/data/routes/route_Hallein_Klagenfurt.json"
+  },
+  "Hallein_to_Villach": {
+    "distance_km": 165.6,
+    "duration_h": 1.82,
+    "file": "sea_demo/data/routes/route_Hallein_Villach.json"
+  },
+  "Hallein_to_Wels": {
+    "distance_km": 138.1,
+    "duration_h": 1.37,
+    "file": "sea_demo/data/routes/route_Hallein_Wels.json"
+  },
+  "Hallein_to_Sankt Pölten": {
+    "distance_km": 265.1,
+    "duration_h": 2.53,
+    "file": "sea_demo/data/routes/route_Hallein_Sankt_Pölten.json"
+  },
+  "Hallein_to_Dornbirn": {
+    "distance_km": 371.8,
+    "duration_h": 3.35,
+    "file": "sea_demo/data/routes/route_Hallein_Dornbirn.json"
+  },
+  "Hallein_to_Wiener Neustadt": {
+    "distance_km": 343.6,
+    "duration_h": 3.28,
+    "file": "sea_demo/data/routes/route_Hallein_Wiener_Neustadt.json"
+  },
+  "Hallein_to_Steyr": {
+    "distance_km": 176.6,
+    "duration_h": 1.84,
+    "file": "sea_demo/data/routes/route_Hallein_Steyr.json"
+  },
+  "Hallein_to_Feldkirch": {
+    "distance_km": 396.4,
+    "duration_h": 3.57,
+    "file": "sea_demo/data/routes/route_Hallein_Feldkirch.json"
+  },
+  "Hallein_to_Bregenz": {
+    "distance_km": 356.6,
+    "duration_h": 3.2,
+    "file": "sea_demo/data/routes/route_Hallein_Bregenz.json"
+  },
+  "Hallein_to_Leoben": {
+    "distance_km": 260.5,
+    "duration_h": 2.56,
+    "file": "sea_demo/data/routes/route_Hallein_Leoben.json"
+  },
+  "Hallein_to_Kapfenberg": {
+    "distance_km": 285.9,
+    "duration_h": 2.86,
+    "file": "sea_demo/data/routes/route_Hallein_Kapfenberg.json"
+  },
+  "Hallein_to_Amstetten": {
+    "distance_km": 195.3,
+    "duration_h": 1.89,
+    "file": "sea_demo/data/routes/route_Hallein_Amstetten.json"
+  },
+  "Hallein_to_Lustenau": {
+    "distance_km": 374.2,
+    "duration_h": 3.36,
+    "file": "sea_demo/data/routes/route_Hallein_Lustenau.json"
+  },
+  "Hallein_to_Traun": {
+    "distance_km": 147.4,
+    "duration_h": 1.52,
+    "file": "sea_demo/data/routes/route_Hallein_Traun.json"
+  },
+  "Hallein_to_Krems an der Donau": {
+    "distance_km": 292.1,
+    "duration_h": 2.69,
+    "file": "sea_demo/data/routes/route_Hallein_Krems_an_der_Donau.json"
+  },
+  "Hallein_to_Baden": {
+    "distance_km": 318.2,
+    "duration_h": 3.02,
+    "file": "sea_demo/data/routes/route_Hallein_Baden.json"
+  },
+  "Hallein_to_Mödling": {
+    "distance_km": 318.6,
+    "duration_h": 3.05,
+    "file": "sea_demo/data/routes/route_Hallein_Mödling.json"
+  },
+  "Hallein_to_Schwechat": {
+    "distance_km": 336.3,
+    "duration_h": 3.25,
+    "file": "sea_demo/data/routes/route_Hallein_Schwechat.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Wien": {
+    "distance_km": 387.5,
+    "duration_h": 4.14,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Wien.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Graz": {
+    "distance_km": 252.7,
+    "duration_h": 3.77,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Graz.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Linz": {
+    "distance_km": 225.8,
+    "duration_h": 2.58,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Linz.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Salzburg": {
+    "distance_km": 96.7,
+    "duration_h": 1.38,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Salzburg.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Innsbruck": {
+    "distance_km": 136.1,
+    "duration_h": 2.43,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Innsbruck.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Klagenfurt": {
+    "distance_km": 214.0,
+    "duration_h": 2.6,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Klagenfurt.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Villach": {
+    "distance_km": 177.6,
+    "duration_h": 2.28,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Villach.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Wels": {
+    "distance_km": 210.4,
+    "duration_h": 2.4,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Wels.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Sankt Pölten": {
+    "distance_km": 337.4,
+    "duration_h": 3.56,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Sankt_Pölten.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Dornbirn": {
+    "distance_km": 378.6,
+    "duration_h": 4.23,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Dornbirn.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Wiener Neustadt": {
+    "distance_km": 320.0,
+    "duration_h": 4.22,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Wiener_Neustadt.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Steyr": {
+    "distance_km": 248.9,
+    "duration_h": 2.86,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Steyr.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Feldkirch": {
+    "distance_km": 290.2,
+    "duration_h": 4.36,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Feldkirch.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Bregenz": {
+    "distance_km": 363.3,
+    "duration_h": 4.08,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Bregenz.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Leoben": {
+    "distance_km": 212.8,
+    "duration_h": 3.27,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Leoben.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Kapfenberg": {
+    "distance_km": 238.2,
+    "duration_h": 3.57,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Kapfenberg.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Amstetten": {
+    "distance_km": 267.6,
+    "duration_h": 2.92,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Amstetten.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Lustenau": {
+    "distance_km": 380.9,
+    "duration_h": 4.24,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Lustenau.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Traun": {
+    "distance_km": 219.7,
+    "duration_h": 2.55,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Traun.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Krems an der Donau": {
+    "distance_km": 364.4,
+    "duration_h": 3.72,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Krems_an_der_Donau.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Baden": {
+    "distance_km": 390.5,
+    "duration_h": 4.05,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Baden.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Mödling": {
+    "distance_km": 390.9,
+    "duration_h": 4.08,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Mödling.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Schwechat": {
+    "distance_km": 408.6,
+    "duration_h": 4.28,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Schwechat.json"
+  },
+  "Saalfelden am Steinernen Meer_to_Hallein": {
+    "distance_km": 75.8,
+    "duration_h": 1.13,
+    "file": "sea_demo/data/routes/route_Saalfelden_am_Steinernen_Meer_Hallein.json"
+  },
+  "Knittelfeld_to_Wien": {
+    "distance_km": 189.6,
+    "duration_h": 2.13,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Wien.json"
+  },
+  "Knittelfeld_to_Graz": {
+    "distance_km": 71.6,
+    "duration_h": 0.91,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Graz.json"
+  },
+  "Knittelfeld_to_Linz": {
+    "distance_km": 189.7,
+    "duration_h": 1.97,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Linz.json"
+  },
+  "Knittelfeld_to_Salzburg": {
+    "distance_km": 253.7,
+    "duration_h": 2.48,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Salzburg.json"
+  },
+  "Knittelfeld_to_Innsbruck": {
+    "distance_km": 431.7,
+    "duration_h": 4.31,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Innsbruck.json"
+  },
+  "Knittelfeld_to_Klagenfurt": {
+    "distance_km": 121.0,
+    "duration_h": 1.66,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Klagenfurt.json"
+  },
+  "Knittelfeld_to_Villach": {
+    "distance_km": 160.7,
+    "duration_h": 2.03,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Villach.json"
+  },
+  "Knittelfeld_to_Wels": {
+    "distance_km": 174.2,
+    "duration_h": 1.78,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Wels.json"
+  },
+  "Knittelfeld_to_Sankt Pölten": {
+    "distance_km": 226.1,
+    "duration_h": 2.39,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Sankt_Pölten.json"
+  },
+  "Knittelfeld_to_Dornbirn": {
+    "distance_km": 580.3,
+    "duration_h": 5.53,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Dornbirn.json"
+  },
+  "Knittelfeld_to_Wiener Neustadt": {
+    "distance_km": 138.7,
+    "duration_h": 1.32,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Wiener_Neustadt.json"
+  },
+  "Knittelfeld_to_Steyr": {
+    "distance_km": 164.8,
+    "duration_h": 2.04,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Steyr.json"
+  },
+  "Knittelfeld_to_Feldkirch": {
+    "distance_km": 604.8,
+    "duration_h": 5.76,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Feldkirch.json"
+  },
+  "Knittelfeld_to_Bregenz": {
+    "distance_km": 565.1,
+    "duration_h": 5.38,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Bregenz.json"
+  },
+  "Knittelfeld_to_Leoben": {
+    "distance_km": 31.4,
+    "duration_h": 0.37,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Leoben.json"
+  },
+  "Knittelfeld_to_Kapfenberg": {
+    "distance_km": 56.8,
+    "duration_h": 0.67,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Kapfenberg.json"
+  },
+  "Knittelfeld_to_Amstetten": {
+    "distance_km": 231.5,
+    "duration_h": 2.3,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Amstetten.json"
+  },
+  "Knittelfeld_to_Lustenau": {
+    "distance_km": 582.7,
+    "duration_h": 5.54,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Lustenau.json"
+  },
+  "Knittelfeld_to_Traun": {
+    "distance_km": 183.6,
+    "duration_h": 1.94,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Traun.json"
+  },
+  "Knittelfeld_to_Krems an der Donau": {
+    "distance_km": 253.2,
+    "duration_h": 2.55,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Krems_an_der_Donau.json"
+  },
+  "Knittelfeld_to_Baden": {
+    "distance_km": 164.9,
+    "duration_h": 1.65,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Baden.json"
+  },
+  "Knittelfeld_to_Mödling": {
+    "distance_km": 178.0,
+    "duration_h": 1.81,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Mödling.json"
+  },
+  "Knittelfeld_to_Schwechat": {
+    "distance_km": 192.4,
+    "duration_h": 1.99,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Schwechat.json"
+  },
+  "Knittelfeld_to_Hallein": {
+    "distance_km": 272.7,
+    "duration_h": 2.63,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Hallein.json"
+  },
+  "Knittelfeld_to_Saalfelden am Steinernen Meer": {
+    "distance_km": 217.1,
+    "duration_h": 3.24,
+    "file": "sea_demo/data/routes/route_Knittelfeld_Saalfelden_am_Steinernen_Meer.json"
+  },
+  "Bruck an der Mur_to_Wien": {
+    "distance_km": 145.0,
+    "duration_h": 1.75,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Wien.json"
+  },
+  "Bruck an der Mur_to_Graz": {
+    "distance_km": 55.1,
+    "duration_h": 0.77,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Graz.json"
+  },
+  "Bruck an der Mur_to_Linz": {
+    "distance_km": 192.3,
+    "duration_h": 2.03,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Linz.json"
+  },
+  "Bruck an der Mur_to_Salzburg": {
+    "distance_km": 256.3,
+    "duration_h": 2.54,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Salzburg.json"
+  },
+  "Bruck an der Mur_to_Innsbruck": {
+    "distance_km": 434.3,
+    "duration_h": 4.37,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Innsbruck.json"
+  },
+  "Bruck an der Mur_to_Klagenfurt": {
+    "distance_km": 186.9,
+    "duration_h": 2.0,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Klagenfurt.json"
+  },
+  "Bruck an der Mur_to_Villach": {
+    "distance_km": 226.6,
+    "duration_h": 2.36,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Villach.json"
+  },
+  "Bruck an der Mur_to_Wels": {
+    "distance_km": 176.7,
+    "duration_h": 1.85,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Wels.json"
+  },
+  "Bruck an der Mur_to_Sankt Pölten": {
+    "distance_km": 181.5,
+    "duration_h": 2.01,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Sankt_Pölten.json"
+  },
+  "Bruck an der Mur_to_Dornbirn": {
+    "distance_km": 582.8,
+    "duration_h": 5.6,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Dornbirn.json"
+  },
+  "Bruck an der Mur_to_Wiener Neustadt": {
+    "distance_km": 94.1,
+    "duration_h": 0.94,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Wiener_Neustadt.json"
+  },
+  "Bruck an der Mur_to_Steyr": {
+    "distance_km": 167.3,
+    "duration_h": 2.1,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Steyr.json"
+  },
+  "Bruck an der Mur_to_Feldkirch": {
+    "distance_km": 607.3,
+    "duration_h": 5.82,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Feldkirch.json"
+  },
+  "Bruck an der Mur_to_Bregenz": {
+    "distance_km": 567.6,
+    "duration_h": 5.45,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Bregenz.json"
+  },
+  "Bruck an der Mur_to_Leoben": {
+    "distance_km": 15.6,
+    "duration_h": 0.3,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Leoben.json"
+  },
+  "Bruck an der Mur_to_Kapfenberg": {
+    "distance_km": 7.0,
+    "duration_h": 0.24,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Kapfenberg.json"
+  },
+  "Bruck an der Mur_to_Amstetten": {
+    "distance_km": 234.1,
+    "duration_h": 2.36,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Amstetten.json"
+  },
+  "Bruck an der Mur_to_Lustenau": {
+    "distance_km": 585.2,
+    "duration_h": 5.61,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Lustenau.json"
+  },
+  "Bruck an der Mur_to_Traun": {
+    "distance_km": 186.1,
+    "duration_h": 2.0,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Traun.json"
+  },
+  "Bruck an der Mur_to_Krems an der Donau": {
+    "distance_km": 208.6,
+    "duration_h": 2.18,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Krems_an_der_Donau.json"
+  },
+  "Bruck an der Mur_to_Baden": {
+    "distance_km": 120.3,
+    "duration_h": 1.27,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Baden.json"
+  },
+  "Bruck an der Mur_to_Mödling": {
+    "distance_km": 133.4,
+    "duration_h": 1.43,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Mödling.json"
+  },
+  "Bruck an der Mur_to_Schwechat": {
+    "distance_km": 147.8,
+    "duration_h": 1.61,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Schwechat.json"
+  },
+  "Bruck an der Mur_to_Hallein": {
+    "distance_km": 275.2,
+    "duration_h": 2.69,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Hallein.json"
+  },
+  "Bruck an der Mur_to_Saalfelden am Steinernen Meer": {
+    "distance_km": 228.3,
+    "duration_h": 3.47,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Saalfelden_am_Steinernen_Meer.json"
+  },
+  "Bruck an der Mur_to_Knittelfeld": {
+    "distance_km": 46.2,
+    "duration_h": 0.54,
+    "file": "sea_demo/data/routes/route_Bruck_an_der_Mur_Knittelfeld.json"
+  },
+  "Spittal an der Drau_to_Wien": {
+    "distance_km": 393.6,
+    "duration_h": 4.13,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Wien.json"
+  },
+  "Spittal an der Drau_to_Graz": {
+    "distance_km": 208.7,
+    "duration_h": 2.32,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Graz.json"
+  },
+  "Spittal an der Drau_to_Linz": {
+    "distance_km": 280.7,
+    "duration_h": 2.86,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Linz.json"
+  },
+  "Spittal an der Drau_to_Salzburg": {
+    "distance_km": 151.6,
+    "duration_h": 1.66,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Salzburg.json"
+  },
+  "Spittal an der Drau_to_Innsbruck": {
+    "distance_km": 318.7,
+    "duration_h": 3.35,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Innsbruck.json"
+  },
+  "Spittal an der Drau_to_Klagenfurt": {
+    "distance_km": 74.7,
+    "duration_h": 0.95,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Klagenfurt.json"
+  },
+  "Spittal an der Drau_to_Villach": {
+    "distance_km": 38.3,
+    "duration_h": 0.63,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Villach.json"
+  },
+  "Spittal an der Drau_to_Wels": {
+    "distance_km": 265.3,
+    "duration_h": 2.68,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Wels.json"
+  },
+  "Spittal an der Drau_to_Sankt Pölten": {
+    "distance_km": 392.2,
+    "duration_h": 3.84,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Sankt_Pölten.json"
+  },
+  "Spittal an der Drau_to_Dornbirn": {
+    "distance_km": 499.0,
+    "duration_h": 4.66,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Dornbirn.json"
+  },
+  "Spittal an der Drau_to_Wiener Neustadt": {
+    "distance_km": 342.7,
+    "duration_h": 3.33,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Wiener_Neustadt.json"
+  },
+  "Spittal an der Drau_to_Steyr": {
+    "distance_km": 303.8,
+    "duration_h": 3.14,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Steyr.json"
+  },
+  "Spittal an der Drau_to_Feldkirch": {
+    "distance_km": 523.5,
+    "duration_h": 4.88,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Feldkirch.json"
+  },
+  "Spittal an der Drau_to_Bregenz": {
+    "distance_km": 483.8,
+    "duration_h": 4.51,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Bregenz.json"
+  },
+  "Spittal an der Drau_to_Leoben": {
+    "distance_km": 185.3,
+    "duration_h": 2.55,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Leoben.json"
+  },
+  "Spittal an der Drau_to_Kapfenberg": {
+    "distance_km": 210.7,
+    "duration_h": 2.85,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Kapfenberg.json"
+  },
+  "Spittal an der Drau_to_Amstetten": {
+    "distance_km": 322.5,
+    "duration_h": 3.2,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Amstetten.json"
+  },
+  "Spittal an der Drau_to_Lustenau": {
+    "distance_km": 501.4,
+    "duration_h": 4.67,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Lustenau.json"
+  },
+  "Spittal an der Drau_to_Traun": {
+    "distance_km": 274.5,
+    "duration_h": 2.83,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Traun.json"
+  },
+  "Spittal an der Drau_to_Krems an der Donau": {
+    "distance_km": 419.3,
+    "duration_h": 4.0,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Krems_an_der_Donau.json"
+  },
+  "Spittal an der Drau_to_Baden": {
+    "distance_km": 368.9,
+    "duration_h": 3.65,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Baden.json"
+  },
+  "Spittal an der Drau_to_Mödling": {
+    "distance_km": 382.0,
+    "duration_h": 3.81,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Mödling.json"
+  },
+  "Spittal an der Drau_to_Schwechat": {
+    "distance_km": 396.4,
+    "duration_h": 4.0,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Schwechat.json"
+  },
+  "Spittal an der Drau_to_Hallein": {
+    "distance_km": 130.7,
+    "duration_h": 1.42,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Hallein.json"
+  },
+  "Spittal an der Drau_to_Saalfelden am Steinernen Meer": {
+    "distance_km": 143.2,
+    "duration_h": 1.92,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Saalfelden_am_Steinernen_Meer.json"
+  },
+  "Spittal an der Drau_to_Knittelfeld": {
+    "distance_km": 156.1,
+    "duration_h": 2.29,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Knittelfeld.json"
+  },
+  "Spittal an der Drau_to_Bruck an der Mur": {
+    "distance_km": 200.0,
+    "duration_h": 2.71,
+    "file": "sea_demo/data/routes/route_Spittal_an_der_Drau_Bruck_an_der_Mur.json"
+  },
+  "Zell am See_to_Wien": {
+    "distance_km": 394.8,
+    "duration_h": 4.3,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Wien.json"
+  },
+  "Zell am See_to_Graz": {
+    "distance_km": 260.1,
+    "duration_h": 3.94,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Graz.json"
+  },
+  "Zell am See_to_Linz": {
+    "distance_km": 233.1,
+    "duration_h": 2.75,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Linz.json"
+  },
+  "Zell am See_to_Salzburg": {
+    "distance_km": 104.0,
+    "duration_h": 1.54,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Salzburg.json"
+  },
+  "Zell am See_to_Innsbruck": {
+    "distance_km": 148.9,
+    "duration_h": 2.71,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Innsbruck.json"
+  },
+  "Zell am See_to_Klagenfurt": {
+    "distance_km": 209.7,
+    "duration_h": 2.74,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Klagenfurt.json"
+  },
+  "Zell am See_to_Villach": {
+    "distance_km": 173.3,
+    "duration_h": 2.42,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Villach.json"
+  },
+  "Zell am See_to_Wels": {
+    "distance_km": 217.7,
+    "duration_h": 2.57,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Wels.json"
+  },
+  "Zell am See_to_Sankt Pölten": {
+    "distance_km": 344.7,
+    "duration_h": 3.72,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Sankt_Pölten.json"
+  },
+  "Zell am See_to_Dornbirn": {
+    "distance_km": 391.7,
+    "duration_h": 4.51,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Dornbirn.json"
+  },
+  "Zell am See_to_Wiener Neustadt": {
+    "distance_km": 327.4,
+    "duration_h": 4.38,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Wiener_Neustadt.json"
+  },
+  "Zell am See_to_Steyr": {
+    "distance_km": 256.2,
+    "duration_h": 3.03,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Steyr.json"
+  },
+  "Zell am See_to_Feldkirch": {
+    "distance_km": 303.0,
+    "duration_h": 4.65,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Feldkirch.json"
+  },
+  "Zell am See_to_Bregenz": {
+    "distance_km": 376.5,
+    "duration_h": 4.36,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Bregenz.json"
+  },
+  "Zell am See_to_Leoben": {
+    "distance_km": 220.1,
+    "duration_h": 3.44,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Leoben.json"
+  },
+  "Zell am See_to_Kapfenberg": {
+    "distance_km": 245.5,
+    "duration_h": 3.73,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Kapfenberg.json"
+  },
+  "Zell am See_to_Amstetten": {
+    "distance_km": 274.9,
+    "duration_h": 3.08,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Amstetten.json"
+  },
+  "Zell am See_to_Lustenau": {
+    "distance_km": 394.1,
+    "duration_h": 4.52,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Lustenau.json"
+  },
+  "Zell am See_to_Traun": {
+    "distance_km": 227.0,
+    "duration_h": 2.71,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Traun.json"
+  },
+  "Zell am See_to_Krems an der Donau": {
+    "distance_km": 371.7,
+    "duration_h": 3.88,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Krems_an_der_Donau.json"
+  },
+  "Zell am See_to_Baden": {
+    "distance_km": 397.8,
+    "duration_h": 4.22,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Baden.json"
+  },
+  "Zell am See_to_Mödling": {
+    "distance_km": 398.3,
+    "duration_h": 4.24,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Mödling.json"
+  },
+  "Zell am See_to_Schwechat": {
+    "distance_km": 415.9,
+    "duration_h": 4.45,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Schwechat.json"
+  },
+  "Zell am See_to_Hallein": {
+    "distance_km": 83.1,
+    "duration_h": 1.3,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Hallein.json"
+  },
+  "Zell am See_to_Saalfelden am Steinernen Meer": {
+    "distance_km": 13.2,
+    "duration_h": 0.31,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Saalfelden_am_Steinernen_Meer.json"
+  },
+  "Zell am See_to_Knittelfeld": {
+    "distance_km": 212.4,
+    "duration_h": 3.33,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Knittelfeld.json"
+  },
+  "Zell am See_to_Bruck an der Mur": {
+    "distance_km": 234.8,
+    "duration_h": 3.6,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Bruck_an_der_Mur.json"
+  },
+  "Zell am See_to_Spittal an der Drau": {
+    "distance_km": 138.4,
+    "duration_h": 2.01,
+    "file": "sea_demo/data/routes/route_Zell_am_See_Spittal_an_der_Drau.json"
+  },
+  "Tulln an der Donau_to_Wien": {
+    "distance_km": 45.0,
+    "duration_h": 0.75,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Wien.json"
+  },
+  "Tulln an der Donau_to_Graz": {
+    "distance_km": 234.4,
+    "duration_h": 2.76,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Graz.json"
+  },
+  "Tulln an der Donau_to_Linz": {
+    "distance_km": 179.4,
+    "duration_h": 1.75,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Linz.json"
+  },
+  "Tulln an der Donau_to_Salzburg": {
+    "distance_km": 297.5,
+    "duration_h": 2.77,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Salzburg.json"
+  },
+  "Tulln an der Donau_to_Innsbruck": {
+    "distance_km": 475.5,
+    "duration_h": 4.59,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Innsbruck.json"
+  },
+  "Tulln an der Donau_to_Klagenfurt": {
+    "distance_km": 358.8,
+    "duration_h": 3.93,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Klagenfurt.json"
+  },
+  "Tulln an der Donau_to_Villach": {
+    "distance_km": 398.5,
+    "duration_h": 4.29,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Villach.json"
+  },
+  "Tulln an der Donau_to_Wels": {
+    "distance_km": 197.7,
+    "duration_h": 1.9,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Wels.json"
+  },
+  "Tulln an der Donau_to_Sankt Pölten": {
+    "distance_km": 58.9,
+    "duration_h": 0.69,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Sankt_Pölten.json"
+  },
+  "Tulln an der Donau_to_Dornbirn": {
+    "distance_km": 608.3,
+    "duration_h": 5.67,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Dornbirn.json"
+  },
+  "Tulln an der Donau_to_Wiener Neustadt": {
+    "distance_km": 93.8,
+    "duration_h": 1.34,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Wiener_Neustadt.json"
+  },
+  "Tulln an der Donau_to_Steyr": {
+    "distance_km": 164.6,
+    "duration_h": 1.84,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Steyr.json"
+  },
+  "Tulln an der Donau_to_Feldkirch": {
+    "distance_km": 632.8,
+    "duration_h": 5.89,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Feldkirch.json"
+  },
+  "Tulln an der Donau_to_Bregenz": {
+    "distance_km": 593.1,
+    "duration_h": 5.52,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Bregenz.json"
+  },
+  "Tulln an der Donau_to_Leoben": {
+    "distance_km": 199.1,
+    "duration_h": 2.41,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Leoben.json"
+  },
+  "Tulln an der Donau_to_Kapfenberg": {
+    "distance_km": 180.3,
+    "duration_h": 2.25,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Kapfenberg.json"
+  },
+  "Tulln an der Donau_to_Amstetten": {
+    "distance_km": 128.8,
+    "duration_h": 1.28,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Amstetten.json"
+  },
+  "Tulln an der Donau_to_Lustenau": {
+    "distance_km": 610.6,
+    "duration_h": 5.68,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Lustenau.json"
+  },
+  "Tulln an der Donau_to_Traun": {
+    "distance_km": 178.6,
+    "duration_h": 1.74,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Traun.json"
+  },
+  "Tulln an der Donau_to_Krems an der Donau": {
+    "distance_km": 39.3,
+    "duration_h": 0.44,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Krems_an_der_Donau.json"
+  },
+  "Tulln an der Donau_to_Baden": {
+    "distance_km": 68.4,
+    "duration_h": 1.09,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Baden.json"
+  },
+  "Tulln an der Donau_to_Mödling": {
+    "distance_km": 68.8,
+    "duration_h": 1.11,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Mödling.json"
+  },
+  "Tulln an der Donau_to_Schwechat": {
+    "distance_km": 55.6,
+    "duration_h": 0.84,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Schwechat.json"
+  },
+  "Tulln an der Donau_to_Hallein": {
+    "distance_km": 316.4,
+    "duration_h": 2.92,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Hallein.json"
+  },
+  "Tulln an der Donau_to_Saalfelden am Steinernen Meer": {
+    "distance_km": 361.8,
+    "duration_h": 3.96,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Saalfelden_am_Steinernen_Meer.json"
+  },
+  "Tulln an der Donau_to_Knittelfeld": {
+    "distance_km": 229.6,
+    "duration_h": 2.64,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Knittelfeld.json"
+  },
+  "Tulln an der Donau_to_Bruck an der Mur": {
+    "distance_km": 184.7,
+    "duration_h": 2.25,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Bruck_an_der_Mur.json"
+  },
+  "Tulln an der Donau_to_Spittal an der Drau": {
+    "distance_km": 444.3,
+    "duration_h": 4.23,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Spittal_an_der_Drau.json"
+  },
+  "Tulln an der Donau_to_Zell am See": {
+    "distance_km": 396.1,
+    "duration_h": 4.13,
+    "file": "sea_demo/data/routes/route_Tulln_an_der_Donau_Zell_am_See.json"
+  }
+}
