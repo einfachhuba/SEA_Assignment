@@ -40,5 +40,11 @@ TASKS = [
         "title": "Assignment 4: Simulated Annealing",
         "page": "07_ASS04_Simulated_Annealing.py",
         "done": 1.0
+    },
+    {
+        "key": "05_01",
+        "title": "Assignment 5: Ant Colony Optimization",
+        "page": "08_ASS05_Ant_Colony_Optimization.py",
+        "done": 1.0
     }
 ]

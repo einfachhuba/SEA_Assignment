@@ -1,0 +1,2177 @@
+{
+  "Villach_to_Klagenfurt am Wörthersee": {
+    "distance_km": 40.6,
+    "duration_h": 0.64,
+    "file": "sea_demo/data/routes_carinthia/route_Villach_Klagenfurt_am_Wörthersee.json"
+  },
+  "Spittal an der Drau_to_Klagenfurt am Wörthersee": {
+    "distance_km": 74.7,
+    "duration_h": 0.95,
+    "file": "sea_demo/data/routes_carinthia/route_Spittal_an_der_Drau_Klagenfurt_am_Wörthersee.json"
+  },
+  "Spittal an der Drau_to_Villach": {
+    "distance_km": 38.3,
+    "duration_h": 0.63,
+    "file": "sea_demo/data/routes_carinthia/route_Spittal_an_der_Drau_Villach.json"
+  },
+  "Wolfsberg_to_Klagenfurt am Wörthersee": {
+    "distance_km": 58.8,
+    "duration_h": 0.7,
+    "file": "sea_demo/data/routes_carinthia/route_Wolfsberg_Klagenfurt_am_Wörthersee.json"
+  },
+  "Wolfsberg_to_Villach": {
+    "distance_km": 98.5,
+    "duration_h": 1.07,
+    "file": "sea_demo/data/routes_carinthia/route_Wolfsberg_Villach.json"
+  },
+  "Wolfsberg_to_Spittal an der Drau": {
+    "distance_km": 132.7,
+    "duration_h": 1.39,
+    "file": "sea_demo/data/routes_carinthia/route_Wolfsberg_Spittal_an_der_Drau.json"
+  },
+  "St. Veit an der Glan_to_Klagenfurt am Wörthersee": {
+    "distance_km": 20.4,
+    "duration_h": 0.38,
+    "file": "sea_demo/data/routes_carinthia/route_St._Veit_an_der_Glan_Klagenfurt_am_Wörthersee.json"
+  },
+  "St. Veit an der Glan_to_Villach": {
+    "distance_km": 55.8,
+    "duration_h": 0.73,
+    "file": "sea_demo/data/routes_carinthia/route_St._Veit_an_der_Glan_Villach.json"
+  },
+  "St. Veit an der Glan_to_Spittal an der Drau": {
+    "distance_km": 90.0,
+    "duration_h": 1.06,
+    "file": "sea_demo/data/routes_carinthia/route_St._Veit_an_der_Glan_Spittal_an_der_Drau.json"
+  },
+  "St. Veit an der Glan_to_Wolfsberg": {
+    "distance_km": 76.0,
+    "duration_h": 0.84,
+    "file": "sea_demo/data/routes_carinthia/route_St._Veit_an_der_Glan_Wolfsberg.json"
+  },
+  "Feldkirchen in Kärnten_to_Klagenfurt am Wörthersee": {
+    "distance_km": 24.5,
+    "duration_h": 0.52,
+    "file": "sea_demo/data/routes_carinthia/route_Feldkirchen_in_Kärnten_Klagenfurt_am_Wörthersee.json"
+  },
+  "Feldkirchen in Kärnten_to_Villach": {
+    "distance_km": 27.0,
+    "duration_h": 0.62,
+    "file": "sea_demo/data/routes_carinthia/route_Feldkirchen_in_Kärnten_Villach.json"
+  },
+  "Feldkirchen in Kärnten_to_Spittal an der Drau": {
+    "distance_km": 57.2,
+    "duration_h": 0.92,
+    "file": "sea_demo/data/routes_carinthia/route_Feldkirchen_in_Kärnten_Spittal_an_der_Drau.json"
+  },
+  "Feldkirchen in Kärnten_to_Wolfsberg": {
+    "distance_km": 78.9,
+    "duration_h": 0.93,
+    "file": "sea_demo/data/routes_carinthia/route_Feldkirchen_in_Kärnten_Wolfsberg.json"
+  },
+  "Feldkirchen in Kärnten_to_St. Veit an der Glan": {
+    "distance_km": 23.0,
+    "duration_h": 0.42,
+    "file": "sea_demo/data/routes_carinthia/route_Feldkirchen_in_Kärnten_St._Veit_an_der_Glan.json"
+  },
+  "Hermagor-Pressegger See_to_Klagenfurt am Wörthersee": {
+    "distance_km": 92.6,
+    "duration_h": 1.23,
+    "file": "sea_demo/data/routes_carinthia/route_Hermagor-Pressegger_See_Klagenfurt_am_Wörthersee.json"
+  },
+  "Hermagor-Pressegger See_to_Villach": {
+    "distance_km": 56.9,
+    "duration_h": 0.93,
+    "file": "sea_demo/data/routes_carinthia/route_Hermagor-Pressegger_See_Villach.json"
+  },
+  "Hermagor-Pressegger See_to_Spittal an der Drau": {
+    "distance_km": 58.0,
+    "duration_h": 0.98,
+    "file": "sea_demo/data/routes_carinthia/route_Hermagor-Pressegger_See_Spittal_an_der_Drau.json"
+  },
+  "Hermagor-Pressegger See_to_Wolfsberg": {
+    "distance_km": 151.3,
+    "duration_h": 1.69,
+    "file": "sea_demo/data/routes_carinthia/route_Hermagor-Pressegger_See_Wolfsberg.json"
+  },
+  "Hermagor-Pressegger See_to_St. Veit an der Glan": {
+    "distance_km": 109.2,
+    "duration_h": 1.37,
+    "file": "sea_demo/data/routes_carinthia/route_Hermagor-Pressegger_See_St._Veit_an_der_Glan.json"
+  },
+  "Hermagor-Pressegger See_to_Feldkirchen in Kärnten": {
+    "distance_km": 91.1,
+    "duration_h": 1.29,
+    "file": "sea_demo/data/routes_carinthia/route_Hermagor-Pressegger_See_Feldkirchen_in_Kärnten.json"
+  },
+  "Bad St. Leonhard im Lavanttal_to_Klagenfurt am Wörthersee": {
+    "distance_km": 78.6,
+    "duration_h": 0.97,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_St._Leonhard_im_Lavanttal_Klagenfurt_am_Wörthersee.json"
+  },
+  "Bad St. Leonhard im Lavanttal_to_Villach": {
+    "distance_km": 118.3,
+    "duration_h": 1.34,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_St._Leonhard_im_Lavanttal_Villach.json"
+  },
+  "Bad St. Leonhard im Lavanttal_to_Spittal an der Drau": {
+    "distance_km": 152.5,
+    "duration_h": 1.66,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_St._Leonhard_im_Lavanttal_Spittal_an_der_Drau.json"
+  },
+  "Bad St. Leonhard im Lavanttal_to_Wolfsberg": {
+    "distance_km": 21.2,
+    "duration_h": 0.37,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_St._Leonhard_im_Lavanttal_Wolfsberg.json"
+  },
+  "Bad St. Leonhard im Lavanttal_to_St. Veit an der Glan": {
+    "distance_km": 55.8,
+    "duration_h": 1.05,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_St._Leonhard_im_Lavanttal_St._Veit_an_der_Glan.json"
+  },
+  "Bad St. Leonhard im Lavanttal_to_Feldkirchen in Kärnten": {
+    "distance_km": 99.2,
+    "duration_h": 1.21,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_St._Leonhard_im_Lavanttal_Feldkirchen_in_Kärnten.json"
+  },
+  "Bad St. Leonhard im Lavanttal_to_Hermagor-Pressegger See": {
+    "distance_km": 171.0,
+    "duration_h": 1.94,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_St._Leonhard_im_Lavanttal_Hermagor-Pressegger_See.json"
+  },
+  "Bleiburg_to_Klagenfurt am Wörthersee": {
+    "distance_km": 52.9,
+    "duration_h": 0.76,
+    "file": "sea_demo/data/routes_carinthia/route_Bleiburg_Klagenfurt_am_Wörthersee.json"
+  },
+  "Bleiburg_to_Villach": {
+    "distance_km": 92.6,
+    "duration_h": 1.13,
+    "file": "sea_demo/data/routes_carinthia/route_Bleiburg_Villach.json"
+  },
+  "Bleiburg_to_Spittal an der Drau": {
+    "distance_km": 126.8,
+    "duration_h": 1.45,
+    "file": "sea_demo/data/routes_carinthia/route_Bleiburg_Spittal_an_der_Drau.json"
+  },
+  "Bleiburg_to_Wolfsberg": {
+    "distance_km": 35.8,
+    "duration_h": 0.51,
+    "file": "sea_demo/data/routes_carinthia/route_Bleiburg_Wolfsberg.json"
+  },
+  "Bleiburg_to_St. Veit an der Glan": {
+    "distance_km": 70.3,
+    "duration_h": 0.89,
+    "file": "sea_demo/data/routes_carinthia/route_Bleiburg_St._Veit_an_der_Glan.json"
+  },
+  "Bleiburg_to_Feldkirchen in Kärnten": {
+    "distance_km": 73.5,
+    "duration_h": 1.0,
+    "file": "sea_demo/data/routes_carinthia/route_Bleiburg_Feldkirchen_in_Kärnten.json"
+  },
+  "Bleiburg_to_Hermagor-Pressegger See": {
+    "distance_km": 145.3,
+    "duration_h": 1.73,
+    "file": "sea_demo/data/routes_carinthia/route_Bleiburg_Hermagor-Pressegger_See.json"
+  },
+  "Bleiburg_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 55.7,
+    "duration_h": 0.78,
+    "file": "sea_demo/data/routes_carinthia/route_Bleiburg_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Völkermarkt_to_Klagenfurt am Wörthersee": {
+    "distance_km": 29.0,
+    "duration_h": 0.5,
+    "file": "sea_demo/data/routes_carinthia/route_Völkermarkt_Klagenfurt_am_Wörthersee.json"
+  },
+  "Völkermarkt_to_Villach": {
+    "distance_km": 68.7,
+    "duration_h": 0.87,
+    "file": "sea_demo/data/routes_carinthia/route_Völkermarkt_Villach.json"
+  },
+  "Völkermarkt_to_Spittal an der Drau": {
+    "distance_km": 103.0,
+    "duration_h": 1.19,
+    "file": "sea_demo/data/routes_carinthia/route_Völkermarkt_Spittal_an_der_Drau.json"
+  },
+  "Völkermarkt_to_Wolfsberg": {
+    "distance_km": 30.1,
+    "duration_h": 0.39,
+    "file": "sea_demo/data/routes_carinthia/route_Völkermarkt_Wolfsberg.json"
+  },
+  "Völkermarkt_to_St. Veit an der Glan": {
+    "distance_km": 46.5,
+    "duration_h": 0.63,
+    "file": "sea_demo/data/routes_carinthia/route_Völkermarkt_St._Veit_an_der_Glan.json"
+  },
+  "Völkermarkt_to_Feldkirchen in Kärnten": {
+    "distance_km": 49.7,
+    "duration_h": 0.74,
+    "file": "sea_demo/data/routes_carinthia/route_Völkermarkt_Feldkirchen_in_Kärnten.json"
+  },
+  "Völkermarkt_to_Hermagor-Pressegger See": {
+    "distance_km": 121.5,
+    "duration_h": 1.47,
+    "file": "sea_demo/data/routes_carinthia/route_Völkermarkt_Hermagor-Pressegger_See.json"
+  },
+  "Völkermarkt_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 50.1,
+    "duration_h": 0.66,
+    "file": "sea_demo/data/routes_carinthia/route_Völkermarkt_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Völkermarkt_to_Bleiburg": {
+    "distance_km": 20.7,
+    "duration_h": 0.38,
+    "file": "sea_demo/data/routes_carinthia/route_Völkermarkt_Bleiburg.json"
+  },
+  "Althofen_to_Klagenfurt am Wörthersee": {
+    "distance_km": 130.9,
+    "duration_h": 1.57,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_Klagenfurt_am_Wörthersee.json"
+  },
+  "Althofen_to_Villach": {
+    "distance_km": 94.5,
+    "duration_h": 1.25,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_Villach.json"
+  },
+  "Althofen_to_Spittal an der Drau": {
+    "distance_km": 59.6,
+    "duration_h": 0.84,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_Spittal_an_der_Drau.json"
+  },
+  "Althofen_to_Wolfsberg": {
+    "distance_km": 189.6,
+    "duration_h": 2.03,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_Wolfsberg.json"
+  },
+  "Althofen_to_St. Veit an der Glan": {
+    "distance_km": 104.2,
+    "duration_h": 1.62,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_St._Veit_an_der_Glan.json"
+  },
+  "Althofen_to_Feldkirchen in Kärnten": {
+    "distance_km": 80.9,
+    "duration_h": 1.38,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_Feldkirchen_in_Kärnten.json"
+  },
+  "Althofen_to_Hermagor-Pressegger See": {
+    "distance_km": 114.8,
+    "duration_h": 1.59,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_Hermagor-Pressegger_See.json"
+  },
+  "Althofen_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 126.2,
+    "duration_h": 2.0,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Althofen_to_Bleiburg": {
+    "distance_km": 183.5,
+    "duration_h": 2.07,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_Bleiburg.json"
+  },
+  "Althofen_to_Völkermarkt": {
+    "distance_km": 160.0,
+    "duration_h": 1.83,
+    "file": "sea_demo/data/routes_carinthia/route_Althofen_Völkermarkt.json"
+  },
+  "Friesach_to_Klagenfurt am Wörthersee": {
+    "distance_km": 43.4,
+    "duration_h": 0.65,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Klagenfurt_am_Wörthersee.json"
+  },
+  "Friesach_to_Villach": {
+    "distance_km": 78.9,
+    "duration_h": 1.0,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Villach.json"
+  },
+  "Friesach_to_Spittal an der Drau": {
+    "distance_km": 113.1,
+    "duration_h": 1.32,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Spittal_an_der_Drau.json"
+  },
+  "Friesach_to_Wolfsberg": {
+    "distance_km": 99.1,
+    "duration_h": 1.11,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Wolfsberg.json"
+  },
+  "Friesach_to_St. Veit an der Glan": {
+    "distance_km": 26.1,
+    "duration_h": 0.4,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_St._Veit_an_der_Glan.json"
+  },
+  "Friesach_to_Feldkirchen in Kärnten": {
+    "distance_km": 49.1,
+    "duration_h": 0.82,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Feldkirchen_in_Kärnten.json"
+  },
+  "Friesach_to_Hermagor-Pressegger See": {
+    "distance_km": 131.6,
+    "duration_h": 1.61,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Hermagor-Pressegger_See.json"
+  },
+  "Friesach_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 50.9,
+    "duration_h": 0.97,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Friesach_to_Bleiburg": {
+    "distance_km": 92.9,
+    "duration_h": 1.15,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Bleiburg.json"
+  },
+  "Friesach_to_Völkermarkt": {
+    "distance_km": 44.2,
+    "duration_h": 0.84,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Völkermarkt.json"
+  },
+  "Friesach_to_Althofen": {
+    "distance_km": 84.3,
+    "duration_h": 1.38,
+    "file": "sea_demo/data/routes_carinthia/route_Friesach_Althofen.json"
+  },
+  "Gmünd in Kärnten_to_Klagenfurt am Wörthersee": {
+    "distance_km": 88.9,
+    "duration_h": 0.99,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Klagenfurt_am_Wörthersee.json"
+  },
+  "Gmünd in Kärnten_to_Villach": {
+    "distance_km": 52.4,
+    "duration_h": 0.67,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Villach.json"
+  },
+  "Gmünd in Kärnten_to_Spittal an der Drau": {
+    "distance_km": 17.5,
+    "duration_h": 0.26,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Spittal_an_der_Drau.json"
+  },
+  "Gmünd in Kärnten_to_Wolfsberg": {
+    "distance_km": 147.6,
+    "duration_h": 1.46,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Wolfsberg.json"
+  },
+  "Gmünd in Kärnten_to_St. Veit an der Glan": {
+    "distance_km": 105.5,
+    "duration_h": 1.13,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_St._Veit_an_der_Glan.json"
+  },
+  "Gmünd in Kärnten_to_Feldkirchen in Kärnten": {
+    "distance_km": 71.7,
+    "duration_h": 0.98,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Feldkirchen_in_Kärnten.json"
+  },
+  "Gmünd in Kärnten_to_Hermagor-Pressegger See": {
+    "distance_km": 72.7,
+    "duration_h": 1.02,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Hermagor-Pressegger_See.json"
+  },
+  "Gmünd in Kärnten_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 167.5,
+    "duration_h": 1.72,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Gmünd in Kärnten_to_Bleiburg": {
+    "distance_km": 141.4,
+    "duration_h": 1.5,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Bleiburg.json"
+  },
+  "Gmünd in Kärnten_to_Völkermarkt": {
+    "distance_km": 117.9,
+    "duration_h": 1.25,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Völkermarkt.json"
+  },
+  "Gmünd in Kärnten_to_Althofen": {
+    "distance_km": 44.8,
+    "duration_h": 0.65,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Althofen.json"
+  },
+  "Gmünd in Kärnten_to_Friesach": {
+    "distance_km": 128.9,
+    "duration_h": 1.41,
+    "file": "sea_demo/data/routes_carinthia/route_Gmünd_in_Kärnten_Friesach.json"
+  },
+  "Radenthein_to_Klagenfurt am Wörthersee": {
+    "distance_km": 61.0,
+    "duration_h": 1.02,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Klagenfurt_am_Wörthersee.json"
+  },
+  "Radenthein_to_Villach": {
+    "distance_km": 28.4,
+    "duration_h": 0.71,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Villach.json"
+  },
+  "Radenthein_to_Spittal an der Drau": {
+    "distance_km": 23.0,
+    "duration_h": 0.62,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Spittal_an_der_Drau.json"
+  },
+  "Radenthein_to_Wolfsberg": {
+    "distance_km": 119.7,
+    "duration_h": 1.49,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Wolfsberg.json"
+  },
+  "Radenthein_to_St. Veit an der Glan": {
+    "distance_km": 59.4,
+    "duration_h": 1.11,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_St._Veit_an_der_Glan.json"
+  },
+  "Radenthein_to_Feldkirchen in Kärnten": {
+    "distance_km": 36.4,
+    "duration_h": 0.7,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Feldkirchen_in_Kärnten.json"
+  },
+  "Radenthein_to_Hermagor-Pressegger See": {
+    "distance_km": 60.3,
+    "duration_h": 1.1,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Hermagor-Pressegger_See.json"
+  },
+  "Radenthein_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 139.6,
+    "duration_h": 1.76,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Radenthein_to_Bleiburg": {
+    "distance_km": 113.6,
+    "duration_h": 1.53,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Bleiburg.json"
+  },
+  "Radenthein_to_Völkermarkt": {
+    "distance_km": 90.0,
+    "duration_h": 1.28,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Völkermarkt.json"
+  },
+  "Radenthein_to_Althofen": {
+    "distance_km": 73.8,
+    "duration_h": 1.25,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Althofen.json"
+  },
+  "Radenthein_to_Friesach": {
+    "distance_km": 80.5,
+    "duration_h": 1.35,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Friesach.json"
+  },
+  "Radenthein_to_Gmünd in Kärnten": {
+    "distance_km": 32.0,
+    "duration_h": 0.68,
+    "file": "sea_demo/data/routes_carinthia/route_Radenthein_Gmünd_in_Kärnten.json"
+  },
+  "Treffen am Ossiacher See_to_Klagenfurt am Wörthersee": {
+    "distance_km": 395.1,
+    "duration_h": 4.06,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Klagenfurt_am_Wörthersee.json"
+  },
+  "Treffen am Ossiacher See_to_Villach": {
+    "distance_km": 434.8,
+    "duration_h": 4.43,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Villach.json"
+  },
+  "Treffen am Ossiacher See_to_Spittal an der Drau": {
+    "distance_km": 431.5,
+    "duration_h": 4.2,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Spittal_an_der_Drau.json"
+  },
+  "Treffen am Ossiacher See_to_Wolfsberg": {
+    "distance_km": 337.8,
+    "duration_h": 3.46,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Wolfsberg.json"
+  },
+  "Treffen am Ossiacher See_to_St. Veit an der Glan": {
+    "distance_km": 356.4,
+    "duration_h": 4.08,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_St._Veit_an_der_Glan.json"
+  },
+  "Treffen am Ossiacher See_to_Feldkirchen in Kärnten": {
+    "distance_km": 415.8,
+    "duration_h": 4.3,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Feldkirchen_in_Kärnten.json"
+  },
+  "Treffen am Ossiacher See_to_Hermagor-Pressegger See": {
+    "distance_km": 486.7,
+    "duration_h": 4.95,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Hermagor-Pressegger_See.json"
+  },
+  "Treffen am Ossiacher See_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 306.0,
+    "duration_h": 3.38,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Treffen am Ossiacher See_to_Bleiburg": {
+    "distance_km": 372.1,
+    "duration_h": 3.86,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Bleiburg.json"
+  },
+  "Treffen am Ossiacher See_to_Völkermarkt": {
+    "distance_km": 366.7,
+    "duration_h": 3.75,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Völkermarkt.json"
+  },
+  "Treffen am Ossiacher See_to_Althofen": {
+    "distance_km": 398.4,
+    "duration_h": 4.05,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Althofen.json"
+  },
+  "Treffen am Ossiacher See_to_Friesach": {
+    "distance_km": 331.8,
+    "duration_h": 3.75,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Friesach.json"
+  },
+  "Treffen am Ossiacher See_to_Gmünd in Kärnten": {
+    "distance_km": 417.7,
+    "duration_h": 4.02,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Gmünd_in_Kärnten.json"
+  },
+  "Treffen am Ossiacher See_to_Radenthein": {
+    "distance_km": 447.2,
+    "duration_h": 4.62,
+    "file": "sea_demo/data/routes_carinthia/route_Treffen_am_Ossiacher_See_Radenthein.json"
+  },
+  "Velden am Wörther See_to_Klagenfurt am Wörthersee": {
+    "distance_km": 23.1,
+    "duration_h": 0.41,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Klagenfurt_am_Wörthersee.json"
+  },
+  "Velden am Wörther See_to_Villach": {
+    "distance_km": 18.5,
+    "duration_h": 0.35,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Villach.json"
+  },
+  "Velden am Wörther See_to_Spittal an der Drau": {
+    "distance_km": 52.7,
+    "duration_h": 0.67,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Spittal_an_der_Drau.json"
+  },
+  "Velden am Wörther See_to_Wolfsberg": {
+    "distance_km": 81.8,
+    "duration_h": 0.87,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Wolfsberg.json"
+  },
+  "Velden am Wörther See_to_St. Veit an der Glan": {
+    "distance_km": 39.8,
+    "duration_h": 0.55,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_St._Veit_an_der_Glan.json"
+  },
+  "Velden am Wörther See_to_Feldkirchen in Kärnten": {
+    "distance_km": 21.6,
+    "duration_h": 0.47,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Feldkirchen_in_Kärnten.json"
+  },
+  "Velden am Wörther See_to_Hermagor-Pressegger See": {
+    "distance_km": 71.2,
+    "duration_h": 0.95,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Hermagor-Pressegger_See.json"
+  },
+  "Velden am Wörther See_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 101.7,
+    "duration_h": 1.14,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Velden am Wörther See_to_Bleiburg": {
+    "distance_km": 75.7,
+    "duration_h": 0.91,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Bleiburg.json"
+  },
+  "Velden am Wörther See_to_Völkermarkt": {
+    "distance_km": 52.1,
+    "duration_h": 0.66,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Völkermarkt.json"
+  },
+  "Velden am Wörther See_to_Althofen": {
+    "distance_km": 108.3,
+    "duration_h": 1.28,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Althofen.json"
+  },
+  "Velden am Wörther See_to_Friesach": {
+    "distance_km": 63.1,
+    "duration_h": 0.82,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Friesach.json"
+  },
+  "Velden am Wörther See_to_Gmünd in Kärnten": {
+    "distance_km": 66.5,
+    "duration_h": 0.71,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Gmünd_in_Kärnten.json"
+  },
+  "Velden am Wörther See_to_Radenthein": {
+    "distance_km": 39.2,
+    "duration_h": 0.75,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Radenthein.json"
+  },
+  "Velden am Wörther See_to_Treffen am Ossiacher See": {
+    "distance_km": 419.2,
+    "duration_h": 4.22,
+    "file": "sea_demo/data/routes_carinthia/route_Velden_am_Wörther_See_Treffen_am_Ossiacher_See.json"
+  },
+  "Ferlach_to_Klagenfurt am Wörthersee": {
+    "distance_km": 18.1,
+    "duration_h": 0.47,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Klagenfurt_am_Wörthersee.json"
+  },
+  "Ferlach_to_Villach": {
+    "distance_km": 54.2,
+    "duration_h": 0.92,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Villach.json"
+  },
+  "Ferlach_to_Spittal an der Drau": {
+    "distance_km": 79.1,
+    "duration_h": 1.24,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Spittal_an_der_Drau.json"
+  },
+  "Ferlach_to_Wolfsberg": {
+    "distance_km": 77.6,
+    "duration_h": 1.04,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Wolfsberg.json"
+  },
+  "Ferlach_to_St. Veit an der Glan": {
+    "distance_km": 37.2,
+    "duration_h": 0.8,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_St._Veit_an_der_Glan.json"
+  },
+  "Ferlach_to_Feldkirchen in Kärnten": {
+    "distance_km": 38.1,
+    "duration_h": 0.88,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Feldkirchen_in_Kärnten.json"
+  },
+  "Ferlach_to_Hermagor-Pressegger See": {
+    "distance_km": 106.9,
+    "duration_h": 1.53,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Hermagor-Pressegger_See.json"
+  },
+  "Ferlach_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 97.5,
+    "duration_h": 1.3,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Ferlach_to_Bleiburg": {
+    "distance_km": 47.5,
+    "duration_h": 0.93,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Bleiburg.json"
+  },
+  "Ferlach_to_Völkermarkt": {
+    "distance_km": 47.9,
+    "duration_h": 0.83,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Völkermarkt.json"
+  },
+  "Ferlach_to_Althofen": {
+    "distance_km": 134.7,
+    "duration_h": 1.84,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Althofen.json"
+  },
+  "Ferlach_to_Friesach": {
+    "distance_km": 60.5,
+    "duration_h": 1.08,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Friesach.json"
+  },
+  "Ferlach_to_Gmünd in Kärnten": {
+    "distance_km": 92.9,
+    "duration_h": 1.28,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Gmünd_in_Kärnten.json"
+  },
+  "Ferlach_to_Radenthein": {
+    "distance_km": 65.6,
+    "duration_h": 1.32,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Radenthein.json"
+  },
+  "Ferlach_to_Treffen am Ossiacher See": {
+    "distance_km": 415.0,
+    "duration_h": 4.38,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Treffen_am_Ossiacher_See.json"
+  },
+  "Ferlach_to_Velden am Wörther See": {
+    "distance_km": 37.5,
+    "duration_h": 0.71,
+    "file": "sea_demo/data/routes_carinthia/route_Ferlach_Velden_am_Wörther_See.json"
+  },
+  "Arnoldstein_to_Klagenfurt am Wörthersee": {
+    "distance_km": 58.2,
+    "duration_h": 0.76,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Klagenfurt_am_Wörthersee.json"
+  },
+  "Arnoldstein_to_Villach": {
+    "distance_km": 22.6,
+    "duration_h": 0.47,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Villach.json"
+  },
+  "Arnoldstein_to_Spittal an der Drau": {
+    "distance_km": 65.8,
+    "duration_h": 0.84,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Spittal_an_der_Drau.json"
+  },
+  "Arnoldstein_to_Wolfsberg": {
+    "distance_km": 116.9,
+    "duration_h": 1.23,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Wolfsberg.json"
+  },
+  "Arnoldstein_to_St. Veit an der Glan": {
+    "distance_km": 74.9,
+    "duration_h": 0.91,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_St._Veit_an_der_Glan.json"
+  },
+  "Arnoldstein_to_Feldkirchen in Kärnten": {
+    "distance_km": 56.7,
+    "duration_h": 0.83,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Feldkirchen_in_Kärnten.json"
+  },
+  "Arnoldstein_to_Hermagor-Pressegger See": {
+    "distance_km": 45.5,
+    "duration_h": 0.77,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Hermagor-Pressegger_See.json"
+  },
+  "Arnoldstein_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 136.8,
+    "duration_h": 1.49,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Arnoldstein_to_Bleiburg": {
+    "distance_km": 110.8,
+    "duration_h": 1.27,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Bleiburg.json"
+  },
+  "Arnoldstein_to_Völkermarkt": {
+    "distance_km": 87.2,
+    "duration_h": 1.02,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Völkermarkt.json"
+  },
+  "Arnoldstein_to_Althofen": {
+    "distance_km": 121.3,
+    "duration_h": 1.44,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Althofen.json"
+  },
+  "Arnoldstein_to_Friesach": {
+    "distance_km": 98.2,
+    "duration_h": 1.18,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Friesach.json"
+  },
+  "Arnoldstein_to_Gmünd in Kärnten": {
+    "distance_km": 79.5,
+    "duration_h": 0.88,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Gmünd_in_Kärnten.json"
+  },
+  "Arnoldstein_to_Radenthein": {
+    "distance_km": 52.3,
+    "duration_h": 0.92,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Radenthein.json"
+  },
+  "Arnoldstein_to_Treffen am Ossiacher See": {
+    "distance_km": 454.3,
+    "duration_h": 4.57,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Treffen_am_Ossiacher_See.json"
+  },
+  "Arnoldstein_to_Velden am Wörther See": {
+    "distance_km": 36.8,
+    "duration_h": 0.51,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Velden_am_Wörther_See.json"
+  },
+  "Arnoldstein_to_Ferlach": {
+    "distance_km": 62.8,
+    "duration_h": 1.05,
+    "file": "sea_demo/data/routes_carinthia/route_Arnoldstein_Ferlach.json"
+  },
+  "Heiligenblut am Großglockner_to_Klagenfurt am Wörthersee": {
+    "distance_km": 168.6,
+    "duration_h": 2.6,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Klagenfurt_am_Wörthersee.json"
+  },
+  "Heiligenblut am Großglockner_to_Villach": {
+    "distance_km": 132.2,
+    "duration_h": 2.28,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Villach.json"
+  },
+  "Heiligenblut am Großglockner_to_Spittal an der Drau": {
+    "distance_km": 97.2,
+    "duration_h": 1.88,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Spittal_an_der_Drau.json"
+  },
+  "Heiligenblut am Großglockner_to_Wolfsberg": {
+    "distance_km": 227.3,
+    "duration_h": 3.07,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Wolfsberg.json"
+  },
+  "Heiligenblut am Großglockner_to_St. Veit an der Glan": {
+    "distance_km": 185.3,
+    "duration_h": 2.75,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_St._Veit_an_der_Glan.json"
+  },
+  "Heiligenblut am Großglockner_to_Feldkirchen in Kärnten": {
+    "distance_km": 151.4,
+    "duration_h": 2.59,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Feldkirchen_in_Kärnten.json"
+  },
+  "Heiligenblut am Großglockner_to_Hermagor-Pressegger See": {
+    "distance_km": 92.0,
+    "duration_h": 1.72,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Hermagor-Pressegger_See.json"
+  },
+  "Heiligenblut am Großglockner_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 247.2,
+    "duration_h": 3.33,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Heiligenblut am Großglockner_to_Bleiburg": {
+    "distance_km": 221.2,
+    "duration_h": 3.11,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Bleiburg.json"
+  },
+  "Heiligenblut am Großglockner_to_Völkermarkt": {
+    "distance_km": 197.6,
+    "duration_h": 2.86,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Völkermarkt.json"
+  },
+  "Heiligenblut am Großglockner_to_Althofen": {
+    "distance_km": 145.1,
+    "duration_h": 2.46,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Althofen.json"
+  },
+  "Heiligenblut am Großglockner_to_Friesach": {
+    "distance_km": 208.6,
+    "duration_h": 3.02,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Friesach.json"
+  },
+  "Heiligenblut am Großglockner_to_Gmünd in Kärnten": {
+    "distance_km": 103.3,
+    "duration_h": 1.9,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Gmünd_in_Kärnten.json"
+  },
+  "Heiligenblut am Großglockner_to_Radenthein": {
+    "distance_km": 112.8,
+    "duration_h": 2.31,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Radenthein.json"
+  },
+  "Heiligenblut am Großglockner_to_Treffen am Ossiacher See": {
+    "distance_km": 421.0,
+    "duration_h": 4.96,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Treffen_am_Ossiacher_See.json"
+  },
+  "Heiligenblut am Großglockner_to_Velden am Wörther See": {
+    "distance_km": 147.2,
+    "duration_h": 2.35,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Velden_am_Wörther_See.json"
+  },
+  "Heiligenblut am Großglockner_to_Ferlach": {
+    "distance_km": 173.5,
+    "duration_h": 2.89,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Ferlach.json"
+  },
+  "Heiligenblut am Großglockner_to_Arnoldstein": {
+    "distance_km": 137.2,
+    "duration_h": 2.49,
+    "file": "sea_demo/data/routes_carinthia/route_Heiligenblut_am_Großglockner_Arnoldstein.json"
+  },
+  "Oberdrauburg_to_Klagenfurt am Wörthersee": {
+    "distance_km": 124.9,
+    "duration_h": 1.68,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Klagenfurt_am_Wörthersee.json"
+  },
+  "Oberdrauburg_to_Villach": {
+    "distance_km": 88.5,
+    "duration_h": 1.36,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Villach.json"
+  },
+  "Oberdrauburg_to_Spittal an der Drau": {
+    "distance_km": 53.5,
+    "duration_h": 0.96,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Spittal_an_der_Drau.json"
+  },
+  "Oberdrauburg_to_Wolfsberg": {
+    "distance_km": 183.6,
+    "duration_h": 2.14,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Wolfsberg.json"
+  },
+  "Oberdrauburg_to_St. Veit an der Glan": {
+    "distance_km": 141.6,
+    "duration_h": 1.82,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_St._Veit_an_der_Glan.json"
+  },
+  "Oberdrauburg_to_Feldkirchen in Kärnten": {
+    "distance_km": 107.7,
+    "duration_h": 1.67,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Feldkirchen_in_Kärnten.json"
+  },
+  "Oberdrauburg_to_Hermagor-Pressegger See": {
+    "distance_km": 33.0,
+    "duration_h": 0.52,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Hermagor-Pressegger_See.json"
+  },
+  "Oberdrauburg_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 203.5,
+    "duration_h": 2.41,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Oberdrauburg_to_Bleiburg": {
+    "distance_km": 177.5,
+    "duration_h": 2.18,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Bleiburg.json"
+  },
+  "Oberdrauburg_to_Völkermarkt": {
+    "distance_km": 154.0,
+    "duration_h": 1.94,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Völkermarkt.json"
+  },
+  "Oberdrauburg_to_Althofen": {
+    "distance_km": 101.4,
+    "duration_h": 1.54,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Althofen.json"
+  },
+  "Oberdrauburg_to_Friesach": {
+    "distance_km": 165.0,
+    "duration_h": 2.1,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Friesach.json"
+  },
+  "Oberdrauburg_to_Gmünd in Kärnten": {
+    "distance_km": 59.7,
+    "duration_h": 0.97,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Gmünd_in_Kärnten.json"
+  },
+  "Oberdrauburg_to_Radenthein": {
+    "distance_km": 69.1,
+    "duration_h": 1.38,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Radenthein.json"
+  },
+  "Oberdrauburg_to_Treffen am Ossiacher See": {
+    "distance_km": 475.9,
+    "duration_h": 4.91,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Treffen_am_Ossiacher_See.json"
+  },
+  "Oberdrauburg_to_Velden am Wörther See": {
+    "distance_km": 103.6,
+    "duration_h": 1.42,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Velden_am_Wörther_See.json"
+  },
+  "Oberdrauburg_to_Ferlach": {
+    "distance_km": 129.8,
+    "duration_h": 1.97,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Ferlach.json"
+  },
+  "Oberdrauburg_to_Arnoldstein": {
+    "distance_km": 78.2,
+    "duration_h": 1.3,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Arnoldstein.json"
+  },
+  "Oberdrauburg_to_Heiligenblut am Großglockner": {
+    "distance_km": 59.2,
+    "duration_h": 1.2,
+    "file": "sea_demo/data/routes_carinthia/route_Oberdrauburg_Heiligenblut_am_Großglockner.json"
+  },
+  "Lavamünd_to_Klagenfurt am Wörthersee": {
+    "distance_km": 64.5,
+    "duration_h": 1.03,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Klagenfurt_am_Wörthersee.json"
+  },
+  "Lavamünd_to_Villach": {
+    "distance_km": 104.2,
+    "duration_h": 1.39,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Villach.json"
+  },
+  "Lavamünd_to_Spittal an der Drau": {
+    "distance_km": 138.4,
+    "duration_h": 1.71,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Spittal_an_der_Drau.json"
+  },
+  "Lavamünd_to_Wolfsberg": {
+    "distance_km": 26.2,
+    "duration_h": 0.57,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Wolfsberg.json"
+  },
+  "Lavamünd_to_St. Veit an der Glan": {
+    "distance_km": 81.9,
+    "duration_h": 1.15,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_St._Veit_an_der_Glan.json"
+  },
+  "Lavamünd_to_Feldkirchen in Kärnten": {
+    "distance_km": 85.1,
+    "duration_h": 1.27,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Feldkirchen_in_Kärnten.json"
+  },
+  "Lavamünd_to_Hermagor-Pressegger See": {
+    "distance_km": 156.9,
+    "duration_h": 2.0,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Hermagor-Pressegger_See.json"
+  },
+  "Lavamünd_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 48.4,
+    "duration_h": 0.88,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Lavamünd_to_Bleiburg": {
+    "distance_km": 25.2,
+    "duration_h": 0.49,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Bleiburg.json"
+  },
+  "Lavamünd_to_Völkermarkt": {
+    "distance_km": 37.4,
+    "duration_h": 0.7,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Völkermarkt.json"
+  },
+  "Lavamünd_to_Althofen": {
+    "distance_km": 194.0,
+    "duration_h": 2.32,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Althofen.json"
+  },
+  "Lavamünd_to_Friesach": {
+    "distance_km": 105.3,
+    "duration_h": 1.43,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Friesach.json"
+  },
+  "Lavamünd_to_Gmünd in Kärnten": {
+    "distance_km": 152.2,
+    "duration_h": 1.75,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Gmünd_in_Kärnten.json"
+  },
+  "Lavamünd_to_Radenthein": {
+    "distance_km": 124.9,
+    "duration_h": 1.79,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Radenthein.json"
+  },
+  "Lavamünd_to_Treffen am Ossiacher See": {
+    "distance_km": 365.9,
+    "duration_h": 3.96,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Treffen_am_Ossiacher_See.json"
+  },
+  "Lavamünd_to_Velden am Wörther See": {
+    "distance_km": 87.5,
+    "duration_h": 1.18,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Velden_am_Wörther_See.json"
+  },
+  "Lavamünd_to_Ferlach": {
+    "distance_km": 83.5,
+    "duration_h": 1.37,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Ferlach.json"
+  },
+  "Lavamünd_to_Arnoldstein": {
+    "distance_km": 122.9,
+    "duration_h": 1.56,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Arnoldstein.json"
+  },
+  "Lavamünd_to_Heiligenblut am Großglockner": {
+    "distance_km": 232.8,
+    "duration_h": 3.4,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Heiligenblut_am_Großglockner.json"
+  },
+  "Lavamünd_to_Oberdrauburg": {
+    "distance_km": 189.4,
+    "duration_h": 2.47,
+    "file": "sea_demo/data/routes_carinthia/route_Lavamünd_Oberdrauburg.json"
+  },
+  "Greifenburg_to_Klagenfurt am Wörthersee": {
+    "distance_km": 107.3,
+    "duration_h": 1.34,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Klagenfurt_am_Wörthersee.json"
+  },
+  "Greifenburg_to_Villach": {
+    "distance_km": 70.9,
+    "duration_h": 1.01,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Villach.json"
+  },
+  "Greifenburg_to_Spittal an der Drau": {
+    "distance_km": 35.8,
+    "duration_h": 0.61,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Spittal_an_der_Drau.json"
+  },
+  "Greifenburg_to_Wolfsberg": {
+    "distance_km": 166.0,
+    "duration_h": 1.8,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Wolfsberg.json"
+  },
+  "Greifenburg_to_St. Veit an der Glan": {
+    "distance_km": 123.9,
+    "duration_h": 1.48,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_St._Veit_an_der_Glan.json"
+  },
+  "Greifenburg_to_Feldkirchen in Kärnten": {
+    "distance_km": 90.1,
+    "duration_h": 1.32,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Feldkirchen_in_Kärnten.json"
+  },
+  "Greifenburg_to_Hermagor-Pressegger See": {
+    "distance_km": 37.2,
+    "duration_h": 0.68,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Hermagor-Pressegger_See.json"
+  },
+  "Greifenburg_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 185.9,
+    "duration_h": 2.07,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Greifenburg_to_Bleiburg": {
+    "distance_km": 159.8,
+    "duration_h": 1.84,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Bleiburg.json"
+  },
+  "Greifenburg_to_Völkermarkt": {
+    "distance_km": 136.3,
+    "duration_h": 1.59,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Völkermarkt.json"
+  },
+  "Greifenburg_to_Althofen": {
+    "distance_km": 83.8,
+    "duration_h": 1.2,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Althofen.json"
+  },
+  "Greifenburg_to_Friesach": {
+    "distance_km": 147.3,
+    "duration_h": 1.75,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Friesach.json"
+  },
+  "Greifenburg_to_Gmünd in Kärnten": {
+    "distance_km": 42.0,
+    "duration_h": 0.63,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Gmünd_in_Kärnten.json"
+  },
+  "Greifenburg_to_Radenthein": {
+    "distance_km": 51.5,
+    "duration_h": 1.04,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Radenthein.json"
+  },
+  "Greifenburg_to_Treffen am Ossiacher See": {
+    "distance_km": 458.2,
+    "duration_h": 4.56,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Treffen_am_Ossiacher_See.json"
+  },
+  "Greifenburg_to_Velden am Wörther See": {
+    "distance_km": 85.9,
+    "duration_h": 1.08,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Velden_am_Wörther_See.json"
+  },
+  "Greifenburg_to_Ferlach": {
+    "distance_km": 112.1,
+    "duration_h": 1.62,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Ferlach.json"
+  },
+  "Greifenburg_to_Arnoldstein": {
+    "distance_km": 60.4,
+    "duration_h": 1.08,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Arnoldstein.json"
+  },
+  "Greifenburg_to_Heiligenblut am Großglockner": {
+    "distance_km": 76.9,
+    "duration_h": 1.55,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Heiligenblut_am_Großglockner.json"
+  },
+  "Greifenburg_to_Oberdrauburg": {
+    "distance_km": 18.4,
+    "duration_h": 0.38,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Oberdrauburg.json"
+  },
+  "Greifenburg_to_Lavamünd": {
+    "distance_km": 171.4,
+    "duration_h": 2.11,
+    "file": "sea_demo/data/routes_carinthia/route_Greifenburg_Lavamünd.json"
+  },
+  "Mallnitz_to_Klagenfurt am Wörthersee": {
+    "distance_km": 114.3,
+    "duration_h": 1.53,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Klagenfurt_am_Wörthersee.json"
+  },
+  "Mallnitz_to_Villach": {
+    "distance_km": 77.8,
+    "duration_h": 1.21,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Villach.json"
+  },
+  "Mallnitz_to_Spittal an der Drau": {
+    "distance_km": 42.8,
+    "duration_h": 0.81,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Spittal_an_der_Drau.json"
+  },
+  "Mallnitz_to_Wolfsberg": {
+    "distance_km": 173.0,
+    "duration_h": 2.0,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Wolfsberg.json"
+  },
+  "Mallnitz_to_St. Veit an der Glan": {
+    "distance_km": 130.9,
+    "duration_h": 1.68,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_St._Veit_an_der_Glan.json"
+  },
+  "Mallnitz_to_Feldkirchen in Kärnten": {
+    "distance_km": 97.1,
+    "duration_h": 1.52,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Feldkirchen_in_Kärnten.json"
+  },
+  "Mallnitz_to_Hermagor-Pressegger See": {
+    "distance_km": 98.1,
+    "duration_h": 1.56,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Hermagor-Pressegger_See.json"
+  },
+  "Mallnitz_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 192.9,
+    "duration_h": 2.26,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Mallnitz_to_Bleiburg": {
+    "distance_km": 166.8,
+    "duration_h": 2.04,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Bleiburg.json"
+  },
+  "Mallnitz_to_Völkermarkt": {
+    "distance_km": 143.3,
+    "duration_h": 1.79,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Völkermarkt.json"
+  },
+  "Mallnitz_to_Althofen": {
+    "distance_km": 90.8,
+    "duration_h": 1.4,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Althofen.json"
+  },
+  "Mallnitz_to_Friesach": {
+    "distance_km": 154.3,
+    "duration_h": 1.95,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Friesach.json"
+  },
+  "Mallnitz_to_Gmünd in Kärnten": {
+    "distance_km": 49.0,
+    "duration_h": 0.83,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Gmünd_in_Kärnten.json"
+  },
+  "Mallnitz_to_Radenthein": {
+    "distance_km": 58.5,
+    "duration_h": 1.24,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Radenthein.json"
+  },
+  "Mallnitz_to_Treffen am Ossiacher See": {
+    "distance_km": 400.2,
+    "duration_h": 4.64,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Treffen_am_Ossiacher_See.json"
+  },
+  "Mallnitz_to_Velden am Wörther See": {
+    "distance_km": 92.9,
+    "duration_h": 1.28,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Velden_am_Wörther_See.json"
+  },
+  "Mallnitz_to_Ferlach": {
+    "distance_km": 119.1,
+    "duration_h": 1.82,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Ferlach.json"
+  },
+  "Mallnitz_to_Arnoldstein": {
+    "distance_km": 105.6,
+    "duration_h": 1.44,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Arnoldstein.json"
+  },
+  "Mallnitz_to_Heiligenblut am Großglockner": {
+    "distance_km": 72.9,
+    "duration_h": 1.51,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Heiligenblut_am_Großglockner.json"
+  },
+  "Mallnitz_to_Oberdrauburg": {
+    "distance_km": 65.5,
+    "duration_h": 1.24,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Oberdrauburg.json"
+  },
+  "Mallnitz_to_Lavamünd": {
+    "distance_km": 178.4,
+    "duration_h": 2.31,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Lavamünd.json"
+  },
+  "Mallnitz_to_Greifenburg": {
+    "distance_km": 51.0,
+    "duration_h": 0.95,
+    "file": "sea_demo/data/routes_carinthia/route_Mallnitz_Greifenburg.json"
+  },
+  "Reichenfels_to_Klagenfurt am Wörthersee": {
+    "distance_km": 85.6,
+    "duration_h": 1.1,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Klagenfurt_am_Wörthersee.json"
+  },
+  "Reichenfels_to_Villach": {
+    "distance_km": 125.3,
+    "duration_h": 1.46,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Villach.json"
+  },
+  "Reichenfels_to_Spittal an der Drau": {
+    "distance_km": 159.6,
+    "duration_h": 1.78,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Spittal_an_der_Drau.json"
+  },
+  "Reichenfels_to_Wolfsberg": {
+    "distance_km": 28.3,
+    "duration_h": 0.5,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Wolfsberg.json"
+  },
+  "Reichenfels_to_St. Veit an der Glan": {
+    "distance_km": 59.4,
+    "duration_h": 1.16,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_St._Veit_an_der_Glan.json"
+  },
+  "Reichenfels_to_Feldkirchen in Kärnten": {
+    "distance_km": 106.3,
+    "duration_h": 1.34,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Feldkirchen_in_Kärnten.json"
+  },
+  "Reichenfels_to_Hermagor-Pressegger See": {
+    "distance_km": 178.1,
+    "duration_h": 2.07,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Hermagor-Pressegger_See.json"
+  },
+  "Reichenfels_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 7.2,
+    "duration_h": 0.17,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Reichenfels_to_Bleiburg": {
+    "distance_km": 62.6,
+    "duration_h": 0.9,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Bleiburg.json"
+  },
+  "Reichenfels_to_Völkermarkt": {
+    "distance_km": 57.1,
+    "duration_h": 0.79,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Völkermarkt.json"
+  },
+  "Reichenfels_to_Althofen": {
+    "distance_km": 115.3,
+    "duration_h": 1.92,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Althofen.json"
+  },
+  "Reichenfels_to_Friesach": {
+    "distance_km": 55.0,
+    "duration_h": 1.09,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Friesach.json"
+  },
+  "Reichenfels_to_Gmünd in Kärnten": {
+    "distance_km": 173.3,
+    "duration_h": 1.82,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Gmünd_in_Kärnten.json"
+  },
+  "Reichenfels_to_Radenthein": {
+    "distance_km": 146.1,
+    "duration_h": 1.86,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Radenthein.json"
+  },
+  "Reichenfels_to_Treffen am Ossiacher See": {
+    "distance_km": 300.5,
+    "duration_h": 3.26,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Treffen_am_Ossiacher_See.json"
+  },
+  "Reichenfels_to_Velden am Wörther See": {
+    "distance_km": 108.7,
+    "duration_h": 1.25,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Velden_am_Wörther_See.json"
+  },
+  "Reichenfels_to_Ferlach": {
+    "distance_km": 104.6,
+    "duration_h": 1.44,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Ferlach.json"
+  },
+  "Reichenfels_to_Arnoldstein": {
+    "distance_km": 144.1,
+    "duration_h": 1.63,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Arnoldstein.json"
+  },
+  "Reichenfels_to_Heiligenblut am Großglockner": {
+    "distance_km": 254.0,
+    "duration_h": 3.47,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Heiligenblut_am_Großglockner.json"
+  },
+  "Reichenfels_to_Oberdrauburg": {
+    "distance_km": 210.6,
+    "duration_h": 2.54,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Oberdrauburg.json"
+  },
+  "Reichenfels_to_Lavamünd": {
+    "distance_km": 56.1,
+    "duration_h": 1.01,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Lavamünd.json"
+  },
+  "Reichenfels_to_Greifenburg": {
+    "distance_km": 192.9,
+    "duration_h": 2.19,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Greifenburg.json"
+  },
+  "Reichenfels_to_Mallnitz": {
+    "distance_km": 199.6,
+    "duration_h": 2.39,
+    "file": "sea_demo/data/routes_carinthia/route_Reichenfels_Mallnitz.json"
+  },
+  "Steinfeld_to_Klagenfurt am Wörthersee": {
+    "distance_km": 167.0,
+    "duration_h": 1.84,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Klagenfurt_am_Wörthersee.json"
+  },
+  "Steinfeld_to_Villach": {
+    "distance_km": 206.7,
+    "duration_h": 2.21,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Villach.json"
+  },
+  "Steinfeld_to_Spittal an der Drau": {
+    "distance_km": 240.9,
+    "duration_h": 2.53,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Spittal_an_der_Drau.json"
+  },
+  "Steinfeld_to_Wolfsberg": {
+    "distance_km": 109.7,
+    "duration_h": 1.24,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Wolfsberg.json"
+  },
+  "Steinfeld_to_St. Veit an der Glan": {
+    "distance_km": 184.5,
+    "duration_h": 1.97,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_St._Veit_an_der_Glan.json"
+  },
+  "Steinfeld_to_Feldkirchen in Kärnten": {
+    "distance_km": 187.7,
+    "duration_h": 2.08,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Feldkirchen_in_Kärnten.json"
+  },
+  "Steinfeld_to_Hermagor-Pressegger See": {
+    "distance_km": 259.4,
+    "duration_h": 2.81,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Hermagor-Pressegger_See.json"
+  },
+  "Steinfeld_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 104.8,
+    "duration_h": 1.26,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Steinfeld_to_Bleiburg": {
+    "distance_km": 143.9,
+    "duration_h": 1.64,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Bleiburg.json"
+  },
+  "Steinfeld_to_Völkermarkt": {
+    "distance_km": 138.5,
+    "duration_h": 1.54,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Völkermarkt.json"
+  },
+  "Steinfeld_to_Althofen": {
+    "distance_km": 221.5,
+    "duration_h": 2.86,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Althofen.json"
+  },
+  "Steinfeld_to_Friesach": {
+    "distance_km": 151.8,
+    "duration_h": 2.12,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Friesach.json"
+  },
+  "Steinfeld_to_Gmünd in Kärnten": {
+    "distance_km": 254.7,
+    "duration_h": 2.57,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Gmünd_in_Kärnten.json"
+  },
+  "Steinfeld_to_Radenthein": {
+    "distance_km": 227.4,
+    "duration_h": 2.61,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Radenthein.json"
+  },
+  "Steinfeld_to_Treffen am Ossiacher See": {
+    "distance_km": 274.0,
+    "duration_h": 3.08,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Treffen_am_Ossiacher_See.json"
+  },
+  "Steinfeld_to_Velden am Wörther See": {
+    "distance_km": 190.1,
+    "duration_h": 2.0,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Velden_am_Wörther_See.json"
+  },
+  "Steinfeld_to_Ferlach": {
+    "distance_km": 186.0,
+    "duration_h": 2.18,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Ferlach.json"
+  },
+  "Steinfeld_to_Arnoldstein": {
+    "distance_km": 225.5,
+    "duration_h": 2.38,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Arnoldstein.json"
+  },
+  "Steinfeld_to_Heiligenblut am Großglockner": {
+    "distance_km": 335.3,
+    "duration_h": 4.21,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Heiligenblut_am_Großglockner.json"
+  },
+  "Steinfeld_to_Oberdrauburg": {
+    "distance_km": 292.0,
+    "duration_h": 3.28,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Oberdrauburg.json"
+  },
+  "Steinfeld_to_Lavamünd": {
+    "distance_km": 82.4,
+    "duration_h": 1.49,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Lavamünd.json"
+  },
+  "Steinfeld_to_Greifenburg": {
+    "distance_km": 274.3,
+    "duration_h": 2.94,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Greifenburg.json"
+  },
+  "Steinfeld_to_Mallnitz": {
+    "distance_km": 280.9,
+    "duration_h": 3.14,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Mallnitz.json"
+  },
+  "Steinfeld_to_Reichenfels": {
+    "distance_km": 111.9,
+    "duration_h": 1.39,
+    "file": "sea_demo/data/routes_carinthia/route_Steinfeld_Reichenfels.json"
+  },
+  "Seeboden am Millstätter See_to_Klagenfurt am Wörthersee": {
+    "distance_km": 81.1,
+    "duration_h": 0.95,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Klagenfurt_am_Wörthersee.json"
+  },
+  "Seeboden am Millstätter See_to_Villach": {
+    "distance_km": 44.7,
+    "duration_h": 0.63,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Villach.json"
+  },
+  "Seeboden am Millstätter See_to_Spittal an der Drau": {
+    "distance_km": 5.4,
+    "duration_h": 0.18,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Spittal_an_der_Drau.json"
+  },
+  "Seeboden am Millstätter See_to_Wolfsberg": {
+    "distance_km": 139.8,
+    "duration_h": 1.42,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Wolfsberg.json"
+  },
+  "Seeboden am Millstätter See_to_St. Veit an der Glan": {
+    "distance_km": 97.8,
+    "duration_h": 1.1,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_St._Veit_an_der_Glan.json"
+  },
+  "Seeboden am Millstätter See_to_Feldkirchen in Kärnten": {
+    "distance_km": 64.0,
+    "duration_h": 0.94,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Feldkirchen_in_Kärnten.json"
+  },
+  "Seeboden am Millstätter See_to_Hermagor-Pressegger See": {
+    "distance_km": 65.0,
+    "duration_h": 0.98,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Hermagor-Pressegger_See.json"
+  },
+  "Seeboden am Millstätter See_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 159.8,
+    "duration_h": 1.68,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Seeboden am Millstätter See_to_Bleiburg": {
+    "distance_km": 133.7,
+    "duration_h": 1.46,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Bleiburg.json"
+  },
+  "Seeboden am Millstätter See_to_Völkermarkt": {
+    "distance_km": 110.2,
+    "duration_h": 1.21,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Völkermarkt.json"
+  },
+  "Seeboden am Millstätter See_to_Althofen": {
+    "distance_km": 56.2,
+    "duration_h": 0.81,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Althofen.json"
+  },
+  "Seeboden am Millstätter See_to_Friesach": {
+    "distance_km": 121.2,
+    "duration_h": 1.37,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Friesach.json"
+  },
+  "Seeboden am Millstätter See_to_Gmünd in Kärnten": {
+    "distance_km": 14.4,
+    "duration_h": 0.24,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Gmünd_in_Kärnten.json"
+  },
+  "Seeboden am Millstätter See_to_Radenthein": {
+    "distance_km": 18.1,
+    "duration_h": 0.47,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Radenthein.json"
+  },
+  "Seeboden am Millstätter See_to_Treffen am Ossiacher See": {
+    "distance_km": 430.6,
+    "duration_h": 4.17,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Treffen_am_Ossiacher_See.json"
+  },
+  "Seeboden am Millstätter See_to_Velden am Wörther See": {
+    "distance_km": 59.8,
+    "duration_h": 0.7,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Velden_am_Wörther_See.json"
+  },
+  "Seeboden am Millstätter See_to_Ferlach": {
+    "distance_km": 86.0,
+    "duration_h": 1.24,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Ferlach.json"
+  },
+  "Seeboden am Millstätter See_to_Arnoldstein": {
+    "distance_km": 72.5,
+    "duration_h": 0.86,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Arnoldstein.json"
+  },
+  "Seeboden am Millstätter See_to_Heiligenblut am Großglockner": {
+    "distance_km": 95.0,
+    "duration_h": 1.87,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Heiligenblut_am_Großglockner.json"
+  },
+  "Seeboden am Millstätter See_to_Oberdrauburg": {
+    "distance_km": 51.6,
+    "duration_h": 0.94,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Oberdrauburg.json"
+  },
+  "Seeboden am Millstätter See_to_Lavamünd": {
+    "distance_km": 145.3,
+    "duration_h": 1.73,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Lavamünd.json"
+  },
+  "Seeboden am Millstätter See_to_Greifenburg": {
+    "distance_km": 34.0,
+    "duration_h": 0.6,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Greifenburg.json"
+  },
+  "Seeboden am Millstätter See_to_Mallnitz": {
+    "distance_km": 40.6,
+    "duration_h": 0.8,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Mallnitz.json"
+  },
+  "Seeboden am Millstätter See_to_Reichenfels": {
+    "distance_km": 166.9,
+    "duration_h": 1.81,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Reichenfels.json"
+  },
+  "Seeboden am Millstätter See_to_Steinfeld": {
+    "distance_km": 247.2,
+    "duration_h": 2.55,
+    "file": "sea_demo/data/routes_carinthia/route_Seeboden_am_Millstätter_See_Steinfeld.json"
+  },
+  "Bad Kleinkirchheim_to_Klagenfurt am Wörthersee": {
+    "distance_km": 63.9,
+    "duration_h": 1.69,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Klagenfurt_am_Wörthersee.json"
+  },
+  "Bad Kleinkirchheim_to_Villach": {
+    "distance_km": 50.2,
+    "duration_h": 1.65,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Villach.json"
+  },
+  "Bad Kleinkirchheim_to_Spittal an der Drau": {
+    "distance_km": 44.4,
+    "duration_h": 1.56,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Spittal_an_der_Drau.json"
+  },
+  "Bad Kleinkirchheim_to_Wolfsberg": {
+    "distance_km": 118.3,
+    "duration_h": 2.1,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Wolfsberg.json"
+  },
+  "Bad Kleinkirchheim_to_St. Veit an der Glan": {
+    "distance_km": 61.6,
+    "duration_h": 1.59,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_St._Veit_an_der_Glan.json"
+  },
+  "Bad Kleinkirchheim_to_Feldkirchen in Kärnten": {
+    "distance_km": 38.7,
+    "duration_h": 1.18,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Feldkirchen_in_Kärnten.json"
+  },
+  "Bad Kleinkirchheim_to_Hermagor-Pressegger See": {
+    "distance_km": 81.7,
+    "duration_h": 2.04,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Hermagor-Pressegger_See.json"
+  },
+  "Bad Kleinkirchheim_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 138.2,
+    "duration_h": 2.37,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Bad Kleinkirchheim_to_Bleiburg": {
+    "distance_km": 112.2,
+    "duration_h": 2.14,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Bleiburg.json"
+  },
+  "Bad Kleinkirchheim_to_Völkermarkt": {
+    "distance_km": 88.6,
+    "duration_h": 1.89,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Völkermarkt.json"
+  },
+  "Bad Kleinkirchheim_to_Althofen": {
+    "distance_km": 71.4,
+    "duration_h": 1.81,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Althofen.json"
+  },
+  "Bad Kleinkirchheim_to_Friesach": {
+    "distance_km": 82.7,
+    "duration_h": 1.83,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Friesach.json"
+  },
+  "Bad Kleinkirchheim_to_Gmünd in Kärnten": {
+    "distance_km": 53.4,
+    "duration_h": 1.62,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Gmünd_in_Kärnten.json"
+  },
+  "Bad Kleinkirchheim_to_Radenthein": {
+    "distance_km": 21.9,
+    "duration_h": 0.95,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Radenthein.json"
+  },
+  "Bad Kleinkirchheim_to_Treffen am Ossiacher See": {
+    "distance_km": 398.8,
+    "duration_h": 5.35,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Treffen_am_Ossiacher_See.json"
+  },
+  "Bad Kleinkirchheim_to_Velden am Wörther See": {
+    "distance_km": 61.0,
+    "duration_h": 1.64,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Velden_am_Wörther_See.json"
+  },
+  "Bad Kleinkirchheim_to_Ferlach": {
+    "distance_km": 77.2,
+    "duration_h": 2.04,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Ferlach.json"
+  },
+  "Bad Kleinkirchheim_to_Arnoldstein": {
+    "distance_km": 74.2,
+    "duration_h": 1.87,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Arnoldstein.json"
+  },
+  "Bad Kleinkirchheim_to_Heiligenblut am Großglockner": {
+    "distance_km": 134.1,
+    "duration_h": 3.25,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Heiligenblut_am_Großglockner.json"
+  },
+  "Bad Kleinkirchheim_to_Oberdrauburg": {
+    "distance_km": 90.7,
+    "duration_h": 2.32,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Oberdrauburg.json"
+  },
+  "Bad Kleinkirchheim_to_Lavamünd": {
+    "distance_km": 123.8,
+    "duration_h": 2.41,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Lavamünd.json"
+  },
+  "Bad Kleinkirchheim_to_Greifenburg": {
+    "distance_km": 73.0,
+    "duration_h": 1.98,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Greifenburg.json"
+  },
+  "Bad Kleinkirchheim_to_Mallnitz": {
+    "distance_km": 79.7,
+    "duration_h": 2.18,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Mallnitz.json"
+  },
+  "Bad Kleinkirchheim_to_Reichenfels": {
+    "distance_km": 145.4,
+    "duration_h": 2.5,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Reichenfels.json"
+  },
+  "Bad Kleinkirchheim_to_Steinfeld": {
+    "distance_km": 225.7,
+    "duration_h": 3.23,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Steinfeld.json"
+  },
+  "Bad Kleinkirchheim_to_Seeboden am Millstätter See": {
+    "distance_km": 39.4,
+    "duration_h": 1.41,
+    "file": "sea_demo/data/routes_carinthia/route_Bad_Kleinkirchheim_Seeboden_am_Millstätter_See.json"
+  },
+  "Paternion_to_Klagenfurt am Wörthersee": {
+    "distance_km": 66.8,
+    "duration_h": 1.05,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Klagenfurt_am_Wörthersee.json"
+  },
+  "Paternion_to_Villach": {
+    "distance_km": 23.3,
+    "duration_h": 0.69,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Villach.json"
+  },
+  "Paternion_to_Spittal an der Drau": {
+    "distance_km": 26.6,
+    "duration_h": 0.64,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Spittal_an_der_Drau.json"
+  },
+  "Paternion_to_Wolfsberg": {
+    "distance_km": 125.6,
+    "duration_h": 1.52,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Wolfsberg.json"
+  },
+  "Paternion_to_St. Veit an der Glan": {
+    "distance_km": 83.5,
+    "duration_h": 1.19,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_St._Veit_an_der_Glan.json"
+  },
+  "Paternion_to_Feldkirchen in Kärnten": {
+    "distance_km": 49.7,
+    "duration_h": 1.04,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Feldkirchen_in_Kärnten.json"
+  },
+  "Paternion_to_Hermagor-Pressegger See": {
+    "distance_km": 50.7,
+    "duration_h": 1.07,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Hermagor-Pressegger_See.json"
+  },
+  "Paternion_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 145.5,
+    "duration_h": 1.78,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Paternion_to_Bleiburg": {
+    "distance_km": 119.4,
+    "duration_h": 1.55,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Bleiburg.json"
+  },
+  "Paternion_to_Völkermarkt": {
+    "distance_km": 95.9,
+    "duration_h": 1.31,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Völkermarkt.json"
+  },
+  "Paternion_to_Althofen": {
+    "distance_km": 82.1,
+    "duration_h": 1.25,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Althofen.json"
+  },
+  "Paternion_to_Friesach": {
+    "distance_km": 106.9,
+    "duration_h": 1.47,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Friesach.json"
+  },
+  "Paternion_to_Gmünd in Kärnten": {
+    "distance_km": 40.4,
+    "duration_h": 0.68,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Gmünd_in_Kärnten.json"
+  },
+  "Paternion_to_Radenthein": {
+    "distance_km": 27.4,
+    "duration_h": 0.73,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Radenthein.json"
+  },
+  "Paternion_to_Treffen am Ossiacher See": {
+    "distance_km": 456.6,
+    "duration_h": 4.62,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Treffen_am_Ossiacher_See.json"
+  },
+  "Paternion_to_Velden am Wörther See": {
+    "distance_km": 45.5,
+    "duration_h": 0.79,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Velden_am_Wörther_See.json"
+  },
+  "Paternion_to_Ferlach": {
+    "distance_km": 71.7,
+    "duration_h": 1.34,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Ferlach.json"
+  },
+  "Paternion_to_Arnoldstein": {
+    "distance_km": 58.2,
+    "duration_h": 0.96,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Arnoldstein.json"
+  },
+  "Paternion_to_Heiligenblut am Großglockner": {
+    "distance_km": 121.0,
+    "duration_h": 2.33,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Heiligenblut_am_Großglockner.json"
+  },
+  "Paternion_to_Oberdrauburg": {
+    "distance_km": 77.6,
+    "duration_h": 1.4,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Oberdrauburg.json"
+  },
+  "Paternion_to_Lavamünd": {
+    "distance_km": 131.0,
+    "duration_h": 1.82,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Lavamünd.json"
+  },
+  "Paternion_to_Greifenburg": {
+    "distance_km": 59.9,
+    "duration_h": 1.05,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Greifenburg.json"
+  },
+  "Paternion_to_Mallnitz": {
+    "distance_km": 66.6,
+    "duration_h": 1.25,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Mallnitz.json"
+  },
+  "Paternion_to_Reichenfels": {
+    "distance_km": 152.6,
+    "duration_h": 1.91,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Reichenfels.json"
+  },
+  "Paternion_to_Steinfeld": {
+    "distance_km": 232.9,
+    "duration_h": 2.64,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Steinfeld.json"
+  },
+  "Paternion_to_Seeboden am Millstätter See": {
+    "distance_km": 32.4,
+    "duration_h": 0.64,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Seeboden_am_Millstätter_See.json"
+  },
+  "Paternion_to_Bad Kleinkirchheim": {
+    "distance_km": 48.7,
+    "duration_h": 1.67,
+    "file": "sea_demo/data/routes_carinthia/route_Paternion_Bad_Kleinkirchheim.json"
+  },
+  "Ebenthal in Kärnten_to_Klagenfurt am Wörthersee": {
+    "distance_km": 5.1,
+    "duration_h": 0.17,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Klagenfurt_am_Wörthersee.json"
+  },
+  "Ebenthal in Kärnten_to_Villach": {
+    "distance_km": 44.2,
+    "duration_h": 0.71,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Villach.json"
+  },
+  "Ebenthal in Kärnten_to_Spittal an der Drau": {
+    "distance_km": 78.5,
+    "duration_h": 1.04,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Spittal_an_der_Drau.json"
+  },
+  "Ebenthal in Kärnten_to_Wolfsberg": {
+    "distance_km": 58.0,
+    "duration_h": 0.69,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Wolfsberg.json"
+  },
+  "Ebenthal in Kärnten_to_St. Veit an der Glan": {
+    "distance_km": 30.3,
+    "duration_h": 0.51,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_St._Veit_an_der_Glan.json"
+  },
+  "Ebenthal in Kärnten_to_Feldkirchen in Kärnten": {
+    "distance_km": 33.5,
+    "duration_h": 0.62,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Feldkirchen_in_Kärnten.json"
+  },
+  "Ebenthal in Kärnten_to_Hermagor-Pressegger See": {
+    "distance_km": 97.0,
+    "duration_h": 1.32,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Hermagor-Pressegger_See.json"
+  },
+  "Ebenthal in Kärnten_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 78.0,
+    "duration_h": 0.95,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Ebenthal in Kärnten_to_Bleiburg": {
+    "distance_km": 51.9,
+    "duration_h": 0.73,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Bleiburg.json"
+  },
+  "Ebenthal in Kärnten_to_Völkermarkt": {
+    "distance_km": 28.4,
+    "duration_h": 0.48,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Völkermarkt.json"
+  },
+  "Ebenthal in Kärnten_to_Althofen": {
+    "distance_km": 134.0,
+    "duration_h": 1.64,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Althofen.json"
+  },
+  "Ebenthal in Kärnten_to_Friesach": {
+    "distance_km": 53.7,
+    "duration_h": 0.79,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Friesach.json"
+  },
+  "Ebenthal in Kärnten_to_Gmünd in Kärnten": {
+    "distance_km": 92.2,
+    "duration_h": 1.08,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Gmünd_in_Kärnten.json"
+  },
+  "Ebenthal in Kärnten_to_Radenthein": {
+    "distance_km": 65.0,
+    "duration_h": 1.12,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Radenthein.json"
+  },
+  "Ebenthal in Kärnten_to_Treffen am Ossiacher See": {
+    "distance_km": 395.4,
+    "duration_h": 4.03,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Treffen_am_Ossiacher_See.json"
+  },
+  "Ebenthal in Kärnten_to_Velden am Wörther See": {
+    "distance_km": 27.6,
+    "duration_h": 0.51,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Velden_am_Wörther_See.json"
+  },
+  "Ebenthal in Kärnten_to_Ferlach": {
+    "distance_km": 20.2,
+    "duration_h": 0.39,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Ferlach.json"
+  },
+  "Ebenthal in Kärnten_to_Arnoldstein": {
+    "distance_km": 63.0,
+    "duration_h": 0.88,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Arnoldstein.json"
+  },
+  "Ebenthal in Kärnten_to_Heiligenblut am Großglockner": {
+    "distance_km": 172.9,
+    "duration_h": 2.72,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Heiligenblut_am_Großglockner.json"
+  },
+  "Ebenthal in Kärnten_to_Oberdrauburg": {
+    "distance_km": 129.5,
+    "duration_h": 1.79,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Oberdrauburg.json"
+  },
+  "Ebenthal in Kärnten_to_Lavamünd": {
+    "distance_km": 63.5,
+    "duration_h": 0.99,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Lavamünd.json"
+  },
+  "Ebenthal in Kärnten_to_Greifenburg": {
+    "distance_km": 111.8,
+    "duration_h": 1.44,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Greifenburg.json"
+  },
+  "Ebenthal in Kärnten_to_Mallnitz": {
+    "distance_km": 118.5,
+    "duration_h": 1.65,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Mallnitz.json"
+  },
+  "Ebenthal in Kärnten_to_Reichenfels": {
+    "distance_km": 85.1,
+    "duration_h": 1.08,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Reichenfels.json"
+  },
+  "Ebenthal in Kärnten_to_Steinfeld": {
+    "distance_km": 165.4,
+    "duration_h": 1.82,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Steinfeld.json"
+  },
+  "Ebenthal in Kärnten_to_Seeboden am Millstätter See": {
+    "distance_km": 84.2,
+    "duration_h": 1.04,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Seeboden_am_Millstätter_See.json"
+  },
+  "Ebenthal in Kärnten_to_Bad Kleinkirchheim": {
+    "distance_km": 72.9,
+    "duration_h": 1.8,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Bad_Kleinkirchheim.json"
+  },
+  "Ebenthal in Kärnten_to_Paternion": {
+    "distance_km": 70.9,
+    "duration_h": 1.14,
+    "file": "sea_demo/data/routes_carinthia/route_Ebenthal_in_Kärnten_Paternion.json"
+  },
+  "Kötschach-Mauthen_to_Klagenfurt am Wörthersee": {
+    "distance_km": 116.8,
+    "duration_h": 1.68,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Klagenfurt_am_Wörthersee.json"
+  },
+  "Kötschach-Mauthen_to_Villach": {
+    "distance_km": 81.2,
+    "duration_h": 1.38,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Villach.json"
+  },
+  "Kötschach-Mauthen_to_Spittal an der Drau": {
+    "distance_km": 71.2,
+    "duration_h": 1.27,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Spittal_an_der_Drau.json"
+  },
+  "Kötschach-Mauthen_to_Wolfsberg": {
+    "distance_km": 175.5,
+    "duration_h": 2.15,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Wolfsberg.json"
+  },
+  "Kötschach-Mauthen_to_St. Veit an der Glan": {
+    "distance_km": 133.5,
+    "duration_h": 1.82,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_St._Veit_an_der_Glan.json"
+  },
+  "Kötschach-Mauthen_to_Feldkirchen in Kärnten": {
+    "distance_km": 115.3,
+    "duration_h": 1.75,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Feldkirchen_in_Kärnten.json"
+  },
+  "Kötschach-Mauthen_to_Hermagor-Pressegger See": {
+    "distance_km": 24.3,
+    "duration_h": 0.45,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Hermagor-Pressegger_See.json"
+  },
+  "Kötschach-Mauthen_to_Bad St. Leonhard im Lavanttal": {
+    "distance_km": 195.4,
+    "duration_h": 2.41,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Bad_St._Leonhard_im_Lavanttal.json"
+  },
+  "Kötschach-Mauthen_to_Bleiburg": {
+    "distance_km": 169.4,
+    "duration_h": 2.19,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Bleiburg.json"
+  },
+  "Kötschach-Mauthen_to_Völkermarkt": {
+    "distance_km": 145.8,
+    "duration_h": 1.94,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Völkermarkt.json"
+  },
+  "Kötschach-Mauthen_to_Althofen": {
+    "distance_km": 119.2,
+    "duration_h": 1.85,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Althofen.json"
+  },
+  "Kötschach-Mauthen_to_Friesach": {
+    "distance_km": 156.8,
+    "duration_h": 2.1,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Friesach.json"
+  },
+  "Kötschach-Mauthen_to_Gmünd in Kärnten": {
+    "distance_km": 77.4,
+    "duration_h": 1.29,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Gmünd_in_Kärnten.json"
+  },
+  "Kötschach-Mauthen_to_Radenthein": {
+    "distance_km": 84.4,
+    "duration_h": 1.56,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Radenthein.json"
+  },
+  "Kötschach-Mauthen_to_Treffen am Ossiacher See": {
+    "distance_km": 493.6,
+    "duration_h": 5.22,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Treffen_am_Ossiacher_See.json"
+  },
+  "Kötschach-Mauthen_to_Velden am Wörther See": {
+    "distance_km": 95.4,
+    "duration_h": 1.42,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Velden_am_Wörther_See.json"
+  },
+  "Kötschach-Mauthen_to_Ferlach": {
+    "distance_km": 121.4,
+    "duration_h": 1.97,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Ferlach.json"
+  },
+  "Kötschach-Mauthen_to_Arnoldstein": {
+    "distance_km": 69.5,
+    "duration_h": 1.23,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Arnoldstein.json"
+  },
+  "Kötschach-Mauthen_to_Heiligenblut am Großglockner": {
+    "distance_km": 77.0,
+    "duration_h": 1.51,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Heiligenblut_am_Großglockner.json"
+  },
+  "Kötschach-Mauthen_to_Oberdrauburg": {
+    "distance_km": 18.0,
+    "duration_h": 0.32,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Oberdrauburg.json"
+  },
+  "Kötschach-Mauthen_to_Lavamünd": {
+    "distance_km": 181.0,
+    "duration_h": 2.45,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Lavamünd.json"
+  },
+  "Kötschach-Mauthen_to_Greifenburg": {
+    "distance_km": 36.1,
+    "duration_h": 0.69,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Greifenburg.json"
+  },
+  "Kötschach-Mauthen_to_Mallnitz": {
+    "distance_km": 83.3,
+    "duration_h": 1.55,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Mallnitz.json"
+  },
+  "Kötschach-Mauthen_to_Reichenfels": {
+    "distance_km": 202.6,
+    "duration_h": 2.54,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Reichenfels.json"
+  },
+  "Kötschach-Mauthen_to_Steinfeld": {
+    "distance_km": 282.9,
+    "duration_h": 3.27,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Steinfeld.json"
+  },
+  "Kötschach-Mauthen_to_Seeboden am Millstätter See": {
+    "distance_km": 69.2,
+    "duration_h": 1.24,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Seeboden_am_Millstätter_See.json"
+  },
+  "Kötschach-Mauthen_to_Bad Kleinkirchheim": {
+    "distance_km": 105.7,
+    "duration_h": 2.5,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Bad_Kleinkirchheim.json"
+  },
+  "Kötschach-Mauthen_to_Paternion": {
+    "distance_km": 74.7,
+    "duration_h": 1.52,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Paternion.json"
+  },
+  "Kötschach-Mauthen_to_Ebenthal in Kärnten": {
+    "distance_km": 121.3,
+    "duration_h": 1.8,
+    "file": "sea_demo/data/routes_carinthia/route_Kötschach-Mauthen_Ebenthal_in_Kärnten.json"
+  }
+}
