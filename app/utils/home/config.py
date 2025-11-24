@@ -46,5 +46,11 @@ TASKS = [
         "title": "Assignment 5: Ant Colony Optimization",
         "page": "08_ASS05_Ant_Colony_Optimization.py",
         "done": 1.0
+    },
+    {
+        "key": "06_01",
+        "title": "Assignment 6: Particle Swarm Optimization",
+        "page": "09_ASS06_Particle_Swarm_Optimization.py",
+        "done": 1.0
     }
 ]
