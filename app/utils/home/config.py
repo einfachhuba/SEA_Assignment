@@ -52,5 +52,11 @@ TASKS = [
         "title": "Assignment 6: Particle Swarm Optimization",
         "page": "09_ASS06_Particle_Swarm_Optimization.py",
         "done": 1.0
+    },
+    {
+        "key": "07_01",
+        "title": "Assignment 7: Differential Evolution",
+        "page": "10_ASS07_Differential_Evolution.py",
+        "done": 1.0
     }
 ]
